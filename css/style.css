@@ -1,0 +1,1521 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+fieldset {
+  border: none; }
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0; }
+
+.wrap::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+#header_sub {
+  width: 100%;
+  border-bottom: 1px solid #ddd; }
+  #header_sub .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative; }
+    #header_sub .inner > h1 {
+      position: absolute;
+      left: 0;
+      bottom: 15px; }
+      #header_sub .inner > h1 a {
+        font: bold 24px/1 "arial";
+        color: #444; }
+    #header_sub .inner .menuWeb #gnb {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      #header_sub .inner .menuWeb #gnb::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #header_sub .inner .menuWeb #gnb li {
+        float: left; }
+        #header_sub .inner .menuWeb #gnb li a {
+          display: block;
+          padding: 20px 40px;
+          color: #555;
+          font: bold 15px/1 "arial";
+          transition: 0.5s; }
+        #header_sub .inner .menuWeb #gnb li:hover a {
+          background: #555;
+          color: #fff; }
+    #header_sub .inner .menuWeb .util {
+      position: absolute;
+      top: 20px;
+      right: 0px; }
+      #header_sub .inner .menuWeb .util::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #header_sub .inner .menuWeb .util li {
+        float: left; }
+        #header_sub .inner .menuWeb .util li a {
+          display: block;
+          font: 12px/1 "arial";
+          color: #999;
+          padding: 0 10px;
+          border-right: 1px solid #aaa; }
+        #header_sub .inner .menuWeb .util li:last-child a {
+          border-right: none; }
+    #header_sub .inner .btnCall {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      display: none; }
+      #header_sub .inner .btnCall::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        transition: top 0.5s 0s, transform 0.5s 0.5s; }
+      #header_sub .inner .btnCall::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: rotate(0deg);
+        transition: bottom 0.5s 0s, transform 0.5s 0.5s; }
+      #header_sub .inner .btnCall span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        text-indent: -9999px;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        transition: 0.5s; }
+      #header_sub .inner .btnCall.on::before {
+        transform: rotate(45deg);
+        top: 50%;
+        margin-top: -1px; }
+      #header_sub .inner .btnCall.on::after {
+        transform: rotate(-45deg);
+        bottom: 50%;
+        margin-bottom: -1px; }
+      #header_sub .inner .btnCall.on span {
+        transform: translateX(100%);
+        opacity: 0; }
+    #header_sub .inner .menuMo {
+      position: fixed;
+      top: 0;
+      left: -270px;
+      width: 270px;
+      height: 100vh;
+      background: #333;
+      transition: 0.5s;
+      padding: 35px 30px;
+      box-sizing: border-box;
+      z-index: 10; }
+      #header_sub .inner .menuMo h1 {
+        border-bottom: 1px solid #666;
+        padding-bottom: 30px; }
+        #header_sub .inner .menuMo h1 a {
+          display: block;
+          font: bold 24px/1 "arial";
+          color: #fff;
+          text-align: center; }
+        #header_sub .inner .menuMo h1 span {
+          font-size: 12px;
+          color: #aaa; }
+      #header_sub .inner .menuMo #gnbMo li a {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #444;
+        font: bold 14px/1 "arial";
+        color: #888;
+        text-align: center; }
+      #header_sub .inner .menuMo.on {
+        left: 0; }
+
+.content {
+  width: 100%;
+  padding: 0px 0px 150px; }
+  .content .sub_visual {
+    width: 100%;
+    height: 250px;
+    background: #bbb;
+    margin-bottom: 100px; }
+  .content .inner {
+    width: 1180px;
+    margin: 0 auto;
+    min-height: 500px; }
+    .content .inner h1 {
+      font: normal 50px/1 "arial";
+      color: #000;
+      margin-bottom: 60px; }
+      .content .inner h1 span {
+        font: normal 20px/1 "맑은 고딕";
+        color: #aaa; }
+        .content .inner h1 span::before {
+          content: "/";
+          margin-right: 20px;
+          margin-left: 10px; }
+
+#footer_sub {
+  width: 100%;
+  padding: 100px 0;
+  background: #444; }
+  #footer_sub .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer_sub .inner::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #footer_sub .inner h1 {
+      font: bold 24px/1 "arial";
+      color: #666;
+      float: left; }
+    #footer_sub .inner ul {
+      float: right; }
+      #footer_sub .inner ul li {
+        float: left;
+        margin-left: 20px; }
+        #footer_sub .inner ul li a {
+          font: bold 14px/1 "arial";
+          color: #666; }
+    #footer_sub .inner address {
+      width: 100%;
+      float: left;
+      font: 14px/1.3 "arial";
+      color: #777;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+    #footer_sub .inner p {
+      font: 12px/1 "arial";
+      color: #777;
+      width: 100%;
+      float: left; }
+
+@media screen and (max-width: 1179px) {
+  #header .inner {
+    width: 100%;
+    height: 100px; }
+    #header .inner > h1 {
+      left: 20px; }
+    #header .inner .menuWeb {
+      display: none; }
+    #header .inner .btnCall {
+      display: block; }
+
+  .content {
+    padding: 0px 0px 100px; }
+    .content .sub_visual {
+      height: 200px; }
+    .content .inner {
+      width: 100%;
+      padding: 0 30px;
+      box-sizing: border-box; }
+
+  /*footer ------------------------------------------*/
+  #footer_sub {
+    padding: 80px 30px; }
+    #footer_sub .inner {
+      width: 100%; } }
+@media screen and (max-width: 539px) {
+  .content {
+    padding: 0px 0px 80px; }
+    .content .sub_visual {
+      height: 150px; }
+    .content .inner h1 {
+      font-size: 45px; }
+      .content .inner h1 span {
+        display: block;
+        margin-top: 10px; }
+
+  /*footer ------------------------------------------*/
+  #footer_sub .inner h1 {
+    margin-bottom: 20px; }
+  #footer_sub .inner ul {
+    width: 100%; }
+    #footer_sub .inner ul li {
+      margin-left: 0;
+      margin: 5px; } }
+.community .sub_visual {
+  background-image: url(../img/f3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  opacity: 0.8; }
+.community .inner {
+  /* pagination */ }
+  .community .inner h1 {
+    font: normal 50px/1 "STIX Two Text";
+    color: #333;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; }
+  .community .inner::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .community .inner .header1 {
+    text-align: center;
+    margin-bottom: 50px; }
+    .community .inner .header1 span {
+      font: normal 17px/1 "STIX Two Text";
+      display: inline-block;
+      margin-right: 30px;
+      color: #666;
+      letter-spacing: 1px; }
+      .community .inner .header1 span:last-child {
+        margin-right: 0; }
+  .community .inner .header2 {
+    margin: 0 13%;
+    margin-bottom: 40px; }
+    .community .inner .header2::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .community .inner .header2 li {
+      float: left;
+      text-align: center;
+      margin: 0 auto; }
+      .community .inner .header2 li a {
+        display: inline-block;
+        font: bold 16px/1 "arial";
+        color: #666;
+        margin: 0px 20px;
+        text-align: center;
+        padding-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: 2px solid transparent;
+        /* transition: all 0.5s; */ }
+      .community .inner .header2 li:last-child {
+        margin-right: 0; }
+      .community .inner .header2 li:hover {
+        border-bottom: 2px solid #333;
+        box-sizing: border-box; }
+  .community .inner table {
+    width: 100%;
+    border-bottom: 2px solid #111;
+    margin-bottom: 50px;
+    border-collapse: collapse; }
+    .community .inner table tr:hover td {
+      background: #fff; }
+    .community .inner table tr th {
+      padding: 15px;
+      color: #222; }
+      .community .inner table tr th:nth-of-type(1) {
+        width: 60%; }
+      .community .inner table tr th:nth-of-type(3) {
+        width: 20%; }
+      .community .inner table tr th:nth-of-type(4) {
+        width: 20%; }
+    .community .inner table tr td {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      text-align: center; }
+      .community .inner table tr td:nth-of-type(1) {
+        text-align: left; }
+      .community .inner table tr td:nth-of-type(2) {
+        text-align: center; }
+      .community .inner table tr td:nth-of-type(3) {
+        width: auto; }
+      .community .inner table tr td span {
+        display: inline-block;
+        width: 45px;
+        height: 30px;
+        margin-left: 30px;
+        margin-right: 15px;
+        background: #333;
+        color: #fff;
+        font: normal 13px/30px "STIX Two Text";
+        text-align: center; }
+      .community .inner table tr td a:nth-of-type(1) {
+        font: normal 16px/1 "STIX Two Text";
+        color: #333; }
+    .community .inner table thead {
+      border-top: 3px solid #222;
+      border-bottom: 1px solid #ddd; }
+  .community .inner .pagination {
+    width: 100%;
+    text-align: center;
+    position: relative; }
+    .community .inner .pagination::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .community .inner .pagination .search {
+      float: left;
+      font: bold 11px/1px;
+      color: #666;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #777; }
+      .community .inner .pagination .search .prev {
+        font: bold 11px/1px;
+        color: #666;
+        padding-left: 10px; }
+    .community .inner .pagination .next {
+      float: right;
+      display: block;
+      width: 130px;
+      height: 40px;
+      border: 1px solid #333;
+      font: normal 18px/40px "STIX Two Text";
+      color: #333;
+      text-align: center; }
+    .community .inner .pagination .numbers {
+      display: inline-block;
+      text-align: center;
+      font-size: 0; }
+      .community .inner .pagination .numbers .left1 {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #aaa;
+        text-align: center;
+        font-size: 10px;
+        line-height: 25px;
+        position: absolute;
+        left: 33%;
+        top: 3px; }
+      .community .inner .pagination .numbers .left2 {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #aaa;
+        text-align: center;
+        font-size: 10px;
+        line-height: 25px;
+        position: absolute;
+        position: absolute;
+        left: 30.9%;
+        top: 3px; }
+      .community .inner .pagination .numbers .right1 {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #aaa;
+        text-align: center;
+        font-size: 10px;
+        line-height: 25px;
+        position: absolute;
+        position: absolute;
+        right: 28%;
+        top: 3px; }
+      .community .inner .pagination .numbers .right2 {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #aaa;
+        text-align: center;
+        font-size: 10px;
+        line-height: 25px;
+        position: absolute;
+        position: absolute;
+        right: 25.9%;
+        top: 3px; }
+      .community .inner .pagination .numbers a {
+        display: inline-block;
+        width: 20px;
+        height: 30px;
+        font: bold 12px/30px "STIX Two Text";
+        color: #666;
+        text-align: center;
+        margin: 0 5px;
+        transition: 0.5s; }
+        .community .inner .pagination .numbers a:hover {
+          background: #666;
+          color: #fff; }
+
+@media screen and (max-width: 1179px) {
+  .community .inner {
+    /* pagination */ }
+    .community .inner .header1 span {
+      margin-right: 20px; }
+    .community .inner .header2 {
+      display: none; }
+    .community .inner table tr td span {
+      margin-left: 10px;
+      margin-right: 10px; }
+    .community .inner table tr td a {
+      font: 13px/1 "arial"; }
+    .community .inner table tr td:nth-of-type(2) {
+      font: normal 12px/30px "arial"; }
+    .community .inner .pagination .search {
+      font: bold 8px/1px;
+      color: #666;
+      text-align: center; }
+      .community .inner .pagination .search .prev {
+        font: bold 8px/1px;
+        color: #666; }
+    .community .inner .pagination .numbers a {
+      margin: 0 1px; }
+      .community .inner .pagination .numbers a:nth-of-type(5) {
+        margin-right: 30px; }
+      .community .inner .pagination .numbers a:nth-of-type(6) {
+        display: none; }
+      .community .inner .pagination .numbers a:nth-of-type(7) {
+        display: none; }
+      .community .inner .pagination .numbers a:nth-of-type(8) {
+        display: none; }
+      .community .inner .pagination .numbers a:nth-of-type(9) {
+        display: none; }
+      .community .inner .pagination .numbers a:nth-of-type(10) {
+        display: none; }
+      .community .inner .pagination .numbers a:hover {
+        background: #666;
+        color: #fff; }
+    .community .inner .pagination .numbers .left1 {
+      left: 40%; }
+    .community .inner .pagination .numbers .left2 {
+      display: none; }
+    .community .inner .pagination .numbers .right1 {
+      right: 29%; }
+    .community .inner .pagination .numbers .right2 {
+      display: none; }
+    .community .inner .pagination .next {
+      width: 100px;
+      height: 30px;
+      font: normal 16px/30px "STIX Two Text"; } }
+@media screen and (max-width: 539px) {
+  .community .inner {
+    /* pagination */ }
+    .community .inner .header1 span {
+      display: none; }
+    .community .inner .header2 {
+      display: none; }
+    .community .inner table tr th:nth-of-type(2) {
+      display: none; }
+    .community .inner table tr td:nth-of-type(2) {
+      display: none; }
+    .community .inner table tr td span {
+      margin-left: 10px; }
+      .community .inner table tr td span a {
+        font: normal 11px/30px "arial"; }
+    .community .inner .pagination .search {
+      display: none; }
+      .community .inner .pagination .search .prev {
+        font: bold 8px/1px;
+        color: #666; }
+    .community .inner .pagination .numbers a {
+      margin: 0 1px; }
+      .community .inner .pagination .numbers a:nth-of-type(1) {
+        position: absolute;
+        left: 20px;
+        top: 3px; }
+      .community .inner .pagination .numbers a:nth-of-type(2) {
+        display: none; }
+      .community .inner .pagination .numbers a:nth-of-type(3) {
+        display: none; }
+      .community .inner .pagination .numbers a:nth-of-type(4) {
+        display: none; }
+      .community .inner .pagination .numbers a:nth-of-type(5) {
+        display: none; }
+    .community .inner .pagination .numbers .left1 {
+      left: -2%; }
+    .community .inner .pagination .numbers .right1 {
+      right: 77%; }
+    .community .inner .pagination .next {
+      width: 100px;
+      height: 30px;
+      font: normal 16px/30px "arial"; } }
+.join {
+  padding: 0 0 150px; }
+  .join .sub_visual {
+    background-image: url(../img/j4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    opacity: 0.8; }
+  .join .inner h1 {
+    font: normal 50px/1 "STIX Two Text";
+    text-align: center;
+    color: #333;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; }
+  .join .inner fieldset {
+    position: relative; }
+  .join .inner h2 {
+    font: normal 20px/1 "STIX Two Text";
+    color: #444;
+    margin-bottom: 20px;
+    margin-top: 50px; }
+    .join .inner h2:nth-of-type(2) {
+      border-bottom: 2px solid #333;
+      margin-bottom: 30px;
+      padding-bottom: 30px; }
+  .join .inner textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    font: 14px/1.6 "STIX Two Text";
+    color: #888;
+    border: 1px solid #aaa;
+    margin-bottom: 20px; }
+    .join .inner textarea:last-child {
+      border: 1px solid #fff;
+      background: #efefef;
+      padding: 15px; }
+  .join .inner h3 {
+    display: inline-block;
+    font: normal 10px/1 "arial";
+    color: #eb5079;
+    position: absolute;
+    right: 20px;
+    top: 21%; }
+    .join .inner h3 > .cir {
+      width: 5px;
+      height: 5px;
+      display: inline-block;
+      margin-right: 8px;
+      background: #eb5079;
+      border-radius: 50px; }
+  .join .inner .agree {
+    text-align: center; }
+    .join .inner .agree span {
+      font: normal 13px/1 "arial";
+      color: #333;
+      margin-left: 5px; }
+  .join .inner table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; }
+    .join .inner table tr {
+      position: relative; }
+      .join .inner table tr:last-child {
+        border-bottom: none;
+        border-right: none;
+        text-align: center; }
+      .join .inner table tr:nth-of-type(6) .cir {
+        display: none; }
+      .join .inner table tr:nth-of-type(7) .cir {
+        display: none; }
+      .join .inner table tr th {
+        width: 15%;
+        padding: 5px;
+        /* border-right: 1px dashed #bbb; */
+        text-align: left; }
+        .join .inner table tr th span {
+          font: 600 11px/1 "Spartan";
+          color: #222; }
+        .join .inner table tr th .cir {
+          width: 5px;
+          height: 5px;
+          display: inline-block;
+          margin-left: 8px;
+          background: #eb5079;
+          border-radius: 50px; }
+        .join .inner table tr th:last-child {
+          border-right: none;
+          border-bottom: none;
+          text-align: center;
+          background: #fff;
+          font-size: 0; }
+      .join .inner table tr td {
+        width: 80%;
+        padding: 20px 0px; }
+        .join .inner table tr td > #comment {
+          background: #efefef;
+          padding: 15px 10px;
+          margin: 0px 0px 15px; }
+      .join .inner table tr input[type="text"],
+      .join .inner table tr input[type="password"] {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #fff;
+        background: #efefef;
+        padding: 15px 10px;
+        margin-bottom: 15px; }
+      .join .inner table tr input[type="checkbox"],
+      .join .inner table tr input[type="radio"] {
+        margin-left: 5px; }
+      .join .inner table tr input[type="tel"] {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #fff;
+        background: #efefef;
+        padding: 15px 10px;
+        margin-bottom: 15px; }
+      .join .inner table tr input[type="submit"] {
+        width: 87%;
+        height: 70px;
+        margin: 0 auto;
+        margin-left: 13.5%;
+        float: left;
+        font: 25px/70px "STIX Two Text";
+        border: 1px solid #fff;
+        transform: translateX(24px);
+        box-sizing: border-box;
+        color: #fff;
+        background: linear-gradient(60deg, #d9a7c7, #fffcdc); }
+
+@media screen and (max-width: 1179px) {
+  .join {
+    padding: 0 0 150px; }
+    .join .sub_visual {
+      background-image: url(../img/j4.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      /* background-attachment: fixed; */
+      opacity: 0.8; }
+    .join .inner h1 {
+      font: normal 50px/1 "STIX Two Text";
+      text-align: center;
+      color: #333;
+      letter-spacing: 1.5px;
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative; }
+    .join .inner fieldset {
+      position: relative; }
+    .join .inner h2 {
+      font: normal 20px/1 "STIX Two Text";
+      color: #444;
+      margin-bottom: 20px;
+      margin-top: 50px; }
+      .join .inner h2:nth-of-type(2) {
+        border-bottom: 2px solid #333;
+        margin-bottom: 30px;
+        padding-bottom: 30px; }
+    .join .inner textarea {
+      resize: none;
+      width: 100%;
+      height: 120px;
+      padding: 20px;
+      font: 14px/1.6 "STIX Two Text";
+      color: #888;
+      border: 1px solid #aaa;
+      margin-bottom: 20px; }
+      .join .inner textarea:nth-of-type(2) {
+        border: 1px solid #fff;
+        background: #efefef;
+        padding: 15px; }
+    .join .inner h3 {
+      display: inline-block;
+      font: normal 10px/1 "arial";
+      color: #eb5079;
+      position: absolute;
+      right: 20px;
+      top: 21%; }
+      .join .inner h3 > .cir {
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        margin-right: 8px;
+        background: #eb5079;
+        border-radius: 50px; }
+    .join .inner .agree {
+      text-align: center; }
+      .join .inner .agree span {
+        font: normal 13px/1 "arial";
+        color: #333;
+        margin-left: 5px; }
+    .join .inner table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px; }
+      .join .inner table tr {
+        position: relative; }
+        .join .inner table tr:last-child {
+          border-bottom: none;
+          border-right: none;
+          text-align: center; }
+        .join .inner table tr:nth-of-type(6) .cir {
+          display: none; }
+        .join .inner table tr:nth-of-type(7) .cir {
+          display: none; }
+        .join .inner table tr th {
+          width: 15%;
+          padding: 5px;
+          /* border-right: 1px dashed #bbb; */
+          text-align: left; }
+          .join .inner table tr th span {
+            font: 600 11px/1 "Spartan";
+            color: #222; }
+          .join .inner table tr th .cir {
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            margin-left: 8px;
+            background: #eb5079;
+            border-radius: 50px; }
+          .join .inner table tr th:last-child {
+            border-right: none;
+            border-bottom: none;
+            text-align: center;
+            background: #fff;
+            font-size: 0; }
+        .join .inner table tr td {
+          width: 80%;
+          padding: 20px 0px; }
+          .join .inner table tr td > #comment {
+            width: 100%;
+            border: 1px solid #fff;
+            background: #efefef;
+            padding: 15px 10px;
+            margin: 0px 0px 15px; }
+        .join .inner table tr input[type="text"],
+        .join .inner table tr input[type="password"] {
+          width: 100%;
+          height: 50px;
+          border: 1px solid #fff;
+          background: #efefef;
+          padding: 15px 10px;
+          margin-bottom: 15px; }
+        .join .inner table tr input[type="checkbox"],
+        .join .inner table tr input[type="radio"] {
+          margin-left: 5px; }
+        .join .inner table tr input[type="tel"] {
+          width: 100%;
+          height: 50px;
+          border: 1px solid #fff;
+          background: #efefef;
+          padding: 15px 10px;
+          margin-bottom: 15px; }
+        .join .inner table tr input[type="submit"] {
+          width: 87%;
+          height: 70px;
+          margin: 0 auto;
+          margin-left: 13%;
+          float: left;
+          font: 25px/70px "STIX Two Text";
+          border: 1px solid #fff;
+          transform: translateX(24px);
+          box-sizing: border-box;
+          color: #fff;
+          background: linear-gradient(60deg, #d9a7c7, #fffcdc); } }
+.department .sub_visual {
+  background-image: url(../img/d3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.8; }
+.department .inner {
+  position: relative; }
+  .department .inner h1 {
+    font: bold 50px/1 "Spartan";
+    color: #333;
+    letter-spacing: 1.5px;
+    text-align: center; }
+  .department .inner .division {
+    width: 100%;
+    height: auto; }
+
+.box1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8%;
+  height: 100%;
+  background: #ffd1d5;
+  z-index: 1; }
+
+.box2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 13%;
+  background: #ffd1d5;
+  z-index: 1; }
+
+#header {
+  width: 100%;
+  background: #fdf3f0; }
+  #header .inner {
+    width: 1180px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative; }
+    #header .inner > h1 {
+      position: absolute;
+      left: -5%;
+      bottom: 15px; }
+      #header .inner > h1 a {
+        font: bold 25px/1 "STIX Two Text";
+        color: #111; }
+    #header .inner .menuWeb #gnb {
+      position: absolute;
+      bottom: 3px;
+      right: 0%; }
+      #header .inner .menuWeb #gnb::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb #gnb li {
+        float: left; }
+        #header .inner .menuWeb #gnb li a {
+          display: block;
+          padding: 20px 20px;
+          font: bold 13px/1 "STIX Two Text";
+          color: #111;
+          transition: 0.5s;
+          box-sizing: border-box;
+          border-top: 1px solid transparent; }
+        #header .inner .menuWeb #gnb li:hover a {
+          border-top: 1px solid #666;
+          box-sizing: border-box; }
+    #header .inner .menuWeb .util {
+      position: absolute;
+      top: 14vh;
+      right: -9vw;
+      z-index: 2; }
+      #header .inner .menuWeb .util::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb .util li {
+        margin-bottom: 30px; }
+        #header .inner .menuWeb .util li a {
+          display: block;
+          font: bold 13px/1 "STIX Two Text";
+          color: #111;
+          padding: 0 10px;
+          transition: 0.5s;
+          text-align: center; }
+        #header .inner .menuWeb .util li:hover a {
+          color: #fff; }
+        #header .inner .menuWeb .util li:last-child a {
+          border-right: none; }
+    #header .inner .btnCall {
+      position: absolute;
+      top: 20%;
+      right: -11%;
+      width: 20px;
+      height: 20px; }
+      #header .inner .btnCall::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        transition: top 0.5s 0s transform 0.5s 0.5s; }
+      #header .inner .btnCall::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: rotate(0deg);
+        transition: bottom 0.5s 0s transform 0.5s 0.5s; }
+      #header .inner .btnCall span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        text-indent: -9999px;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        transition: 0.5s; }
+      #header .inner .btnCall.on::before {
+        transform: rotate(45deg);
+        top: 50%;
+        margin-top: -1px; }
+      #header .inner .btnCall.on::after {
+        transform: rotate(-45deg);
+        bottom: 50%;
+        margin-bottom: -1px; }
+      #header .inner .btnCall.on span {
+        transform: translateX(100%);
+        opacity: 0; }
+    #header .inner .menuMo {
+      position: fixed;
+      top: 0;
+      left: -270px;
+      width: 270px;
+      height: 100vh;
+      background: #fcdde0;
+      transition: 0.5s;
+      padding: 35px 30px;
+      box-sizing: border-box;
+      z-index: 10; }
+      #header .inner .menuMo h1 {
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px; }
+        #header .inner .menuMo h1 a {
+          display: block;
+          font: bold 24px/1 "STIX Two Text";
+          color: #222;
+          text-align: center; }
+        #header .inner .menuMo h1 span {
+          font-size: 12px;
+          color: #333; }
+      #header .inner .menuMo #gnbMo li a {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        font: bold 14px/1 "STIX Two Text";
+        color: #333;
+        text-align: center;
+        transition: 0.5s; }
+      #header .inner .menuMo #gnbMo li:hover a {
+        color: #fff; }
+      #header .inner .menuMo.on {
+        left: 0; }
+
+#visual {
+  width: 100%;
+  height: calc(100vh - 120px);
+  overflow: hidden;
+  position: relative;
+  background: #fdf3f0; }
+  #visual img:nth-of-type(1) {
+    width: 30%;
+    height: 90%;
+    object-fit: cover;
+    transition: 0.5s;
+    position: absolute;
+    right: 11%;
+    top: 5%;
+    z-index: 1; }
+  #visual img:nth-of-type(2) {
+    width: 150px;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.5s;
+    position: absolute;
+    left: 45%;
+    bottom: 9%;
+    z-index: 1; }
+  #visual .inner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative; }
+    #visual .inner .txt {
+      width: 60%;
+      position: absolute;
+      top: 30%;
+      left: -5%;
+      transform: translateY(-30%); }
+      #visual .inner .txt h1 {
+        font: 700 90px/1 "STIX Two Text";
+        color: #111;
+        margin-bottom: 50px;
+        letter-spacing: 3px; }
+      #visual .inner .txt p {
+        font: bold 18px/1.3 "STIX Two Text";
+        color: #444;
+        margin-bottom: 80px; }
+      #visual .inner .txt a {
+        font-size: 25px;
+        color: #333;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(221, 221, 221, 0.4);
+        margin-right: 80px;
+        text-align: center;
+        line-height: 60px; }
+        #visual .inner .txt a:hover {
+          background: #efefef;
+          color: #fff; }
+    #visual .inner .sns {
+      position: absolute;
+      left: 3%;
+      bottom: 30px;
+      z-index: 2; }
+      #visual .inner .sns li {
+        float: left;
+        margin-right: 60px; }
+        #visual .inner .sns li a {
+          font: bold 15px/1 "STIX Two Text";
+          color: #111;
+          transition: 0.5s; }
+        #visual .inner .sns li:hover a {
+          color: #fff; }
+
+#news {
+  width: 100%;
+  padding: 200px 0;
+  background-color: #fdf3f0; }
+  #news .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #news .inner h1 {
+      font: 700 25px/1 "STIX Two Text";
+      color: #222;
+      text-align: center;
+      margin-bottom: 30px; }
+    #news .inner .wrap {
+      width: 100%; }
+      #news .inner .wrap article {
+        width: 280px;
+        float: left;
+        margin-right: 20px; }
+        #news .inner .wrap article:last-child {
+          margin-right: 0px; }
+        #news .inner .wrap article .pic {
+          width: 100%;
+          height: 120px;
+          background: #333;
+          overflow: hidden; }
+          #news .inner .wrap article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s; }
+          #news .inner .wrap article .pic:hover img {
+            transform: scale(1.2); }
+        #news .inner .wrap article h2 {
+          margin-bottom: 10px;
+          margin-top: 10px; }
+          #news .inner .wrap article h2 a {
+            display: inline-block;
+            font: bold 16px/30px "STIX Two Text";
+            width: 150px;
+            height: 30px;
+            border: 1px dashed #ffc6ce;
+            text-align: center;
+            color: #333;
+            box-sizing: border-box; }
+          #news .inner .wrap article h2:hover a {
+            background: #ffbdc7;
+            border: 1px dashed transparent;
+            border: none;
+            color: #fff; }
+        #news .inner .wrap article p {
+          font: 14px/1.4 "STIX Two Text";
+          color: #777; }
+
+#brand {
+  width: 100%;
+  padding: 200px 0;
+  background: rgba(240, 224, 222, 0.8); }
+  #brand .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #brand .inner h1 {
+      font: bold 24px "STIX Two Text";
+      color: #555;
+      text-align: center;
+      margin-bottom: 50px;
+      position: absolute;
+      top: -99999px;
+      opacity: 0; }
+    #brand .inner .wrap {
+      width: 100%; }
+      #brand .inner .wrap article:nth-of-type(1) {
+        width: 380px;
+        margin-right: 20px;
+        float: left; }
+        #brand .inner .wrap article:nth-of-type(1) .txt {
+          width: 85%;
+          padding: 15px;
+          box-sizing: border-box;
+          text-align: center; }
+          #brand .inner .wrap article:nth-of-type(1) .txt h2 {
+            width: 50%;
+            font: 700 18px/1 'STIX Two Text';
+            color: #222;
+            margin-bottom: 20px;
+            text-align: left;
+            border-top: 1px solid #222;
+            padding-top: 20px; }
+          #brand .inner .wrap article:nth-of-type(1) .txt P {
+            font: 600 25px/1.3 'STIX Two Text';
+            color: #222;
+            text-align: left;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 20px; }
+            #brand .inner .wrap article:nth-of-type(1) .txt P::after {
+              content: "";
+              display: block;
+              width: 80px;
+              height: 1px;
+              background: #222;
+              position: absolute;
+              bottom: 0;
+              left: 0px; }
+          #brand .inner .wrap article:nth-of-type(1) .txt a {
+            display: block;
+            width: 150px;
+            height: 30px;
+            border: 1px solid #333;
+            color: #222;
+            font: bold 14px/30px 'STIX Two Text';
+            text-align: center; }
+      #brand .inner .wrap article:nth-of-type(2) {
+        width: 380px;
+        background: #fff;
+        margin-right: 20px;
+        float: left;
+        position: relative; }
+        #brand .inner .wrap article:nth-of-type(2) img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover; }
+        #brand .inner .wrap article:nth-of-type(2) .txt {
+          width: 100%;
+          background: #fff;
+          padding: 30px;
+          box-sizing: border-box;
+          text-align: center; }
+          #brand .inner .wrap article:nth-of-type(2) .txt h2 {
+            font: 100 20px/1 'STIX Two Text';
+            color: #222;
+            text-align: left;
+            margin-bottom: 15px; }
+          #brand .inner .wrap article:nth-of-type(2) .txt p {
+            font: 15px/1.3 'STIX Two Text';
+            text-align: left; }
+          #brand .inner .wrap article:nth-of-type(2) .txt a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            color: #ffbdc7;
+            border: 1px dashed #222;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            top: 63%;
+            transform: translateY(-63%); }
+      #brand .inner .wrap article:nth-of-type(3) {
+        width: 380px;
+        background: #fff;
+        float: left;
+        position: relative; }
+        #brand .inner .wrap article:nth-of-type(3) img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover; }
+        #brand .inner .wrap article:nth-of-type(3) .txt {
+          width: 100%;
+          background: #fff;
+          padding: 30px;
+          box-sizing: border-box;
+          text-align: center; }
+          #brand .inner .wrap article:nth-of-type(3) .txt h2 {
+            font: 100 20px/1 'STIX Two Text';
+            color: #222;
+            text-align: left;
+            margin-bottom: 15px; }
+          #brand .inner .wrap article:nth-of-type(3) .txt p {
+            font: 15px/1.3 'STIX Two Text';
+            text-align: left; }
+          #brand .inner .wrap article:nth-of-type(3) .txt a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            color: #ffbdc7;
+            border: 1px dashed #222;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            top: 63%;
+            transform: translateY(-63%); }
+
+#banner {
+  width: 100%;
+  padding: 120px 0;
+  background: url(../img/b6.jpg) no-repeat center/cover fixed; }
+  #banner .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #banner .inner h1 {
+      font: bold 30px "STIX Two Text";
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px; }
+    #banner .inner p {
+      font: 16px/1.3 "arial";
+      color: #ddd;
+      text-align: center; }
+
+#comment {
+  width: 100%;
+  padding: 150px 0;
+  background: rgba(240, 224, 222, 0.8); }
+  #comment .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #comment .inner h1 {
+      font: bold 20px "STIX Two Text";
+      color: #555;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222; }
+    #comment .inner ul {
+      width: 100%; }
+      #comment .inner ul li {
+        width: 100%;
+        border: 1px dotted #333;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        transition: 0.5s; }
+        #comment .inner ul li::after {
+          content: "";
+          display: block;
+          clear: both; }
+        #comment .inner ul li a {
+          font: 12px/1 "STIX Two Text";
+          color: #555;
+          float: left;
+          transition: 0.5s; }
+        #comment .inner ul li span {
+          font: 12px/1 "STIX Two Text";
+          color: #888;
+          transition: 0.5s;
+          float: right; }
+        #comment .inner ul li:hover {
+          background: rgba(224, 154, 154, 0.8); }
+          #comment .inner ul li:hover a {
+            color: #fff; }
+          #comment .inner ul li:hover span {
+            color: #fff; }
+
+#footer {
+  width: 100%;
+  padding: 100px 0;
+  background: #dbadb1; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer .inner::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #footer .inner h1 {
+      font: bold 24px/1 "arial";
+      color: #666;
+      float: left; }
+    #footer .inner ul {
+      float: right; }
+      #footer .inner ul li {
+        float: left;
+        margin-left: 20px; }
+        #footer .inner ul li a {
+          font: bold 14px/1 "arial";
+          color: #666; }
+    #footer .inner address {
+      width: 100%;
+      float: left;
+      font: 14px/1.3 "arial";
+      color: #777;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+    #footer .inner p {
+      font: 12px/1 "arial";
+      color: #777;
+      width: 100%;
+      float: left; }
+
+@media screen and (max-width: 1179px) {
+  #header .inner {
+    width: 100%; }
+    #header .inner > h1 {
+      left: 3%; }
+    #header .inner .menuWeb .util {
+      position: absolute;
+      top: 14vh;
+      right: 0vw;
+      z-index: 2; }
+      #header .inner .menuWeb .util li {
+        margin-bottom: 30px; }
+        #header .inner .menuWeb .util li a {
+          display: block;
+          font: bold 13px/1 "STIX Two Text";
+          color: #111;
+          padding: 0 10px;
+          transition: 0.5s;
+          text-align: center; }
+        #header .inner .menuWeb .util li:hover a {
+          color: #fff; }
+        #header .inner .menuWeb .util li:last-child a {
+          border-right: none; }
+    #header .inner .btnCall {
+      right: 15vmin; }
+
+  #visual {
+    height: calc(100vh - 120px); }
+    #visual img:nth-of-type(1) {
+      width: 83%;
+      height: 35%;
+      right: 13%;
+      top: 5%;
+      z-index: 1; }
+    #visual img:nth-of-type(2) {
+      display: none; }
+    #visual .inner {
+      width: 100%; }
+      #visual .inner .txt {
+        width: 80vmin;
+        position: absolute;
+        top: 65%;
+        left: 3%;
+        transform: translateY(-65%); }
+        #visual .inner .txt h1 {
+          font: 700 50px/1 "STIX Two Text";
+          margin-bottom: 30px; }
+        #visual .inner .txt p {
+          font: bold 15px/1.3 "STIX Two Text";
+          margin-bottom: 50px; }
+        #visual .inner .txt a {
+          font-size: 25px; }
+
+  #news {
+    padding: 100px 30px;
+    box-sizing: border-box; }
+    #news .inner {
+      width: 100%; }
+      #news .inner .wrap article {
+        width: 49%;
+        margin-right: 2%;
+        margin-bottom: 60px; }
+        #news .inner .wrap article:nth-child(2n) {
+          margin-right: 0px; }
+        #news .inner .wrap article .pic {
+          height: 20vmax; }
+
+  #brand {
+    padding: 100px 30px;
+    box-sizing: border-box; }
+    #brand .inner {
+      width: 100%; }
+      #brand .inner .wrap article:nth-of-type(1) {
+        display: none; }
+      #brand .inner .wrap article:nth-of-type(2) {
+        width: 48%;
+        margin-right: 20px;
+        margin-bottom: 20px; }
+      #brand .inner .wrap article:nth-of-type(3) {
+        width: 48%; }
+
+  #banner {
+    padding: 150px 30px;
+    box-sizing: border-box; }
+    #banner .inner {
+      width: 100%; }
+
+  #comment {
+    padding: 80px 30px;
+    box-sizing: border-box; }
+    #comment .inner {
+      width: 100%; }
+
+  #footer {
+    padding: 80px 30px; }
+    #footer .inner {
+      width: 100%; } }
+@media screen and (max-width: 539px) {
+  #header .inner {
+    width: 100%; }
+    #header .inner .menuWeb .util {
+      display: block; }
+
+  #visual {
+    height: calc(100vh - 120px); }
+    #visual img:nth-of-type(1) {
+      width: 83%;
+      height: 35%;
+      right: 13%;
+      top: 5%;
+      z-index: 1; }
+    #visual img:nth-of-type(2) {
+      display: none; }
+    #visual .inner {
+      width: 100%; }
+      #visual .inner .txt {
+        position: absolute;
+        top: 60%;
+        left: 3%;
+        transform: translateY(-60%); }
+        #visual .inner .txt h1 {
+          font: 700 25px/1 "STIX Two Text";
+          margin-bottom: 10px; }
+        #visual .inner .txt p {
+          font: bold 11px/1.3 "STIX Two Text";
+          margin-bottom: 30px; }
+        #visual .inner .txt a {
+          font-size: 15px;
+          text-align: center;
+          line-height: 35px;
+          width: 35px;
+          height: 35px; }
+      #visual .inner .sns li {
+        margin-right: 20px; }
+        #visual .inner .sns li a {
+          font: bold 13px/1 "STIX Two Text"; }
+
+  #news .inner .wrap article {
+    width: 100%;
+    margin-right: 0%; }
+    #news .inner .wrap article .pic {
+      height: 30vmax; }
+
+  #brand {
+    padding: 100px 30px;
+    box-sizing: border-box; }
+    #brand .inner .wrap article:nth-of-type(2) {
+      width: 100%; }
+    #brand .inner .wrap article:nth-of-type(3) {
+      width: 100%; }
+
+  #banner {
+    padding: 120px 30px; }
+
+  #comment .inner ul li a {
+    margin-bottom: 10px; }
+
+  #footer .inner h1 {
+    margin-bottom: 20px; }
+  #footer .inner ul {
+    width: 100%; }
+    #footer .inner ul li {
+      margin-left: 0;
+      margin: 5px; } }
+
+/*# sourceMappingURL=style.css.map */
