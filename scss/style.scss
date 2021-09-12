@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;700&display=swap");
 
 $tablet: 1179px;
@@ -35,15 +35,15 @@ $mobile: 539px;
 			bottom: 15px;
 
 			a {
-				font: 300 25px/1 "Spartan";
+				font: 500 25px/1 "Spartan";
 				color: #111;
 			}
 		}
 		.menuWeb {
 			#gnb {
 				position: absolute;
-				bottom: 3px;
-				right: 0%;
+				bottom: 10%;
+				right: 15%;
 
 				&::after {
 					content: "";
@@ -56,8 +56,8 @@ $mobile: 539px;
 
 					a {
 						display: block;
-						padding: 20px 20px;
-						font: bold 13px/1 "STIX Two Text";
+						padding: 10px 10px;
+						font: 400 12px/1 "Spartan";
 						color: #111;
 						transition: 0.5s;
 						box-sizing: border-box;
@@ -73,9 +73,9 @@ $mobile: 539px;
 
 			.util {
 				position: absolute;
-				top: 14vh;
-				right: -9vw;
-				z-index: 2;
+				top: 10PX;
+				right: 0px;
+				
 
 				&::after {
 					content: "";
@@ -83,12 +83,12 @@ $mobile: 539px;
 					clear: both;
 				}
 				li {
-					// float: left;
+					float: left;
 					margin-bottom: 30px;
 
 					a {
 						display: block;
-						font: bold 13px/1 "STIX Two Text";
+						font: 400 13px/1 "Spartan";
 						color: #111;
 						padding: 0 10px;
 						transition: 0.5s;
@@ -106,10 +106,10 @@ $mobile: 539px;
 		.btnCall {
 			position: absolute;
 			top: 20%;
-			right: -11%;
+			right: 0;
 			width: 20px;
 			height: 20px;
-			// display: none;
+			display: none;
 
 			&::before {
 				content: "";
@@ -221,23 +221,25 @@ $mobile: 539px;
 #visual {
 	width: 100%;
 	height: calc(100vh - 120px);
-	// background-image: url(../img/visual.jpg);
-	// background-color: #fff;
+	background-image: url(../img/br6.jpg);
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
 	overflow: hidden;
+	object-fit: cover;
 	position: relative;
-	background: rgb(253, 243, 240);
-
-	img {
-		width: 30%;
-		height: 90%;
-		object-fit: cover;
-		transition: 0.5s;
-		position: absolute;
-		right: 11%;
-		top: 5%;
-		z-index: 1;
-		// box-shadow: 5px 5px 20px  #333;
-	}
+	
+	// img {
+	// 	width: 30%;
+	// 	height: 90%;
+	// 	object-fit: cover;
+	// 	transition: 0.5s;
+	// 	position: absolute;
+	// 	right: 11%;
+	// 	top: 5%;
+	// 	z-index: 1;
+	// 	// box-shadow: 5px 5px 20px  #333;
+	// }
 	.inner {
 		width: 1180px;
 		height: 100%;
