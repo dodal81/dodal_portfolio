@@ -12,32 +12,16 @@ $mobile: 539px;
 @import "department.scss";
 
 @mixin title($fontSize: 24px, $color: #555, $align: center, $mb: 50px) {
-	font: bold $fontSize/1 "STIX Two Text";
+	font: bold $fontSize/1 "Spartan";
 	color: $color;
 	text-align: $align;
 	margin-bottom: $mb;
 }
-.box1 {
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 8%;
-	height: 100%;
-	background: rgb(255, 209, 213);
-	z-index: 1;
-}
-.box2 {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 13%;
-	background: rgb(255, 209, 213);
-	z-index: 1;
-}
+
 //  header ---------------------------------------------------------------
 #header {
 	width: 100%;
-	background: rgb(253, 243, 240);
+	background: #fff;
 
 	.inner {
 		width: 1180px;
@@ -47,11 +31,11 @@ $mobile: 539px;
 
 		> h1 {
 			position: absolute;
-			left: -5%;
+			left: 0%;
 			bottom: 15px;
 
 			a {
-				font: bold 25px/1 "STIX Two Text";
+				font: 300 25px/1 "Spartan";
 				color: #111;
 			}
 		}
@@ -243,7 +227,7 @@ $mobile: 539px;
 	position: relative;
 	background: rgb(253, 243, 240);
 
-	img:nth-of-type(1) {
+	img {
 		width: 30%;
 		height: 90%;
 		object-fit: cover;
@@ -254,18 +238,6 @@ $mobile: 539px;
 		z-index: 1;
 		// box-shadow: 5px 5px 20px  #333;
 	}
-	img:nth-of-type(2) {
-		width: 150px;
-		height: 230px;
-		object-fit: cover;
-		transition: 0.5s;
-		position: absolute;
-		left: 45%;
-		bottom: 9%;
-		z-index: 1;
-		// box-shadow: 5px 5px 20px #333;
-	}
-
 	.inner {
 		width: 1180px;
 		height: 100%;
