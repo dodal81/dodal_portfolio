@@ -847,14 +847,14 @@ fieldset {
     #header .inner > h1 {
       position: absolute;
       left: 0%;
-      bottom: 15px; }
+      bottom: 25%; }
       #header .inner > h1 a {
         font: 500 25px/1 "Spartan";
         color: #111; }
     #header .inner .menuWeb #gnb {
       position: absolute;
-      bottom: 10%;
-      right: 15%; }
+      bottom: 25%;
+      right: 9vw; }
       #header .inner .menuWeb #gnb::after {
         content: "";
         display: block;
@@ -863,36 +863,52 @@ fieldset {
         float: left; }
         #header .inner .menuWeb #gnb li a {
           display: block;
-          padding: 10px 10px;
-          font: 400 12px/1 "Spartan";
+          padding: 10px 20px;
+          font: 400 13px/1 "Spartan";
           color: #111;
           transition: 0.5s;
           box-sizing: border-box;
           border-top: 1px solid transparent; }
+          #header .inner .menuWeb #gnb li a:nth-of-type(1)::after {
+            content: "";
+            display: inline-block;
+            position: Absolute;
+            left: 15%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 100%;
+            background: #e0e0e0; }
         #header .inner .menuWeb #gnb li:hover a {
-          border-top: 1px solid #666;
-          box-sizing: border-box; }
+          color: #dfc16d; }
     #header .inner .menuWeb .util {
       position: absolute;
-      top: 10PX;
-      right: 0px; }
+      bottom: 20%;
+      right: -5%; }
       #header .inner .menuWeb .util::after {
         content: "";
         display: block;
         clear: both; }
       #header .inner .menuWeb .util li {
-        float: left;
-        margin-bottom: 30px; }
+        float: left; }
         #header .inner .menuWeb .util li a {
-          display: block;
-          font: 400 13px/1 "Spartan";
+          width: 100%;
+          display: inline-block;
+          font-size: 30px;
           color: #111;
-          padding: 0 10px;
+          margin-left: 20px;
+          padding: 10px 10px;
           transition: 0.5s;
           text-align: center; }
-        #header .inner .menuWeb .util li:hover a {
-          color: #fff; }
         #header .inner .menuWeb .util li:last-child a {
+          width: 30%;
+          position: absolute;
+          top: 55%;
+          transform: translateY(-50%);
+          font-size: 13px;
+          font-weight: 400;
+          font-family: "Spartan";
+          line-height: 15px;
           border-right: none; }
     #header .inner .btnCall {
       position: absolute;
@@ -989,6 +1005,7 @@ fieldset {
   background-size: cover;
   overflow: hidden;
   object-fit: cover;
+  opacity: 0.8;
   position: relative; }
   #visual .inner {
     width: 1180px;
@@ -1121,14 +1138,14 @@ fieldset {
           text-align: center; }
           #brand .inner .wrap article:nth-of-type(1) .txt h2 {
             width: 50%;
-            font: 700 18px/1 'STIX Two Text';
+            font: 700 18px/1 "STIX Two Text";
             color: #222;
             margin-bottom: 20px;
             text-align: left;
             border-top: 1px solid #222;
             padding-top: 20px; }
           #brand .inner .wrap article:nth-of-type(1) .txt P {
-            font: 600 25px/1.3 'STIX Two Text';
+            font: 600 25px/1.3 "STIX Two Text";
             color: #222;
             text-align: left;
             margin-bottom: 20px;
@@ -1149,7 +1166,7 @@ fieldset {
             height: 30px;
             border: 1px solid #333;
             color: #222;
-            font: bold 14px/30px 'STIX Two Text';
+            font: bold 14px/30px "STIX Two Text";
             text-align: center; }
       #brand .inner .wrap article:nth-of-type(2) {
         width: 380px;
@@ -1168,12 +1185,12 @@ fieldset {
           box-sizing: border-box;
           text-align: center; }
           #brand .inner .wrap article:nth-of-type(2) .txt h2 {
-            font: 100 20px/1 'STIX Two Text';
+            font: 100 20px/1 "STIX Two Text";
             color: #222;
             text-align: left;
             margin-bottom: 15px; }
           #brand .inner .wrap article:nth-of-type(2) .txt p {
-            font: 15px/1.3 'STIX Two Text';
+            font: 15px/1.3 "STIX Two Text";
             text-align: left; }
           #brand .inner .wrap article:nth-of-type(2) .txt a {
             display: block;
@@ -1205,12 +1222,12 @@ fieldset {
           box-sizing: border-box;
           text-align: center; }
           #brand .inner .wrap article:nth-of-type(3) .txt h2 {
-            font: 100 20px/1 'STIX Two Text';
+            font: 100 20px/1 "STIX Two Text";
             color: #222;
             text-align: left;
             margin-bottom: 15px; }
           #brand .inner .wrap article:nth-of-type(3) .txt p {
-            font: 15px/1.3 'STIX Two Text';
+            font: 15px/1.3 "STIX Two Text";
             text-align: left; }
           #brand .inner .wrap article:nth-of-type(3) .txt a {
             display: block;

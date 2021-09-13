@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;700&display=swap");
 
 $tablet: 1179px;
@@ -32,7 +32,7 @@ $mobile: 539px;
 		> h1 {
 			position: absolute;
 			left: 0%;
-			bottom: 15px;
+			bottom: 25%;
 
 			a {
 				font: 500 25px/1 "Spartan";
@@ -42,8 +42,8 @@ $mobile: 539px;
 		.menuWeb {
 			#gnb {
 				position: absolute;
-				bottom: 10%;
-				right: 15%;
+				bottom: 25%;
+				right: 9vw;
 
 				&::after {
 					content: "";
@@ -56,26 +56,36 @@ $mobile: 539px;
 
 					a {
 						display: block;
-						padding: 10px 10px;
-						font: 400 12px/1 "Spartan";
+						padding: 10px 20px;
+						font: 400 13px/1 "Spartan";
 						color: #111;
 						transition: 0.5s;
 						box-sizing: border-box;
 						border-top: 1px solid transparent;
+
+						&:nth-of-type(1)::after {
+							content: "";
+							display: inline-block;
+							position: Absolute;
+							left: 15%;
+							top: 50%;
+							transform: translateY(-50%);
+							width: 1px;
+							height: 100%;
+							background: #e0e0e0;
+						}
 					}
 
 					&:hover a {
-						border-top: 1px solid #666;
-						box-sizing: border-box;
+						color: rgb(223, 193, 109);
 					}
 				}
 			}
 
 			.util {
 				position: absolute;
-				top: 10PX;
-				right: 0px;
-				
+				bottom: 20%;
+				right: -5%;
 
 				&::after {
 					content: "";
@@ -84,21 +94,28 @@ $mobile: 539px;
 				}
 				li {
 					float: left;
-					margin-bottom: 30px;
-
 					a {
-						display: block;
-						font: 400 13px/1 "Spartan";
+						width: 100%;
+						display: inline-block;
+						font-size: 30px;
 						color: #111;
-						padding: 0 10px;
+						margin-left: 20px;
+						padding: 10px 10px;
 						transition: 0.5s;
 						text-align: center;
 					}
-					&:hover a {
-						color: #fff;
-					}
+					
 					&:last-child a {
+						width: 30%;
+						position: absolute;
+						top: 55%;
+						transform: translateY(-50%);
+						font-size: 13px;
+						font-weight: 400;
+						font-family: "Spartan";
+						line-height: 15px;
 						border-right: none;
+
 					}
 				}
 			}
@@ -227,8 +244,9 @@ $mobile: 539px;
 	background-size: cover;
 	overflow: hidden;
 	object-fit: cover;
+	opacity: 0.8;
 	position: relative;
-	
+
 	// img {
 	// 	width: 30%;
 	// 	height: 90%;
@@ -413,7 +431,7 @@ $mobile: 539px;
 				// background: #444;
 				margin-right: 20px;
 				float: left;
-				
+
 				.txt {
 					width: 85%;
 					// background: #fff;
@@ -423,15 +441,15 @@ $mobile: 539px;
 
 					h2 {
 						width: 50%;
-						font: 700 18px/1 'STIX Two Text';
+						font: 700 18px/1 "STIX Two Text";
 						color: #222;
 						margin-bottom: 20px;
 						text-align: left;
 						border-top: 1px solid #222;
 						padding-top: 20px;
 					}
-					P{
-						font: 600 25px/1.3 'STIX Two Text';
+					P {
+						font: 600 25px/1.3 "STIX Two Text";
 						color: #222;
 						text-align: left;
 						margin-bottom: 20px;
@@ -447,16 +465,15 @@ $mobile: 539px;
 							position: absolute;
 							bottom: 0;
 							left: 0px;
-	
 						}
 					}
-					a{
+					a {
 						display: block;
 						width: 150px;
 						height: 30px;
 						border: 1px solid #333;
 						color: #222;
-						font: bold 14px/30px 'STIX Two Text';
+						font: bold 14px/30px "STIX Two Text";
 						text-align: center;
 					}
 				}
@@ -468,13 +485,11 @@ $mobile: 539px;
 				margin-right: 20px;
 				float: left;
 				position: relative;
-				
 
 				img {
 					width: 100%;
-					height:150px;
+					height: 150px;
 					object-fit: cover;
-
 				}
 				.txt {
 					width: 100%;
@@ -484,13 +499,13 @@ $mobile: 539px;
 					text-align: center;
 
 					h2 {
-						font: 100 20px/1 'STIX Two Text';
+						font: 100 20px/1 "STIX Two Text";
 						color: #222;
 						text-align: left;
 						margin-bottom: 15px;
 					}
-					p{
-						font: 15px/1.3 'STIX Two Text';
+					p {
+						font: 15px/1.3 "STIX Two Text";
 						text-align: left;
 					}
 					a {
@@ -508,7 +523,6 @@ $mobile: 539px;
 						right: 15px;
 						top: 63%;
 						transform: translateY(-63%);
-
 					}
 				}
 			}
@@ -522,9 +536,8 @@ $mobile: 539px;
 					width: 100%;
 					height: 150px;
 					object-fit: cover;
-					
 				}
-				
+
 				.txt {
 					width: 100%;
 					background: #fff;
@@ -533,13 +546,13 @@ $mobile: 539px;
 					text-align: center;
 
 					h2 {
-						font: 100 20px/1 'STIX Two Text';
+						font: 100 20px/1 "STIX Two Text";
 						color: #222;
 						text-align: left;
 						margin-bottom: 15px;
 					}
-					p{
-						font: 15px/1.3 'STIX Two Text';
+					p {
+						font: 15px/1.3 "STIX Two Text";
 						text-align: left;
 					}
 					a {
@@ -938,7 +951,6 @@ $mobile: 539px;
 
 		.inner {
 			.wrap {
-				
 				article:nth-of-type(2) {
 					width: 100%;
 				}
