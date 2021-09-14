@@ -999,7 +999,7 @@ fieldset {
 #visual {
   width: 100%;
   height: calc(100vh - 120px);
-  background-image: url(../img/br6.jpg);
+  background-image: url(../img/br8.jpg);
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1307,7 +1307,8 @@ fieldset {
 #footer {
   width: 100%;
   padding: 100px 0;
-  background: #efefef; }
+  background: #efefef;
+  position: relative; }
   #footer .inner {
     width: 1330px;
     margin: 0 auto;
@@ -1330,14 +1331,23 @@ fieldset {
         #footer .inner .wrap article:nth-of-type(4) {
           margin-right: 0px;
           width: 31%; }
+        #footer .inner .wrap article:nth-of-type(1) span {
+          display: block;
+          margin-bottom: 20px;
+          font: normal 19px/1 "arial"; }
+        #footer .inner .wrap article:nth-of-type(3) span a {
+          display: block;
+          margin-bottom: 20px;
+          font: bold 13px/1 "arial";
+          color: #222; }
         #footer .inner .wrap article .menu {
-          font: 400 14px/1 'arial';
+          font: 400 14px/1 "arial";
           color: #333;
           padding-bottom: 15px;
           margin-bottom: 20px;
           border-bottom: 1px solid #aaa; }
         #footer .inner .wrap article p {
-          font: 300 13px/1.5 'arial';
+          font: 300 13px/1.5 "arial";
           color: #3c3c3b;
           margin-bottom: 20px; }
           #footer .inner .wrap article p:last-child {
@@ -1345,20 +1355,11 @@ fieldset {
             font-size: 12px;
             color: #222; }
           #footer .inner .wrap article p a {
-            font: 400 15px/1.1 'arial';
+            font: 400 15px/1.1 "arial";
             color: #222; }
-        #footer .inner .wrap article:nth-of-type(1) span {
-          display: block;
-          margin-bottom: 20px;
-          font: normal 19px/1 'arial'; }
-        #footer .inner .wrap article:nth-of-type(3) span a {
-          display: block;
-          margin-bottom: 20px;
-          font: bold 13px/1 'arial';
-          color: #222; }
       #footer .inner .wrap .box4 p:nth-of-type(2) {
-        font: 12px/1.5 'arial'; }
-      #footer .inner .wrap .box4 a {
+        font: 12px/1.5 "arial"; }
+      #footer .inner .wrap .box4 > a {
         display: inline-block;
         text-align: center;
         padding: 5px 20px;
@@ -1368,8 +1369,16 @@ fieldset {
         line-height: 35px;
         color: #333;
         margin-right: 15px; }
-        #footer .inner .wrap .box4 a img {
-          margin: 0 auto; }
+        #footer .inner .wrap .box4 > a img {
+          max-width: 100%;
+          height: auto; }
+  #footer .list {
+    width: 100%;
+    background: #bdbdbd;
+    padding: 17px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
 
 @media screen and (max-width: 1179px) {
   #header .inner {
