@@ -752,9 +752,22 @@ $mobile: 539px;
 		width: 100%;
 		background: #bdbdbd;
 		padding: 17px 0;
-		position: absolute;
-		bottom: 0;
-		left: 0;
+		position: relative;
+
+		>.wrap{
+			width: 1330px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+
+			.company {
+				padding: 17px;
+			}
+			.sns {
+				position: absolute;
+	
+			}
+		}
 	}
 }
 

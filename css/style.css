@@ -1376,9 +1376,16 @@ fieldset {
     width: 100%;
     background: #bdbdbd;
     padding: 17px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0; }
+    position: relative; }
+    #footer .list > .wrap {
+      width: 1330px;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+      #footer .list > .wrap .company {
+        padding: 17px; }
+      #footer .list > .wrap .sns {
+        position: absolute; }
 
 @media screen and (max-width: 1179px) {
   #header .inner {
