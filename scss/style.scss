@@ -20,8 +20,9 @@ $mobile: 539px;
 
 //  header ---------------------------------------------------------------
 #header {
-	width: 100%;
+	width: 100vw;
 	background: #fff;
+	overflow: hidden;
 
 	.inner {
 		width: 1180px;
@@ -43,7 +44,7 @@ $mobile: 539px;
 			#gnb {
 				position: absolute;
 				bottom: 25%;
-				right: 9vw;
+				right: 20%;
 
 				&::after {
 					content: "";
@@ -85,7 +86,7 @@ $mobile: 539px;
 			.util {
 				position: absolute;
 				bottom: 20%;
-				right: -5%;
+				right: 5%;
 
 				&::after {
 					content: "";
@@ -198,7 +199,7 @@ $mobile: 539px;
 
 				a {
 					display: block;
-					font: bold 24px/1 "STIX Two Text";
+					font: bold 24px/1 "Spartan";
 					color: #222;
 					text-align: center;
 				}
@@ -214,7 +215,7 @@ $mobile: 539px;
 						width: 100%;
 						padding: 20px 0;
 						// border-bottom: 1px solid #fff;
-						font: bold 14px/1 "STIX Two Text";
+						font: bold 14px/1 "Spartan";
 						color: #333;
 						text-align: center;
 						transition: 0.5s;
@@ -656,13 +657,15 @@ $mobile: 539px;
 
 //  footer ---------------------------------------------------------------
 #footer {
-	width: 100%;
-	padding: 100px 0;
+	width: 100vw;
+	padding-top: 50px;
 	background: #efefef;
+	overflow: hidden;
 	position: relative;
+
 	.inner {
 		width: 1330px;
-		margin: 0 auto;
+		margin: 50px auto;
 		position: relative;
 
 		.wrap {
@@ -706,6 +709,7 @@ $mobile: 539px;
 					padding-bottom: 15px;
 					margin-bottom: 20px;
 					border-bottom: 1px solid #aaa;
+					display: inline-block;
 				}
 				p {
 					font: 300 13px/1.5 "arial";
@@ -729,7 +733,7 @@ $mobile: 539px;
 						font: 12px/1.5 "arial";
 					}
 				}
-				>a {
+				> a {
 					display: inline-block;
 					text-align: center;
 					padding: 5px 20px;
@@ -751,21 +755,28 @@ $mobile: 539px;
 	.list {
 		width: 100%;
 		background: #bdbdbd;
-		padding: 17px 0;
+		padding: 20px 50px;
 		position: relative;
 
-		>.wrap{
+		> .wrap {
 			width: 1330px;
-			position: absolute;
-			left: 0;
-			bottom: 0;
 
 			.company {
-				padding: 17px;
+				width: 70%;
 			}
 			.sns {
 				position: absolute;
-	
+				top: 50%;
+				right: 10vw;
+				transform: translateY(-50%);
+
+				a {
+					display: inline-block;
+					content: "";
+					font-size: 20px;
+					color: #fff;
+					margin-right: 20px;
+				}
 			}
 		}
 	}
@@ -776,46 +787,86 @@ $mobile: 539px;
 	//  header ---------------------------------------------------------------
 	#header {
 		.inner {
-			width: 100%;
+			width: 100vw;
 
 			> h1 {
-				left: 3%;
+				left: 20px;
 			}
 			.menuWeb {
+				display: block;
+
+				#gnb {
+					display: none;
+				}
+
 				.util {
 					position: absolute;
-					top: 14vh;
-					right: 0vw;
-					z-index: 2;
-
+					bottom: 25%;
+					right: 25%;
+					display: block;
 					li {
-						// float: left;
-						margin-bottom: 30px;
-
 						a {
-							display: block;
-							font: bold 13px/1 "STIX Two Text";
-							color: #111;
-							padding: 0 10px;
-							transition: 0.5s;
-							text-align: center;
-						}
-						&:hover a {
-							color: #fff;
-						}
-						&:last-child a {
-							border-right: none;
+							font-size: 25px;
+							margin-left: 30px;
 						}
 					}
 				}
 			}
 			.btnCall {
-				right: 15vmin;
-				// display: none;
+				top: 50%;
+				right: 5vw;
+				display: block;
+				transform: translateY(-50%);
+			}
+			.menuMo {
+				position: fixed;
+				top: 0;
+				left: -270px;
+				width: 270px;
+				height: 100vh;
+				background: rgb(252, 221, 224);
+				transition: 0.5s;
+				padding: 35px 30px;
+				box-sizing: border-box;
+				z-index: 10;
+
+				h1 {
+					border-bottom: 1px solid #333;
+					padding-bottom: 10px;
+
+					a {
+						display: block;
+						color: #222;
+						text-align: center;
+					}
+					span {
+						font-size: 12px;
+						color: #333;
+					}
+				}
+				#gnbMo {
+					li {
+						a {
+							display: block;
+							width: 100%;
+							padding: 20px 0;
+							color: #333;
+							text-align: center;
+							transition: 0.5s;
+						}
+
+						&:hover a {
+							color: #fff;
+						}
+					}
+				}
+
+				&.on {
+					left: 0;
+				}
 			}
 		}
 	}
-
 	//  visual ---------------------------------------------------------------
 	#visual {
 		height: calc(100vh - 120px);
@@ -923,10 +974,128 @@ $mobile: 539px;
 	}
 	//  footer ---------------------------------------------------------------
 	#footer {
-		padding: 80px 30px;
-
+		width: 100vw;
+		padding-top: 50px;
+		background: #efefef;
+		overflow: hidden;
+		position: relative;
+	
 		.inner {
+			width: 1330px;
+			margin: 50px auto;
+			position: relative;
+	
+			.wrap {
+				width: 100%;
+	
+				&::after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+				article {
+					width: 20%;
+					height: 200px;
+					padding: 10px 20px;
+					margin-right: 20px;
+					float: left;
+					position: relative;
+	
+					&:nth-of-type(3) {
+						width: 10%;
+					}
+					&:nth-of-type(4) {
+						margin-right: 0px;
+						width: 31%;
+					}
+	
+					&:nth-of-type(1) span {
+						display: block;
+						margin-bottom: 20px;
+						font: normal 19px/1 "arial";
+					}
+					&:nth-of-type(3) span a {
+						display: block;
+						margin-bottom: 20px;
+						font: bold 13px/1 "arial";
+						color: #222;
+					}
+					.menu {
+						font: 400 14px/1 "arial";
+						color: #333;
+						padding-bottom: 15px;
+						margin-bottom: 20px;
+						border-bottom: 1px solid #aaa;
+						display: inline-block;
+					}
+					p {
+						font: 300 13px/1.5 "arial";
+						color: #3c3c3b;
+						margin-bottom: 20px;
+	
+						&:last-child {
+							margin-top: 30px;
+							font-size: 12px;
+							color: #222;
+						}
+						a {
+							font: 400 15px/1.1 "arial";
+							color: #222;
+						}
+					}
+				}
+				.box4 {
+					p {
+						&:nth-of-type(2) {
+							font: 12px/1.5 "arial";
+						}
+					}
+					> a {
+						display: inline-block;
+						text-align: center;
+						padding: 5px 20px;
+						height: 35px;
+						border: 1px solid #888;
+						font-size: 13px;
+						line-height: 35px;
+						color: #333;
+						margin-right: 15px;
+	
+						img {
+							max-width: 100%;
+							height: auto;
+						}
+					}
+				}
+			}
+		}
+		.list {
 			width: 100%;
+			background: #bdbdbd;
+			padding: 20px 50px;
+			position: relative;
+	
+			> .wrap {
+				width: 1330px;
+	
+				.company {
+					width: 70%;
+				}
+				.sns {
+					position: absolute;
+					top: 50%;
+					right: 10vw;
+					transform: translateY(-50%);
+	
+					a {
+						display: inline-block;
+						content: "";
+						font-size: 20px;
+						color: #fff;
+						margin-right: 20px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -936,12 +1105,11 @@ $mobile: 539px;
 	//  header ---------------------------------------------------------------
 	#header {
 		.inner {
-			width: 100%;
-
 			.menuWeb {
-				.util {
-					display: block;
-				}
+				display: none;
+			}
+			.btnCall {
+				right: 10vw;
 			}
 		}
 	}
