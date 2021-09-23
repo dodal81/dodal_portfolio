@@ -1657,23 +1657,15 @@ fieldset {
       margin: 50px auto;
       position: relative; }
       #footer .inner .wrap {
-        width: 100%; }
-        #footer .inner .wrap::after {
-          content: "";
-          display: block;
-          clear: both; }
+        width: 100%;
+        padding: 0 30px; }
         #footer .inner .wrap article {
-          width: 20%;
-          height: 200px;
-          padding: 10px 20px;
-          margin-right: 20px;
-          float: left;
-          position: relative; }
+          width: 18%;
+          margin: 0; }
           #footer .inner .wrap article:nth-of-type(3) {
-            width: 10%; }
+            display: none; }
           #footer .inner .wrap article:nth-of-type(4) {
-            margin-right: 0px;
-            width: 31%; }
+            display: inline-block; }
           #footer .inner .wrap article:nth-of-type(1) span {
             display: block;
             margin-bottom: 20px;
@@ -1701,28 +1693,13 @@ fieldset {
             #footer .inner .wrap article p a {
               font: 400 15px/1.1 "arial";
               color: #222; }
-        #footer .inner .wrap .box4 p:nth-of-type(2) {
-          font: 12px/1.5 "arial"; }
-        #footer .inner .wrap .box4 > a {
-          display: inline-block;
-          text-align: center;
-          padding: 5px 20px;
-          height: 35px;
-          border: 1px solid #888;
-          font-size: 13px;
-          line-height: 35px;
-          color: #333;
-          margin-right: 15px; }
-          #footer .inner .wrap .box4 > a img {
-            max-width: 100%;
-            height: auto; }
     #footer .list {
       width: 100%;
       background: #bdbdbd;
       padding: 20px 50px;
       position: relative; }
       #footer .list > .wrap {
-        width: 1330px; }
+        width: 100%; }
         #footer .list > .wrap .company {
           width: 70%; }
         #footer .list > .wrap .sns {
