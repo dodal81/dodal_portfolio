@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;700&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 ul, ol, li {
   list-style: none; }
@@ -1128,58 +1129,72 @@ fieldset {
 #visual {
   width: 100%;
   height: calc(100vh - 120px);
-  background-image: url(../img/br8.jpg);
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  object-fit: cover;
-  opacity: 0.8;
   position: relative; }
+  #visual #slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; }
+    #visual #slider .list {
+      width: calc(100% * 4);
+      height: inherit;
+      margin-left: -100%; }
+      #visual #slider .list > li {
+        width: calc(100% / 4);
+        height: inherit;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #visual #slider .list > li .txt {
+          width: 60%;
+          position: absolute;
+          top: 40%;
+          left: 15%;
+          transform: translateY(-30%); }
+          #visual #slider .list > li .txt h1 {
+            font: 30px/1 "Spartan";
+            font-size: 70px;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 2px #999; }
+          #visual #slider .list > li .txt p {
+            font: 30px/1.3 "Spartan";
+            font-size: 35px;
+            color: #fff; }
+        #visual #slider .list > li[data-index="1"] {
+          background-image: url(../img/p1.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+        #visual #slider .list > li[data-index="2"] {
+          background-image: url(../img/p3.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+        #visual #slider .list > li[data-index="1"] {
+          background-image: url(../img/p2.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+        #visual #slider .list > li[data-index="1"] {
+          background-image: url(../img/p4.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
   #visual .inner {
     width: 1180px;
     height: 100%;
-    margin: 0 auto;
-    position: relative; }
-    #visual .inner .txt {
-      width: 60%;
-      position: absolute;
-      top: 30%;
-      left: -5%;
-      transform: translateY(-30%); }
-      #visual .inner .txt h1 {
-        font: 700 90px/1 "STIX Two Text";
-        color: #111;
-        margin-bottom: 50px;
-        letter-spacing: 3px; }
-      #visual .inner .txt p {
-        font: bold 18px/1.3 "STIX Two Text";
-        color: #444;
-        margin-bottom: 80px; }
-      #visual .inner .txt a {
-        font-size: 25px;
-        color: #333;
-        display: inline-block;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background: rgba(221, 221, 221, 0.4);
-        margin-right: 80px;
-        text-align: center;
-        line-height: 60px; }
-        #visual .inner .txt a:hover {
-          background: #efefef;
-          color: #fff; }
+    margin: 0 auto; }
     #visual .inner .sns {
       position: absolute;
       left: 3%;
       bottom: 30px;
       z-index: 2; }
       #visual .inner .sns li {
-        float: left;
-        margin-right: 60px; }
+        margin-top: 30px; }
         #visual .inner .sns li a {
-          font: bold 15px/1 "STIX Two Text";
+          font-size: 25px;
           color: #111;
           transition: 0.5s; }
         #visual .inner .sns li:hover a {
