@@ -1151,7 +1151,8 @@ fieldset {
           position: absolute;
           top: 40%;
           left: 15%;
-          transform: translateY(-30%); }
+          transform: translateY(-30%);
+          display: none; }
           #visual #slider .list > li .txt h1 {
             font: 30px/1 "Spartan";
             font-size: 70px;
@@ -1190,7 +1191,8 @@ fieldset {
       position: absolute;
       left: 3%;
       bottom: 30px;
-      z-index: 2; }
+      z-index: 2;
+      display: none; }
       #visual .inner .sns li {
         margin-top: 30px; }
         #visual .inner .sns li a {
