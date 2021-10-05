@@ -58,7 +58,7 @@ $mobile: 539px;
 					a {
 						display: block;
 						padding: 10px 20px;
-						font: 400 13px/1 "Spartan";
+						font: 400 12px/1 "Spartan";
 						color: #111;
 						transition: 0.5s;
 						box-sizing: border-box;
@@ -98,7 +98,7 @@ $mobile: 539px;
 					a {
 						width: 100%;
 						display: inline-block;
-						font-size: 30px;
+						font-size: 20px;
 						color: #111;
 						margin-left: 20px;
 						padding: 10px 10px;
@@ -390,7 +390,7 @@ $mobile: 539px;
 #news {
 	width: 100%;
 	padding: 200px 0;
-	background-color: rgb(253, 243, 240);
+	background-color: #fff;
 
 	.inner {
 		width: 1180px;
@@ -468,7 +468,7 @@ $mobile: 539px;
 #brand {
 	width: 100%;
 	padding: 200px 0;
-	background: rgba(240, 224, 222, 0.8);
+	background: rgba(252, 237, 235, 0.8);
 
 	.inner {
 		width: 1180px;
@@ -716,19 +716,23 @@ $mobile: 539px;
 
 //  footer ---------------------------------------------------------------
 #footer {
-	width: 100vw;
-	padding-top: 50px;
+	width: 100%;
+	padding-top: 30px;
 	background: #efefef;
 	overflow: hidden;
 	position: relative;
 
 	.inner {
-		width: 1330px;
+		width: 1180px;
+		padding: 0px 80px;
 		margin: 50px auto;
 		position: relative;
 
 		.wrap {
 			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
 			&::after {
 				content: "";
@@ -736,32 +740,73 @@ $mobile: 539px;
 				clear: both;
 			}
 			article {
-				width: 20%;
+				
 				height: 200px;
 				padding: 10px 20px;
 				margin-right: 20px;
 				float: left;
-				position: relative;
+				
 
-				&:nth-of-type(3) {
-					width: 10%;
+				&.box1 {
+					width: 22%;
+					span{
+
+						display: block;
+						margin-bottom: 20px;
+						font: normal 19px/1 "arial";
+					}
+					p{
+						&:last-child {
+							font-size: 11px;
+						}
+					}
 				}
-				&:nth-of-type(4) {
+
+				&.box3 {
+					width: 13%;
+
+					span {
+
+						a {
+							display: block;
+							margin-bottom: 20px;
+							font: bold 13px/1 "arial";
+							color: #222;
+						}
+					}
+				}
+				&.box4 {
 					margin-right: 0px;
-					width: 31%;
+					width: 40%;
+					p {
+						&:nth-of-type(2) {
+							font: 12px/1.5 "arial";
+						}
+					}
+					a {
+						
+						display: inline-block;
+						text-align: center;
+						padding: 0px 10px;
+						width: auto;
+						height: 40px;
+						border: 1px solid #888;
+						font-size: 13px;
+						line-height: 40px;
+						color: #333;
+						margin-right: 15px;
+
+						&:last-child {
+							margin-right: 0px;
+						}
+
+						img {
+							max-width: 100%;
+							height: auto;
+						}
+					}
 				}
 
-				&:nth-of-type(1) span {
-					display: block;
-					margin-bottom: 20px;
-					font: normal 19px/1 "arial";
-				}
-				&:nth-of-type(3) span a {
-					display: block;
-					margin-bottom: 20px;
-					font: bold 13px/1 "arial";
-					color: #222;
-				}
 				.menu {
 					font: 400 14px/1 "arial";
 					color: #333;
@@ -781,31 +826,8 @@ $mobile: 539px;
 						color: #222;
 					}
 					a {
-						font: 400 15px/1.1 "arial";
+						font: 400 14px/1.1 "arial";
 						color: #222;
-					}
-				}
-			}
-			.box4 {
-				p {
-					&:nth-of-type(2) {
-						font: 12px/1.5 "arial";
-					}
-				}
-				> a {
-					display: inline-block;
-					text-align: center;
-					padding: 5px 20px;
-					height: 35px;
-					border: 1px solid #888;
-					font-size: 13px;
-					line-height: 35px;
-					color: #333;
-					margin-right: 15px;
-
-					img {
-						max-width: 100%;
-						height: auto;
 					}
 				}
 			}
@@ -814,22 +836,23 @@ $mobile: 539px;
 	.list {
 		width: 100%;
 		background: #bdbdbd;
+		margin-top: 80px;
 		padding: 20px 50px;
 		position: relative;
 
 		> .wrap {
-			width: 1330px;
+			width: 1180px;
 
 			.company {
-				width: 70%;
+				width: 100%;
 			}
 			.sns {
 				position: absolute;
 				top: 50%;
-				right: 10vw;
+				right: 5%;
 				transform: translateY(-50%);
 
-				a {
+				>a {
 					display: inline-block;
 					content: "";
 					font-size: 20px;
