@@ -1458,7 +1458,7 @@ fieldset {
   position: relative; }
   #footer .inner {
     width: 1180px;
-    padding: 0px 80px;
+    padding: 0px 70px;
     margin: 50px auto;
     position: relative; }
     #footer .inner .wrap {
@@ -1482,7 +1482,7 @@ fieldset {
             margin-bottom: 20px;
             font: normal 19px/1 "arial"; }
           #footer .inner .wrap article.box1 p:last-child {
-            font-size: 11px; }
+            font-size: 10px; }
         #footer .inner .wrap article.box3 {
           width: 13%; }
           #footer .inner .wrap article.box3 span a {
@@ -1502,7 +1502,7 @@ fieldset {
             width: auto;
             height: 40px;
             border: 1px solid #888;
-            font-size: 13px;
+            font-size: 12px;
             line-height: 40px;
             color: #333;
             margin-right: 15px; }
