@@ -10,6 +10,9 @@ $mobile: 539px;
 @import "community.scss";
 @import "join.scss";
 @import "department.scss";
+@import "gallery.scss";
+@import "youtube.scss";
+@import "location.scss";
 
 @mixin title($fontSize: 24px, $color: #555, $align: center, $mb: 50px) {
 	font: bold $fontSize/1 "Spartan";
