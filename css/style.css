@@ -54,7 +54,7 @@ fieldset {
         #header_sub .inner .menuWeb #gnb li a {
           display: block;
           padding: 10px 20px;
-          font: 400 13px/1 "Spartan";
+          font: 400 12px/1 "Spartan";
           color: #111;
           transition: 0.5s;
           box-sizing: border-box;
@@ -84,7 +84,7 @@ fieldset {
         #header_sub .inner .menuWeb .util li a {
           width: 100%;
           display: inline-block;
-          font-size: 30px;
+          font-size: 20px;
           color: #111;
           margin-left: 20px;
           padding: 10px 10px;
@@ -211,42 +211,66 @@ fieldset {
           margin-left: 10px; }
 
 #footer_sub {
-  width: 100vw;
-  padding-top: 50px;
+  width: 100%;
+  padding-top: 30px;
   background: #efefef;
   overflow: hidden;
   position: relative; }
   #footer_sub .inner {
-    width: 1330px;
+    width: 1180px;
+    padding: 0px 70px;
     margin: 50px auto;
     position: relative; }
     #footer_sub .inner .wrap {
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       #footer_sub .inner .wrap::after {
         content: "";
         display: block;
         clear: both; }
       #footer_sub .inner .wrap article {
-        width: 20%;
         height: 200px;
         padding: 10px 20px;
         margin-right: 20px;
-        float: left;
-        position: relative; }
-        #footer_sub .inner .wrap article:nth-of-type(3) {
-          width: 10%; }
-        #footer_sub .inner .wrap article:nth-of-type(4) {
+        float: left; }
+        #footer_sub .inner .wrap article.box1 {
+          width: 22%; }
+          #footer_sub .inner .wrap article.box1 span {
+            display: block;
+            margin-bottom: 20px;
+            font: normal 19px/1 "arial"; }
+          #footer_sub .inner .wrap article.box1 p:last-child {
+            font-size: 10px; }
+        #footer_sub .inner .wrap article.box3 {
+          width: 13%; }
+          #footer_sub .inner .wrap article.box3 span a {
+            display: block;
+            margin-bottom: 20px;
+            font: bold 13px/1 "arial";
+            color: #222; }
+        #footer_sub .inner .wrap article.box4 {
           margin-right: 0px;
-          width: 31%; }
-        #footer_sub .inner .wrap article:nth-of-type(1) span {
-          display: block;
-          margin-bottom: 20px;
-          font: normal 19px/1 "arial"; }
-        #footer_sub .inner .wrap article:nth-of-type(3) span a {
-          display: block;
-          margin-bottom: 20px;
-          font: bold 13px/1 "arial";
-          color: #222; }
+          width: 40%; }
+          #footer_sub .inner .wrap article.box4 p:nth-of-type(2) {
+            font: 12px/1.5 "arial"; }
+          #footer_sub .inner .wrap article.box4 a {
+            display: inline-block;
+            text-align: center;
+            padding: 0px 10px;
+            width: auto;
+            height: 40px;
+            border: 1px solid #888;
+            font-size: 12px;
+            line-height: 40px;
+            color: #333;
+            margin-right: 15px; }
+            #footer_sub .inner .wrap article.box4 a:last-child {
+              margin-right: 0px; }
+            #footer_sub .inner .wrap article.box4 a img {
+              max-width: 100%;
+              height: auto; }
         #footer_sub .inner .wrap article .menu {
           font: 400 14px/1 "arial";
           color: #333;
@@ -263,38 +287,24 @@ fieldset {
             font-size: 12px;
             color: #222; }
           #footer_sub .inner .wrap article p a {
-            font: 400 15px/1.1 "arial";
+            font: 400 14px/1.1 "arial";
             color: #222; }
-      #footer_sub .inner .wrap .box4 p:nth-of-type(2) {
-        font: 12px/1.5 "arial"; }
-      #footer_sub .inner .wrap .box4 > a {
-        display: inline-block;
-        text-align: center;
-        padding: 5px 20px;
-        height: 35px;
-        border: 1px solid #888;
-        font-size: 13px;
-        line-height: 35px;
-        color: #333;
-        margin-right: 15px; }
-        #footer_sub .inner .wrap .box4 > a img {
-          max-width: 100%;
-          height: auto; }
   #footer_sub .list {
     width: 100%;
     background: #bdbdbd;
+    margin-top: 80px;
     padding: 20px 50px;
     position: relative; }
     #footer_sub .list > .wrap {
-      width: 1330px; }
+      width: 1180px; }
       #footer_sub .list > .wrap .company {
-        width: 70%; }
+        width: 100%; }
       #footer_sub .list > .wrap .sns {
         position: absolute;
         top: 50%;
-        right: 10vw;
+        right: 5%;
         transform: translateY(-50%); }
-        #footer_sub .list > .wrap .sns a {
+        #footer_sub .list > .wrap .sns > a {
           display: inline-block;
           content: "";
           font-size: 20px;
@@ -985,6 +995,29 @@ fieldset {
     top: 20px;
     right: 20px;
     cursor: pointer; }
+
+.sub_visual {
+  display: none; }
+
+#vidGallery {
+  width: 100%;
+  padding: 100px; }
+  #vidGallery article {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #vidGallery article a {
+      width: 30%; }
+      #vidGallery article a img {
+        width: 100%; }
+    #vidGallery article .con {
+      width: 65%; }
+      #vidGallery article .con h2 {
+        margin-bottom: 20px; }
 
 #header {
   width: 100vw;
