@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>location</title>
-    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f97a955efb03fb99cb37673ba7149432"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+	<script defer src="js/map.js"></script>
 </head>
 <body>
     <header id="header_sub">
@@ -54,7 +57,29 @@
 
 
 
-    <!-- 콘텐츠 들어갈 부분 -->
+	<section class="content location">
+        <div class="sub_visual"></div>
+        <div class="inner">
+
+            <div id="map"></div>
+
+			<!-- <ul class="traffic">
+				<li><a href="#">교통정보 보기</a></li>
+				<li class="on"><a href="#" >교통정보 끄기</a></li>
+			</ul> -->
+		
+			<ul class="branch">
+				<li data-index="0" class="on"><a href="#">본점</a></li>
+				<li data-index="1"><a href="#">부산지점</a></li>
+				<li data-index="2"><a href="#">제주지점</a></li>
+		
+			</ul>
+
+        </div>
+
+
+    </section>
+
 
 
 
