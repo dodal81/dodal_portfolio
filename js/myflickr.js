@@ -3,7 +3,7 @@ $.ajax({
     dataType :"json",
     data:{
         api_key :"585462c89320318d78d565f713b9b44e",
-        per_page: 5,
+        per_page: 6,
         format: "json",
         nojsoncallback:1,
        
