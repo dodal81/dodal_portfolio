@@ -1292,23 +1292,23 @@ fieldset {
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat; }
-  #visual .inner {
+  #visual .btns_inner {
     width: 1180px;
     height: 100%;
     margin: 0 auto; }
-    #visual .inner .sns {
+    #visual .btns_inner .sns {
       position: absolute;
       left: 3%;
       bottom: 30px;
       z-index: 2;
       display: none; }
-      #visual .inner .sns li {
+      #visual .btns_inner .sns li {
         margin-top: 30px; }
-        #visual .inner .sns li a {
+        #visual .btns_inner .sns li a {
           font-size: 25px;
           color: #111;
           transition: 0.5s; }
-        #visual .inner .sns li:hover a {
+        #visual .btns_inner .sns li:hover a {
           color: #fff; }
 
 #popup {
@@ -1356,23 +1356,30 @@ fieldset {
   background-color: #fff; }
   #news .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
     #news .inner h1 {
-      font: 700 25px/1 "STIX Two Text";
+      display: inline-block;
+      font: 700 25px/1 "Spartan";
+      padding-bottom: 20px;
       color: #222;
-      text-align: center;
-      margin-bottom: 30px; }
+      margin-bottom: 70px;
+      border-bottom: 3px solid #555; }
     #news .inner .wrap {
-      width: 100%; }
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row; }
       #news .inner .wrap article {
-        width: 280px;
-        float: left;
-        margin-right: 20px; }
+        margin: 0 auto; }
         #news .inner .wrap article:last-child {
           margin-right: 0px; }
         #news .inner .wrap article .pic {
-          width: 100%;
-          height: 120px;
+          width: 280px;
+          height: 280px;
+          border-radius: 50%;
           background: #333;
           overflow: hidden; }
           #news .inner .wrap article .pic img {
@@ -1380,17 +1387,17 @@ fieldset {
             height: 100%;
             object-fit: cover;
             transition: 0.5s; }
-          #news .inner .wrap article .pic:hover img {
-            transform: scale(1.2); }
+            #news .inner .wrap article .pic img:hover .img {
+              transform: scale(1.2); }
         #news .inner .wrap article h2 {
           margin-bottom: 10px;
           margin-top: 10px; }
           #news .inner .wrap article h2 a {
             display: inline-block;
-            font: bold 16px/30px "STIX Two Text";
+            font: bold 16px/30px "Spartan";
             width: 150px;
             height: 30px;
-            border: 1px dashed #ffc6ce;
+            border: 1px dashed #ffbdc7;
             text-align: center;
             color: #333;
             box-sizing: border-box; }
@@ -1400,13 +1407,13 @@ fieldset {
             border: none;
             color: #fff; }
         #news .inner .wrap article p {
-          font: 14px/1.4 "STIX Two Text";
+          font: 14px/1.4 "Spartan";
           color: #777; }
 
 #brand {
   width: 100%;
   padding: 200px 0;
-  background: rgba(252, 237, 235, 0.8); }
+  background: rgba(234, 212, 212, 0.73); }
   #brand .inner {
     width: 1180px;
     margin: 0 auto;
@@ -1432,14 +1439,14 @@ fieldset {
           text-align: center; }
           #brand .inner .wrap article:nth-of-type(1) .txt h2 {
             width: 50%;
-            font: 700 18px/1 "STIX Two Text";
+            font: 700 18px/1 "Spartan";
             color: #222;
             margin-bottom: 20px;
             text-align: left;
             border-top: 1px solid #222;
             padding-top: 20px; }
           #brand .inner .wrap article:nth-of-type(1) .txt P {
-            font: 600 25px/1.3 "STIX Two Text";
+            font: 600 25px/1.3 "Spartan";
             color: #222;
             text-align: left;
             margin-bottom: 20px;
@@ -1460,7 +1467,7 @@ fieldset {
             height: 30px;
             border: 1px solid #333;
             color: #222;
-            font: bold 14px/30px "STIX Two Text";
+            font: bold 14px/30px "Spartan";
             text-align: center; }
       #brand .inner .wrap article:nth-of-type(2) {
         width: 380px;
@@ -1479,12 +1486,12 @@ fieldset {
           box-sizing: border-box;
           text-align: center; }
           #brand .inner .wrap article:nth-of-type(2) .txt h2 {
-            font: 100 20px/1 "STIX Two Text";
+            font: 100 20px/1 "Spartan";
             color: #222;
             text-align: left;
             margin-bottom: 15px; }
           #brand .inner .wrap article:nth-of-type(2) .txt p {
-            font: 15px/1.3 "STIX Two Text";
+            font: 15px/1.3 "Spartan";
             text-align: left; }
           #brand .inner .wrap article:nth-of-type(2) .txt a {
             display: block;
@@ -1516,12 +1523,12 @@ fieldset {
           box-sizing: border-box;
           text-align: center; }
           #brand .inner .wrap article:nth-of-type(3) .txt h2 {
-            font: 100 20px/1 "STIX Two Text";
+            font: 100 20px/1 "Spartan";
             color: #222;
             text-align: left;
             margin-bottom: 15px; }
           #brand .inner .wrap article:nth-of-type(3) .txt p {
-            font: 15px/1.3 "STIX Two Text";
+            font: 15px/1.3 "Spartan";
             text-align: left; }
           #brand .inner .wrap article:nth-of-type(3) .txt a {
             display: block;
@@ -1540,25 +1547,64 @@ fieldset {
 
 #banner {
   width: 100%;
-  padding: 120px 0;
-  background: url(../img/b6.jpg) no-repeat center/cover fixed; }
+  padding: 80px 0;
+  background: url(../img/b6.jpg) no-repeat center/cover fixed;
+  background-image: rgba(0, 0, 0, 0.2); }
   #banner .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
     #banner .inner h1 {
-      font: bold 30px "Spartan";
+      font: bold 15px/1 'spartan';
       color: #fff;
-      text-align: center;
-      margin-bottom: 30px; }
+      margin-bottom: 15px; }
+    #banner .inner h2 {
+      font: bold 35px/1 'spartan';
+      color: #fff;
+      margin-bottom: 15px; }
     #banner .inner p {
       font: 16px/1.3 "arial";
-      color: #ddd;
-      text-align: center; }
+      color: #fff;
+      text-align: center;
+      margin-bottom: 35px; }
+    #banner .inner .box {
+      width: 100%;
+      text-align: center;
+      margin-left: 20px; }
+      #banner .inner .box a {
+        text-align: left;
+        padding-left: 20px;
+        display: inline-block;
+        width: 300px;
+        height: 60px;
+        margin-right: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font: bold 15px/60px "Spartan";
+        position: relative;
+        transition: 0.5; }
+        #banner .inner .box a:last-child {
+          width: 150px;
+          border: 1px solid #fff;
+          margin-right: 0;
+          background: rgba(0, 0, 0, 0.05);
+          box-sizing: border-box; }
+        #banner .inner .box a:hover {
+          border: 1px solid #fff; }
+          #banner .inner .box a:hover:hover:last-child {
+            background: rgba(237, 176, 176, 0.8); }
+        #banner .inner .box a i {
+          position: absolute;
+          right: 20px;
+          font-size: 15px;
+          line-height: 60px; }
+          #banner .inner .box a i:last-child {
+            right: 50px; }
 
 #comment {
   width: 100%;
   padding: 150px 0;
-  background: rgba(240, 224, 222, 0.8); }
+  background: rgba(255, 252, 251, 0.8); }
   #comment .inner {
     width: 1180px;
     margin: 0 auto; }
