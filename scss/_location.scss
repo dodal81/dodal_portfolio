@@ -1,13 +1,24 @@
 @charset "utf-8";
 
+
 .location {
 	height: 100%;
+	text-align: center;
+
 	.sub_visual{
-		background-color: #fff;
+		background-color: #bbb;
 	}
 	.inner{
 		h1{
-			text-align: center;
+			font:bold  50px/1 'Noto Sans KR';
+			margin-bottom: 30px;
+			letter-spacing: 1.5px;
+		}
+		h2{
+			font: bold 35px/1 'Noto Sans KR'; color: #222;
+			border-bottom: 2px solid #222;
+			padding-bottom: 30px;
+			letter-spacing: 1.5px;
 		}
 	}
 
@@ -31,7 +42,7 @@
 				height: 40px;
 				border: 1px solid #555;
 				border-radius: 20px;
-				font: bold 12px/40px "맑은 고딕";
+				font: bold 12px/40px 'Noto Sans KR';
 				color: #555;
 				text-align: center;
 			}
@@ -58,7 +69,7 @@
 				width: 200px;
 				height: 40px;
 				background: #555;
-				font: bold 12px/40px "맑은 고딕";
+				font: bold 12px/40px 'Noto Sans KR';
 				color: #fff;
 				text-align: center;
 			}
