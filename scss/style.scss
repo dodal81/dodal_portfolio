@@ -291,18 +291,18 @@ $mobile: 539px;
 					background-repeat: no-repeat;
 				}
 				&[data-index="2"] {
-					background-image: url(../img/p3.jpg);
+					background-image: url(../img/p4.jpg);
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
 				}
-				&[data-index="1"] {
+				&[data-index="3"] {
 					background-image: url(../img/p2.jpg);
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
 				}
-				&[data-index="1"] {
+				&[data-index="4"] {
 					background-image: url(../img/p4.jpg);
 					background-size: cover;
 					background-position: center;
@@ -385,6 +385,58 @@ $mobile: 539px;
 					color: #fff;
 				}
 			}
+		}
+	}
+}
+// popup ----------------------------------------------------------------
+#popup {
+	width: 600px;
+	height: 300px;
+	border-radius: 20px;
+	background: rgb(237, 214, 218);
+	padding: 20px;
+	box-sizing: border-box;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.03);
+	.pop_inner {
+		width: 100%;
+		height: 100%;
+		border:2px solid #fff;
+		border-radius: 20px;
+		padding: 40px;
+		
+		h1{
+			text-align: center;
+			font: bold 30px/1 "Spartan";
+
+		}
+
+		.pop_content {
+			width: 100%;
+			min-height: 150px;
+			padding-top: 50px;
+		}
+		&::after {
+			content: "";
+			display: block;
+		}
+
+		.wrap {
+			float: left;
+
+			label {
+				font: bold 13px/1 "Spartan";
+				margin-left: 4px;
+			}
+		}
+		.close {
+			float: right;
+			font: 14px/1 "Spartan";
+			color: #fff;
 		}
 	}
 }
@@ -743,22 +795,19 @@ $mobile: 539px;
 				clear: both;
 			}
 			article {
-				
 				height: 200px;
 				padding: 10px 20px;
 				margin-right: 20px;
 				float: left;
-				
 
 				&.box1 {
 					width: 22%;
-					span{
-
+					span {
 						display: block;
 						margin-bottom: 20px;
 						font: normal 19px/1 "arial";
 					}
-					p{
+					p {
 						&:last-child {
 							font-size: 10px;
 						}
@@ -769,7 +818,6 @@ $mobile: 539px;
 					width: 13%;
 
 					span {
-
 						a {
 							display: block;
 							margin-bottom: 20px;
@@ -787,7 +835,6 @@ $mobile: 539px;
 						}
 					}
 					a {
-						
 						display: inline-block;
 						text-align: center;
 						padding: 0px 10px;
@@ -855,7 +902,7 @@ $mobile: 539px;
 				right: 5%;
 				transform: translateY(-50%);
 
-				>a {
+				> a {
 					display: inline-block;
 					content: "";
 					font-size: 20px;
