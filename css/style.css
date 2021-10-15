@@ -1314,7 +1314,7 @@ fieldset {
       transform: translateY(-50%); }
 
 #popup {
-  width: 600px;
+  width: 500px;
   height: 300px;
   border-radius: 20px;
   background: #edd6da;
@@ -1325,7 +1325,8 @@ fieldset {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.03); }
+  box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.03);
+  z-index: 2; }
   #popup .pop_inner {
     width: 100%;
     height: 100%;

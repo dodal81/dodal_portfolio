@@ -341,7 +341,8 @@ $mobile: 539px;
 }
 // popup ----------------------------------------------------------------
 #popup {
-	width: 600px;
+	
+	width: 500px;
 	height: 300px;
 	border-radius: 20px;
 	background: rgb(237, 214, 218);
@@ -353,6 +354,7 @@ $mobile: 539px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.03);
+	z-index: 2;
 	.pop_inner {
 		width: 100%;
 		height: 100%;
