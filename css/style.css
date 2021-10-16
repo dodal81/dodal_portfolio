@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+/*
+"Spartan"
+'STIX Two Text'
+'Noto Sans KR'
+*/
 * {
   margin: 0;
   padding: 0;
@@ -1267,12 +1272,33 @@ fieldset {
 
 #visual {
   width: 100%;
-  height: calc(100vh - 120px);
-  position: relative; }
+  height: calc(100vh - 100px);
+  position: relative;
+  overflow: hidden; }
+  #visual .txt {
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translateY(-30%);
+    z-index: 2; }
+    #visual .txt h1 {
+      font: 30px/1 "Spartan";
+      font-size: 70px;
+      color: #111;
+      margin-bottom: 30px; }
+    #visual .txt p {
+      font: 30px/1.5 "Spartan";
+      font-size: 35px;
+      color: #111; }
   #visual #slider {
-    width: 100%;
+    width: 55%;
     height: 100%;
-    overflow: hidden; }
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    overflow: hidden;
+    transform: skew(-20deg) translateY(-50%); }
     #visual #slider .list {
       width: calc(100% * 4);
       height: inherit;
@@ -1284,40 +1310,23 @@ fieldset {
         display: flex;
         justify-content: center;
         align-items: center; }
-        #visual #slider .list > li .txt {
-          width: 60%;
-          position: absolute;
-          top: 40%;
-          left: 15%;
-          transform: translateY(-30%);
-          display: none; }
-          #visual #slider .list > li .txt h1 {
-            font: 30px/1 "Spartan";
-            font-size: 70px;
-            color: #fff;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 2px #999; }
-          #visual #slider .list > li .txt p {
-            font: 30px/1.3 "Spartan";
-            font-size: 35px;
-            color: #fff; }
         #visual #slider .list > li[data-index="1"] {
-          background: #ddd;
+          background: #9cc6ed;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat; }
         #visual #slider .list > li[data-index="2"] {
-          background: #bbb;
+          background: #ffdadf;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat; }
         #visual #slider .list > li[data-index="3"] {
-          background: #ddd;
+          background: #ffeea8;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat; }
         #visual #slider .list > li[data-index="4"] {
-          background: #ddd;
+          background: #b3ffc2;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat; }
@@ -1334,24 +1343,21 @@ fieldset {
       transform: translateY(-50%); }
 
 #popup {
-  width: 500px;
+  width: 400px;
   height: 300px;
-  border-radius: 20px;
   background: #edd6da;
   padding: 20px;
   box-sizing: border-box;
   color: #fff;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.03);
+  top: 100px;
+  right: 10%;
+  box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.03);
   z-index: 2; }
   #popup .pop_inner {
     width: 100%;
     height: 100%;
     border: 2px solid #fff;
-    border-radius: 20px;
     padding: 40px; }
     #popup .pop_inner h1 {
       text-align: center;
@@ -1359,7 +1365,7 @@ fieldset {
     #popup .pop_inner .pop_content {
       width: 100%;
       min-height: 150px;
-      padding-top: 50px; }
+      padding-top: 30px; }
     #popup .pop_inner::after {
       content: "";
       display: block; }
@@ -1375,8 +1381,8 @@ fieldset {
 
 #news {
   width: 100%;
-  padding: 200px 0;
-  background-color: #fff; }
+  padding: 100px 0;
+  background-color: rgba(233, 175, 180, 0.562); }
   #news .inner {
     width: 1180px;
     margin: 0 auto;
@@ -1384,10 +1390,12 @@ fieldset {
     #news .inner h1 {
       display: inline-block;
       font: 700 25px/1 "Spartan";
-      padding-bottom: 20px;
-      color: #222;
-      margin-bottom: 70px;
-      border-bottom: 3px solid #555; }
+      color: #ce616f;
+      margin-bottom: 20px; }
+    #news .inner h2 {
+      font: 100 15px/1 "Spartan";
+      color: #fff;
+      margin-bottom: 70px; }
     #news .inner .wrap {
       width: 100%;
       margin: 0 auto;
@@ -1399,19 +1407,11 @@ fieldset {
         width: 280px;
         height: 280px;
         margin: 0 auto; }
-        #news .inner .wrap article .pic {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: #333;
-          overflow: hidden; }
-          #news .inner .wrap article .pic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 0.5s; }
-            #news .inner .wrap article .pic img:hover img {
-              transform: scale(1.2); }
+        #news .inner .wrap article .icon {
+          display: inline-block; }
+          #news .inner .wrap article .icon i {
+            font-size: 30px;
+            color: #ce616f; }
         #news .inner .wrap article h2 {
           margin-bottom: 10px;
           margin-top: 10px; }
@@ -1420,9 +1420,8 @@ fieldset {
             font: bold 16px/30px "Spartan";
             width: 150px;
             height: 30px;
-            border: 1px dashed #ffbdc7;
             text-align: center;
-            color: #333;
+            color: #ce616f;
             box-sizing: border-box; }
           #news .inner .wrap article h2:hover a {
             background: #ffbdc7;
@@ -1431,12 +1430,12 @@ fieldset {
             color: #fff; }
         #news .inner .wrap article p {
           font: 14px/1.4 "Spartan";
-          color: #777; }
+          color: #fff; }
 
 #brand {
   width: 100%;
   padding: 200px 0;
-  background: rgba(234, 212, 212, 0.73); }
+  background: #efefef; }
   #brand .inner {
     width: 1180px;
     margin: 0 auto;

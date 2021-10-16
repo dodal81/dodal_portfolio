@@ -1,7 +1,13 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+
+/*
+"Spartan"
+'STIX Two Text'
+'Noto Sans KR'
+*/
 
 $tablet: 1179px;
 $mobile: 539px;
@@ -241,13 +247,40 @@ $mobile: 539px;
 //  visual ---------------------------------------------------------------
 #visual {
 	width: 100%;
-	height: calc(100vh - 120px);
+	height: calc(100vh - 100px);
 	position: relative;
+	overflow: hidden;
+
+	.txt {
+		width: 60%;
+		position: absolute;
+		top: 40%;
+		left: 15%;
+		transform: translateY(-30%);
+		z-index: 2;
+
+		h1 {
+			font: 30px/1 "Spartan";
+			font-size: 70px;
+			color: #111;
+			margin-bottom: 30px;
+			
+		}
+		p {
+			font: 30px/1.5 "Spartan";
+			font-size: 35px;
+			color: #111;
+		}
+	}
 
 	#slider {
-		width: 100%;
+		width: 55%;
 		height: 100%;
+		position: absolute;
+		right: 0%;
+		top: 50%;
 		overflow: hidden;
+		transform: skew(-20deg) translateY(-50%);
 
 		.list {
 			width: calc(100% * 4);
@@ -262,52 +295,32 @@ $mobile: 539px;
 				justify-content: center;
 				align-items: center;
 
-				.txt {
-					width: 60%;
-					position: absolute;
-					top: 40%;
-					left: 15%;
-					transform: translateY(-30%);
-					display: none;
-
-					h1 {
-						font: 30px/1 "Spartan";
-						font-size: 70px;
-						color: #fff;
-						margin-bottom: 30px;
-						text-shadow: 2px 2px 2px #999;
-					}
-					p {
-						font: 30px/1.3 "Spartan";
-						font-size: 35px;
-						color: #fff;
-					}
-				}
+				
 
 				&[data-index="1"] {
 					// background-image: url(../img/p1.jpg);
-					background: #ddd;
+					background: rgb(156, 198, 237);
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
 				}
 				&[data-index="2"] {
 					// background-image: url(../img/p4.jpg);
-					background: #bbb;
+					background: rgb(255, 218, 223);
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
 				}
 				&[data-index="3"] {
 					// background-image: url(../img/p2.jpg);
-					background: #ddd;
+					background: rgb(255, 238, 168);
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
 				}
 				&[data-index="4"] {
 					// background-image: url(../img/p4.jpg);
-					background: #ddd;
+					background: rgb(179, 255, 194);
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
@@ -318,7 +331,6 @@ $mobile: 539px;
 	.btns_inner {
 		width: 100%;
 		margin: 0 auto;
-		
 
 		// .prev {
 		// 	display: inline-block;
@@ -326,40 +338,36 @@ $mobile: 539px;
 		// 	position: absolute;
 		// 	top: 50%;
 		// 	left: 5%;
-			
+
 		// }
 		.next {
 			display: inline-block;
-			font-size: 80px; color: #fff;
+			font-size: 80px;
+			color: #fff;
 			position: absolute;
 			top: 50%;
 			right: 5%;
 			transform: translateY(-50%);
-			
 		}
 	}
 }
 // popup ----------------------------------------------------------------
 #popup {
-	
-	width: 500px;
+	width: 400px;
 	height: 300px;
-	border-radius: 20px;
 	background: rgb(237, 214, 218);
 	padding: 20px;
 	box-sizing: border-box;
 	color: #fff;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.03);
+	top: 100px;
+	right: 10%;
+	box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.03);
 	z-index: 2;
 	.pop_inner {
 		width: 100%;
 		height: 100%;
 		border: 2px solid #fff;
-		border-radius: 20px;
 		padding: 40px;
 
 		h1 {
@@ -370,7 +378,7 @@ $mobile: 539px;
 		.pop_content {
 			width: 100%;
 			min-height: 150px;
-			padding-top: 50px;
+			padding-top: 30px;
 		}
 		&::after {
 			content: "";
@@ -396,8 +404,8 @@ $mobile: 539px;
 //  news ---------------------------------------------------------------
 #news {
 	width: 100%;
-	padding: 200px 0;
-	background-color: #fff;
+	padding: 100px 0;
+	background-color: rgba(233, 175, 180, 0.562);
 
 	.inner {
 		width: 1180px;
@@ -407,10 +415,15 @@ $mobile: 539px;
 		h1 {
 			display: inline-block;
 			font: 700 25px/1 "Spartan";
-			padding-bottom: 20px;
-			color: #222;
+			color: rgb(206, 97, 111);
+			margin-bottom: 20px;
+			
+		}
+		h2 {
+			
+			font: 100 15px/1 "Spartan";
+			color: #fff;
 			margin-bottom: 70px;
-			border-bottom: 3px solid #555;
 		}
 		.wrap {
 			width: 100%;
@@ -425,27 +438,40 @@ $mobile: 539px;
 				height: 280px;
 				margin: 0 auto;
 
-				.pic {
-					width: 100%;
-					height: 100%;
-					border-radius: 50%;
-					background: #333;
-					overflow: hidden;
+				.icon {
+					display: inline-block;
 
-					&:hover {
-					}
-
-					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-						transition: 0.5s;
-
-						&:hover img {
-							transform: scale(1.2);
-						}
+					i {
+						font-size: 30px; color: rgb(206, 97, 111);
 					}
 				}
+				.news_txt {
+
+					
+
+				}
+
+				// .pic {
+				// 	width: 100%;
+				// 	height: 100%;
+				// 	border-radius: 50%;
+				// 	background: #333;
+				// 	overflow: hidden;
+
+				// 	&:hover {
+				// 	}
+
+				// 	img {
+				// 		width: 100%;
+				// 		height: 100%;
+				// 		object-fit: cover;
+				// 		transition: 0.5s;
+
+				// 		&:hover img {
+				// 			transform: scale(1.2);
+				// 		}
+				// 	}
+				// }
 
 				h2 {
 					margin-bottom: 10px;
@@ -457,10 +483,9 @@ $mobile: 539px;
 						width: 150px;
 						height: 30px;
 						// background: #97ccb8;
-						border: 1px dashed rgb(255, 189, 199);
-						// border-radius: 20px;
+						// border: 1px dashed rgb(255, 189, 199);
 						text-align: center;
-						color: #333;
+						color: rgb(206, 97, 111);
 						box-sizing: border-box;
 					}
 					&:hover a {
@@ -473,7 +498,7 @@ $mobile: 539px;
 
 				p {
 					font: 14px/1.4 "Spartan";
-					color: #777;
+					color: #fff;
 				}
 			}
 		}
@@ -483,8 +508,7 @@ $mobile: 539px;
 #brand {
 	width: 100%;
 	padding: 200px 0;
-	background: rgba(234, 212, 212, 0.73);
-
+	background: #efefef;
 	.inner {
 		width: 1180px;
 		margin: 0 auto;
