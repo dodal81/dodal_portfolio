@@ -1009,78 +1009,98 @@ fieldset {
       right: 20px;
       cursor: pointer; }
 
-#vidGallery {
+/*
+"Spartan"
+'STIX Two Text'
+'Noto Sans KR'
+*/
+.youtube {
   width: 100%;
-  padding: 100px; }
-  #vidGallery article {
+  text-align: center; }
+  .youtube .inner h1 {
+    font: bold 30px/1 "Noto Sans KR"; }
+  .youtube .inner #vidGallery {
     width: 100%;
-    border: 1px solid #ccc;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap; }
-    #vidGallery article a {
-      width: 30%; }
-      #vidGallery article a img {
-        width: 100%; }
-    #vidGallery article .con {
-      width: 65%; }
-      #vidGallery article .con h2 {
-        margin-bottom: 20px; }
+    .youtube .inner #vidGallery article {
+      width: 300px;
+      height: 400px;
+      border: 1px solid #ccc;
+      padding: 30px;
+      margin-bottom: 30px;
+      text-align: center; }
+      .youtube .inner #vidGallery article a {
+        width: 30%; }
+        .youtube .inner #vidGallery article a img {
+          width: 200px; }
+      .youtube .inner #vidGallery article .con {
+        width: 65%; }
+        .youtube .inner #vidGallery article .con h2 {
+          width: 100%;
+          display: inline-block;
+          font: bold 20px/1.5 "Noto Sans KR";
+          margin-bottom: 20px; }
 
+/*
+"Spartan"
+'STIX Two Text'
+'Noto Sans KR'
+*/
 .location {
   height: 100%;
   text-align: center; }
   .location .sub_visual {
     background-color: #bbb; }
   .location .inner h1 {
-    font: bold  50px/1 'Noto Sans KR';
+    font: bold 50px/1 "Noto Sans KR";
     margin-bottom: 30px;
     letter-spacing: 1.5px; }
   .location .inner h2 {
-    font: bold 35px/1 'Noto Sans KR';
+    font: bold 35px/1 "Noto Sans KR";
     color: #222;
     border-bottom: 2px solid #222;
     padding-bottom: 30px;
     letter-spacing: 1.5px; }
-  .location #map {
+  .location .inner #map {
     width: 100%;
     height: 500px;
     margin-top: 100px; }
-  .location .branch {
+  .location .inner .branch {
     float: right;
     margin-top: 20px; }
-    .location .branch li {
+    .location .inner .branch li {
       float: left;
       margin-right: 10px; }
-      .location .branch li a {
+      .location .inner .branch li a {
         display: block;
         width: 200px;
         height: 40px;
         border: 1px solid #555;
         border-radius: 20px;
-        font: bold 12px/40px 'Noto Sans KR';
+        font: bold 12px/40px "Noto Sans KR";
         color: #555;
         text-align: center; }
-      .location .branch li.on a {
+      .location .inner .branch li.on a {
         background: #ddd;
         color: #333; }
-  .location .traffic {
+  .location .inner .traffic {
     float: left;
     margin-top: 20px; }
-    .location .traffic li {
+    .location .inner .traffic li {
       float: left;
       margin-right: 10px; }
-      .location .traffic li a {
+      .location .inner .traffic li a {
         display: block;
         width: 200px;
         height: 40px;
         background: #555;
-        font: bold 12px/40px 'Noto Sans KR';
+        font: bold 12px/40px "Noto Sans KR";
         color: #fff;
         text-align: center; }
-      .location .traffic li.on a {
+      .location .inner .traffic li.on a {
         background: #aaa;
         color: #333; }
 
@@ -1551,8 +1571,8 @@ fieldset {
 #banner {
   width: 100%;
   padding: 80px 0;
-  background: url(../img/b6.jpg) no-repeat center/cover fixed;
-  background-image: rgba(0, 0, 0, 0.2); }
+  background: url(../img/banner2.jpg) no-repeat center/cover fixed;
+  background-image: rgba(0, 0, 0, 0.02); }
   #banner .inner {
     width: 1180px;
     margin: 0 auto;

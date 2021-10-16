@@ -4,7 +4,7 @@ $.ajax({
     data: {
         part: "snippet",
         key: "AIzaSyDWjF6dR3xILcieZUrGTLlC602C6k9RYnU",
-        maxResults: 4,
+        maxResults: 6,
         playlistId: "PLHKeRbsUuhBdC-WTrs6vfnWFj8mHQWomO"
     }
 })
@@ -14,11 +14,11 @@ $.ajax({
         console.log(items);
 
         $(items).each(function (index, data) {
-            let txt = data.snippet.description;
+            let txt = data.snippet.title;
             let len = txt.length;
 
-            if (len > 200) {
-                txt = txt.substr(0, 200) + "..."
+            if (len > 5) {
+                txt = txt.substr(0, 5) + "..."
             }
 
             let date = data.snippet.publishedAt;
