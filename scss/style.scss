@@ -532,6 +532,13 @@ $mobile: 539px;
 			margin-right: 15px;
 			padding: 10px 30px;
 			box-sizing: border-box;
+			transition: 0.5s;
+
+			&:hover {
+				background: #91b6d6;
+				border: none;
+				color: #fff;
+			}
 
 			
 		}
@@ -606,24 +613,34 @@ $mobile: 539px;
 							}
 
 							a {
-								display: inline-block;
-								width: 45px;
-								height: 45px;
-								border-radius:50%;
-								border: 4px solid #fff;
-								box-sizing: border-box;
-								margin-right: 10px;
-								box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03);
+								// display: inline-block;
+								// width: 45px;
+								// height: 45px;
+								// border-radius:50%;
+								// border: 4px solid #fff;
+								// box-sizing: border-box;
+								// margin-right: 10px;
+								// box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03);
 
-								&:nth-of-type(1) {
-									background: #7f8388;
-								}
-								&:nth-of-type(2) {
-									background: #a3a3a3;
-								}
-								&:nth-of-type(3) {
-									background: #d3d3d3;
-									margin-right: 0px;
+								// &:nth-of-type(1) {
+								// 	background: #7f8388;
+								// }
+								// &:nth-of-type(2) {
+								// 	background: #a3a3a3;
+								// }
+								// &:nth-of-type(3) {
+								// 	background: #d3d3d3;
+								// 	margin-right: 0px;
+
+								display: inline-block;
+								width: 180px;
+								height: 50px;
+								border: 1px solid #fff;
+								font: bold 15px/50px 'Spartan';
+								text-align: center;
+								color: #fff;
+
+
 								}
 							}
 						}
@@ -632,7 +649,7 @@ $mobile: 539px;
 			}
 		}
 	}
-}
+
 
 //  banner ---------------------------------------------------------------
 #banner {

@@ -77,3 +77,28 @@ $(".stop").on("click", function(e){
     $(".stop").addClass("on"); 
     $(".start").removeClass("on"); 
 }); 
+
+
+// 자동롤링 product만들기 -------------------------------
+let num=0;
+
+ let timer = setInterval(move, 20);
+console.log(timer);
+
+$(".product_slider").on("mouseenter",function(){    
+    clearInterval(timer);
+});
+$(".product_slider").on("mouseleave", function(){    
+    timer = setInterval(move,20);
+});
+
+//setInterval로 반복할 공통 함수 분리
+function move(){
+    if(num <= -360){        
+        num = 0;        
+        $(".product_list").find("li").first().appendTo($(".product_list"));
+    }else{ 
+        num -= 2;
+    }    
+    $(".product_list").css({left: num});
+}
