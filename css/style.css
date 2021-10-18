@@ -1174,7 +1174,7 @@ fieldset {
           padding: 10px 10px;
           transition: 0.5s;
           text-align: center; }
-        #header .inner .menuWeb .util li:last-child a {
+        #header .inner .menuWeb .util li:last-child > a {
           width: 30%;
           position: absolute;
           top: 55%;
@@ -1278,21 +1278,36 @@ fieldset {
   #visual .txt {
     width: 60%;
     position: absolute;
-    top: 40%;
-    left: 15%;
-    transform: translateY(-30%);
+    top: 25%;
+    left: 5%;
     z-index: 2; }
     #visual .txt h1 {
-      font: 30px/1 "Spartan";
-      font-size: 70px;
+      font: 300 100px/1 "Spartan";
       color: #111;
       margin-bottom: 30px; }
     #visual .txt p {
-      font: 30px/1.5 "Spartan";
-      font-size: 35px;
-      color: #111; }
+      font: 35px/1.5 "Spartan";
+      color: #111;
+      margin-bottom: 70px; }
+    #visual .txt a {
+      display: inline-block;
+      width: 350px;
+      height: 70px;
+      background: #ccc;
+      color: #fff;
+      font: 30px/70px "Spartan";
+      text-align: center;
+      position: relative;
+      padding-right: 10px;
+      text-align: left;
+      padding-left: 40px; }
+      #visual .txt a img {
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%); }
   #visual #slider {
-    width: 55%;
+    width: 60%;
     height: 100%;
     position: absolute;
     right: 0%;
@@ -1391,11 +1406,11 @@ fieldset {
       display: inline-block;
       font: 700 25px/1 "Spartan";
       color: #ce616f;
-      margin-bottom: 20px; }
+      margin-bottom: 25px; }
     #news .inner h2 {
-      font: 100 15px/1 "Spartan";
+      font: 100 17px/1 "Spartan";
       color: #fff;
-      margin-bottom: 70px; }
+      margin-bottom: 50px; }
     #news .inner .wrap {
       width: 100%;
       margin: 0 auto;
@@ -1406,36 +1421,189 @@ fieldset {
       #news .inner .wrap article {
         width: 280px;
         height: 280px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
         #news .inner .wrap article .icon {
           display: inline-block; }
           #news .inner .wrap article .icon i {
             font-size: 30px;
             color: #ce616f; }
-        #news .inner .wrap article h2 {
-          margin-bottom: 10px;
-          margin-top: 10px; }
-          #news .inner .wrap article h2 a {
-            display: inline-block;
-            font: bold 16px/30px "Spartan";
-            width: 150px;
-            height: 30px;
-            text-align: center;
-            color: #ce616f;
-            box-sizing: border-box; }
-          #news .inner .wrap article h2:hover a {
-            background: #ffbdc7;
-            border: 1px dashed transparent;
-            border: none;
+        #news .inner .wrap article .news_txt {
+          width: 80%; }
+          #news .inner .wrap article .news_txt h2 {
+            margin-bottom: 10px;
+            margin-top: 10px; }
+            #news .inner .wrap article .news_txt h2 a {
+              display: inline-block;
+              font: bold 16px/30px "Spartan";
+              width: 150px;
+              height: 30px;
+              text-align: center;
+              color: #ce616f;
+              box-sizing: border-box; }
+            #news .inner .wrap article .news_txt h2:hover a {
+              background: #ffbdc7;
+              border: 1px dashed transparent;
+              border: none;
+              color: #fff; }
+          #news .inner .wrap article .news_txt p {
+            font: 14px/1.4 "Spartan";
             color: #fff; }
-        #news .inner .wrap article p {
-          font: 14px/1.4 "Spartan";
-          color: #fff; }
+
+#product {
+  width: 100%;
+  padding: 200px 0;
+  background: #fff; }
+  #product .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; }
+    #product .inner h1 {
+      font: bold 35px/1 "Spartan";
+      color: #111;
+      text-align: center;
+      margin-bottom: 40px; }
+    #product .inner > a {
+      display: inline;
+      height: 50px;
+      font: bold 25px/50px 'Spartan';
+      border: 1px solid #888;
+      color: #888;
+      border-radius: 30px;
+      margin-right: 15px;
+      padding: 10px 30px;
+      box-sizing: border-box; }
+    #product .inner .wrap {
+      width: 100%; }
+      #product .inner .wrap .product_slider {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        #product .inner .wrap .product_slider .product_list {
+          width: 3600px;
+          height: 100%;
+          overflow: hidden; }
+          #product .inner .wrap .product_slider .product_list li {
+            width: 360px;
+            height: 500px;
+            float: left;
+            margin-right: 40px;
+            border-radius: 10px;
+            margin-top: 50px;
+            position: relative;
+            text-align: center; }
+            #product .inner .wrap .product_slider .product_list li[data-index="1"] {
+              background: #9cc6ed; }
+            #product .inner .wrap .product_slider .product_list li[data-index="2"] {
+              background: #ffdadf; }
+            #product .inner .wrap .product_slider .product_list li[data-index="3"] {
+              background: #ffeea8; }
+            #product .inner .wrap .product_slider .product_list li[data-index="4"] {
+              background: #b3ffc2; }
+            #product .inner .wrap .product_slider .product_list li[data-index="5"] {
+              background: #77A1D3; }
+            #product .inner .wrap .product_slider .product_list li[data-index="6"] {
+              background: #fbc7d4; }
+            #product .inner .wrap .product_slider .product_list li[data-index="7"] {
+              background: #1488CC; }
+            #product .inner .wrap .product_slider .product_list li[data-index="8"] {
+              background: #B79891; }
+            #product .inner .wrap .product_slider .product_list li[data-index="9"] {
+              background: #536976; }
+            #product .inner .wrap .product_slider .product_list li .txt {
+              position: absolute;
+              bottom: 10%;
+              left: 50%;
+              transform: translateX(-50%); }
+              #product .inner .wrap .product_slider .product_list li .txt h2 {
+                font: bold 23px/1 "Spartan";
+                color: #111;
+                margin-bottom: 10px; }
+              #product .inner .wrap .product_slider .product_list li .txt p {
+                font: bold 20px/1.5 "Noto Sans KR";
+                color: #111;
+                letter-spacing: 1.5px;
+                margin-bottom: 20px; }
+              #product .inner .wrap .product_slider .product_list li .txt a {
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                border: 4px solid #fff;
+                box-sizing: border-box;
+                margin-right: 10px;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03); }
+                #product .inner .wrap .product_slider .product_list li .txt a:nth-of-type(1) {
+                  background: #7f8388; }
+                #product .inner .wrap .product_slider .product_list li .txt a:nth-of-type(2) {
+                  background: #a3a3a3; }
+                #product .inner .wrap .product_slider .product_list li .txt a:nth-of-type(3) {
+                  background: #d3d3d3;
+                  margin-right: 0px; }
+
+#banner {
+  width: 100%;
+  padding: 80px 0;
+  background: url(../img/banner2.jpg) no-repeat center/cover fixed;
+  background-image: rgba(0, 0, 0, 0.02); }
+  #banner .inner {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center; }
+    #banner .inner h1 {
+      font: bold 15px/1 "spartan";
+      color: #fff;
+      margin-bottom: 15px; }
+    #banner .inner h2 {
+      font: bold 35px/1 "spartan";
+      color: #fff;
+      margin-bottom: 15px; }
+    #banner .inner p {
+      font: 16px/1.3 "arial";
+      color: #fff;
+      text-align: center;
+      margin-bottom: 35px; }
+    #banner .inner .box {
+      width: 100%;
+      text-align: center;
+      margin-left: 20px; }
+      #banner .inner .box a {
+        text-align: left;
+        padding-left: 20px;
+        display: inline-block;
+        width: 300px;
+        height: 60px;
+        margin-right: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font: bold 15px/60px "Spartan";
+        position: relative; }
+        #banner .inner .box a:last-child {
+          width: 150px;
+          border: 1px solid #fff;
+          margin-right: 0;
+          background: rgba(0, 0, 0, 0.05);
+          box-sizing: border-box; }
+        #banner .inner .box a:hover {
+          border: 1px solid #fff; }
+          #banner .inner .box a:hover:hover:last-child {
+            background: rgba(237, 176, 176, 0.8); }
+        #banner .inner .box a i {
+          position: absolute;
+          right: 20px;
+          font-size: 15px;
+          line-height: 60px; }
+          #banner .inner .box a i:last-child {
+            right: 50px; }
 
 #brand {
   width: 100%;
   padding: 200px 0;
-  background: #efefef; }
+  background: #fcf9f9; }
   #brand .inner {
     width: 1180px;
     margin: 0 auto;
@@ -1567,104 +1735,22 @@ fieldset {
             top: 63%;
             transform: translateY(-63%); }
 
-#banner {
-  width: 100%;
-  padding: 80px 0;
-  background: url(../img/banner2.jpg) no-repeat center/cover fixed;
-  background-image: rgba(0, 0, 0, 0.02); }
-  #banner .inner {
-    width: 1180px;
-    margin: 0 auto;
-    text-align: center; }
-    #banner .inner h1 {
-      font: bold 15px/1 "spartan";
-      color: #fff;
-      margin-bottom: 15px; }
-    #banner .inner h2 {
-      font: bold 35px/1 "spartan";
-      color: #fff;
-      margin-bottom: 15px; }
-    #banner .inner p {
-      font: 16px/1.3 "arial";
-      color: #fff;
-      text-align: center;
-      margin-bottom: 35px; }
-    #banner .inner .box {
-      width: 100%;
-      text-align: center;
-      margin-left: 20px; }
-      #banner .inner .box a {
-        text-align: left;
-        padding-left: 20px;
-        display: inline-block;
-        width: 300px;
-        height: 60px;
-        margin-right: 10px;
-        background: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        font: bold 15px/60px "Spartan";
-        position: relative;
-        transition: 0.5; }
-        #banner .inner .box a:last-child {
-          width: 150px;
-          border: 1px solid #fff;
-          margin-right: 0;
-          background: rgba(0, 0, 0, 0.05);
-          box-sizing: border-box; }
-        #banner .inner .box a:hover {
-          border: 1px solid #fff; }
-          #banner .inner .box a:hover:hover:last-child {
-            background: rgba(237, 176, 176, 0.8); }
-        #banner .inner .box a i {
-          position: absolute;
-          right: 20px;
-          font-size: 15px;
-          line-height: 60px; }
-          #banner .inner .box a i:last-child {
-            right: 50px; }
-
 #comment {
   width: 100%;
   padding: 150px 0;
   background: rgba(255, 252, 251, 0.8); }
   #comment .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     #comment .inner h1 {
-      font: bold 20px "Spartan";
+      font: bold 24px "Spartan";
       color: #555;
       text-align: center;
-      margin-bottom: 30px;
-      color: #222; }
-    #comment .inner ul {
+      margin-bottom: 50px;
+      text-align: center; }
+    #comment .inner .wrap {
       width: 100%; }
-      #comment .inner ul li {
-        width: 100%;
-        border: 1px dotted #333;
-        margin-bottom: 20px;
-        padding: 15px 20px;
-        box-sizing: border-box;
-        transition: 0.5s; }
-        #comment .inner ul li::after {
-          content: "";
-          display: block;
-          clear: both; }
-        #comment .inner ul li a {
-          font: 12px/1 "STIX Two Text";
-          color: #555;
-          float: left;
-          transition: 0.5s; }
-        #comment .inner ul li span {
-          font: 12px/1 "STIX Two Text";
-          color: #888;
-          transition: 0.5s;
-          float: right; }
-        #comment .inner ul li:hover {
-          background: rgba(224, 154, 154, 0.8); }
-          #comment .inner ul li:hover a {
-            color: #fff; }
-          #comment .inner ul li:hover span {
-            color: #fff; }
 
 #footer {
   width: 100%;

@@ -47,20 +47,6 @@ $(".next").on("click", function(e){
    
 }); 
 
-//prev 버튼 클릭시 이벤트 
-$(".prev").on("click", function(e){
-    e.preventDefault(); 
-
-    if(enableClick){
-        $(".list").animate({ marginLeft: "0%"},1000, function(){
-            $(".list").css({marginLeft :"-100%"}); 
-            $(".list li").last().prependTo(".list"); 
-            enableClick = true; 
-        });
-        enableClick = false; 
-    }    
-});
-
 
 //start버튼 클릭시 
 $(".start").on("click", function(e){
