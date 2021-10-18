@@ -976,6 +976,11 @@ fieldset {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
+    .department .inner h1 {
+      font: bold 50px/1 'Spartan';
+      color: #444;
+      text-align: center;
+      margin-bottom: 70px; }
     .department .inner .wrap {
       width: 100%; }
       .department .inner .wrap::after {
@@ -986,7 +991,7 @@ fieldset {
         width: 1180px;
         height: 250px;
         background: #ddd;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         position: relative; }
         .department .inner .wrap .company .main_pic {
           width: 450px;
@@ -1011,15 +1016,23 @@ fieldset {
       .department .inner .wrap .team {
         display: inline-block;
         width: 100%;
-        background: #aaa;
         text-align: center; }
         .department .inner .wrap .team article {
-          width: 280px;
-          height: 300px;
-          margin-right: 20px;
+          width: 260px;
+          height: 350px;
+          border-radius: 5px;
+          margin-right: 46px;
           background: pink;
-          margin-bottom: 20px;
+          margin-bottom: 60px;
           float: left; }
+          .department .inner .wrap .team article .pic {
+            width: 120px;
+            height: 120px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            background: #ddd;
+            margin: 30px auto;
+            box-sizing: border-box; }
           .department .inner .wrap .team article:nth-child(4n+0) {
             margin-right: 0; }
 

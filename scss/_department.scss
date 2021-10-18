@@ -15,6 +15,12 @@
 		margin: 0 auto;
 		position: relative;
 
+		h1{
+			font: bold 50px/1 'Spartan'; color: #444;
+			text-align: center;
+			margin-bottom: 70px;
+		}
+
 		.wrap {
 			width: 100%;
 
@@ -29,7 +35,7 @@
 				width: 1180px;
 				height: 250px;
 				background: #ddd;
-				margin-bottom: 30px;
+				margin-bottom: 50px;
 				position: relative;
 				
 				
@@ -64,19 +70,30 @@
 			.team {
 				display: inline-block;
 				width: 100%;
-				background: #aaa;
 				text-align: center;
+
 				
-			
-
+				
 				article {
-					width: 280px;
-					height: 300px;
-					margin-right: 20px;
+					width: 260px;
+					height: 350px;
+					border-radius: 5px;
+					margin-right: 46px;
 					background: pink;
-					margin-bottom: 20px;
+					margin-bottom: 60px;
 					float: left;
-
+					
+					.pic {
+						width: 120px;
+						height: 120px;
+						border: 4px solid #fff;
+						border-radius: 50%;
+						background: #ddd;
+						margin: 30px auto;
+						box-sizing: border-box;
+						
+					}
+					
 					&:nth-child(4n+0){
 						margin-right: 0;
 					}
