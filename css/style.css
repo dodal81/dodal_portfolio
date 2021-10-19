@@ -964,8 +964,14 @@ fieldset {
           box-sizing: border-box;
           color: #fff;
           background: linear-gradient(60deg, #d9a7c7, #fffcdc); } }
+/*
+"Spartan"
+'STIX Two Text'
+'Noto Sans KR'
+*/
 .department {
-  width: 100%; }
+  width: 100%;
+  background: #f8f8f8; }
   .department .sub_visual {
     background: #ccc;
     background-size: cover;
@@ -980,59 +986,114 @@ fieldset {
       font: bold 50px/1 'Spartan';
       color: #444;
       text-align: center;
-      margin-bottom: 70px; }
+      margin-bottom: 10%; }
+    .department .inner .team_name {
+      width: 100%;
+      position: absolute;
+      top: 4%;
+      left: 50%; }
+      .department .inner .team_name li {
+        float: left; }
     .department .inner .wrap {
       width: 100%; }
+      .department .inner .wrap::before {
+        content: "";
+        display: block;
+        width: 450px;
+        height: 2px;
+        background: #111;
+        position: absolute;
+        top: 7%; }
       .department .inner .wrap::after {
         content: "";
         display: block;
-        clear: both; }
+        clear: both;
+        width: 100%;
+        height: 2px;
+        background: #111;
+        position: absolute;
+        top: 23%; }
       .department .inner .wrap .company {
         width: 1180px;
         height: 250px;
-        background: #ddd;
-        margin-bottom: 50px;
+        margin-bottom: 10%;
         position: relative; }
         .department .inner .wrap .company .main_pic {
           width: 450px;
           height: 100%;
           background: #bcc9e9;
           float: left; }
-          .department .inner .wrap .company .main_pic::before {
-            content: "";
-            display: block;
-            width: 50px;
-            height: 1px;
-            color: #000;
-            position: absolute;
-            top: 0;
-            left: 0; }
         .department .inner .wrap .company .txt {
           width: 55%;
           position: absolute;
-          right: 0%;
+          right: 3%;
           top: 50%;
           transform: translateY(-50%); }
+          .department .inner .wrap .company .txt h2 {
+            font: bold 30px/1 'Noto Sans KR';
+            color: #222;
+            margin-bottom: 20px; }
+          .department .inner .wrap .company .txt p {
+            font: bold 15px/1.5 'Spartan';
+            color: #222;
+            margin-bottom: 20px; }
+          .department .inner .wrap .company .txt a {
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            width: 250px;
+            height: 50px;
+            background: rgba(216, 216, 216, 0.665);
+            font: 13px/50px 'Spartan';
+            color: #858080;
+            margin-right: 20px; }
       .department .inner .wrap .team {
         display: inline-block;
         width: 100%;
         text-align: center; }
+        .department .inner .wrap .team h1 {
+          font: bold 50px/1 'Noto Sans KR';
+          color: #222;
+          margin-bottom: 40px; }
+        .department .inner .wrap .team h2 {
+          font: bold 23px/1.5 'Noto Sans KR';
+          color: #222;
+          margin-bottom: 50px; }
         .department .inner .wrap .team article {
           width: 260px;
           height: 350px;
-          border-radius: 5px;
+          border-radius: 7px;
           margin-right: 46px;
-          background: pink;
+          background: #fff;
           margin-bottom: 60px;
-          float: left; }
+          float: left;
+          position: relative; }
           .department .inner .wrap .team article .pic {
             width: 120px;
             height: 120px;
-            border: 4px solid #fff;
+            border: 5px solid #fff;
             border-radius: 50%;
-            background: #ddd;
-            margin: 30px auto;
-            box-sizing: border-box; }
+            background: rgba(214, 197, 213, 0.816);
+            margin: 30px auto 45px;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.04); }
+          .department .inner .wrap .team article > h3 {
+            font: bold 17px/1 'Spartan';
+            color: #222;
+            margin-bottom: 10px; }
+          .department .inner .wrap .team article > p {
+            font: bold 13px/1.5 'Spartan';
+            color: #999;
+            margin-bottom: 30px; }
+          .department .inner .wrap .team article > a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(216, 216, 216, 0.665);
+            border-radius: 10px;
+            text-align: center;
+            line-height: 40px;
+            color: #858080; }
           .department .inner .wrap .team article:nth-child(4n+0) {
             margin-right: 0; }
 
@@ -1542,11 +1603,13 @@ fieldset {
       #product .inner .wrap .product_slider {
         width: 100%;
         height: 100%;
-        overflow: hidden; }
+        overflow: hidden;
+        transition: 1s; }
         #product .inner .wrap .product_slider .product_list {
           width: 3600px;
           height: 100%;
-          overflow: hidden; }
+          overflow: hidden;
+          transition: 1s; }
           #product .inner .wrap .product_slider .product_list li {
             width: 360px;
             height: 500px;
@@ -1600,7 +1663,7 @@ fieldset {
 #banner {
   width: 100%;
   padding: 80px 0;
-  background: url(../img/banner2.jpg) no-repeat center/cover fixed;
+  background: #9cc6ed;
   background-image: rgba(0, 0, 0, 0.02); }
   #banner .inner {
     width: 1180px;
@@ -1812,7 +1875,7 @@ fieldset {
   position: relative; }
   #footer .inner {
     width: 1180px;
-    padding: 0px 70px;
+    padding: 0px 10px;
     margin: 50px auto;
     position: relative; }
     #footer .inner .wrap {
@@ -1842,7 +1905,7 @@ fieldset {
           #footer .inner .wrap article.box3 span a {
             display: block;
             margin-bottom: 20px;
-            font: bold 13px/1 "arial";
+            font: bold 12px/1 "arial";
             color: #222; }
         #footer .inner .wrap article.box4 {
           margin-right: 0px;
@@ -1873,7 +1936,7 @@ fieldset {
           border-bottom: 1px solid #aaa;
           display: inline-block; }
         #footer .inner .wrap article p {
-          font: 300 13px/1.5 "arial";
+          font: 300 12px/1.5 "arial";
           color: #3c3c3b;
           margin-bottom: 20px; }
           #footer .inner .wrap article p:last-child {
@@ -2054,7 +2117,7 @@ fieldset {
           #footer .inner .wrap article:nth-of-type(3) span a {
             display: block;
             margin-bottom: 20px;
-            font: bold 13px/1 "arial";
+            font: bold 12px/1 "arial";
             color: #222; }
           #footer .inner .wrap article .menu {
             font: 400 14px/1 "arial";

@@ -549,11 +549,13 @@ $mobile: 539px;
 				width: 100%;
 				height: 100%;
 				overflow: hidden;
+				transition: 1s;
 
 				.product_list {
 					width: 3600px;
 					height: 100%;
 					overflow: hidden;
+					transition: 1s;
 
 					li {
 						width: 360px;
@@ -655,7 +657,8 @@ $mobile: 539px;
 #banner {
 	width: 100%;
 	padding: 80px 0;
-	background: url(../img/banner2.jpg) no-repeat center/cover fixed;
+	// background: url(../img/banner2.jpg) no-repeat center/cover fixed;
+	background: rgb(156, 198, 237);
 	background-image: rgba(0, 0, 0, 0.02);
 
 	.inner {
@@ -931,7 +934,7 @@ $mobile: 539px;
 
 	.inner {
 		width: 1180px;
-		padding: 0px 70px;
+		padding: 0px 10px;
 		margin: 50px auto;
 		position: relative;
 
@@ -973,7 +976,7 @@ $mobile: 539px;
 						a {
 							display: block;
 							margin-bottom: 20px;
-							font: bold 13px/1 "arial";
+							font: bold 12px/1 "arial";
 							color: #222;
 						}
 					}
@@ -1018,7 +1021,7 @@ $mobile: 539px;
 					display: inline-block;
 				}
 				p {
-					font: 300 13px/1.5 "arial";
+					font: 300 12px/1.5 "arial";
 					color: #3c3c3b;
 					margin-bottom: 20px;
 
@@ -1292,7 +1295,7 @@ $mobile: 539px;
 					&:nth-of-type(3) span a {
 						display: block;
 						margin-bottom: 20px;
-						font: bold 13px/1 "arial";
+						font: bold 12px/1 "arial";
 						color: #222;
 					}
 					.menu {

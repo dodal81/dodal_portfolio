@@ -1,7 +1,15 @@
 @charset "utf-8";
 
+/*
+"Spartan"
+'STIX Two Text'
+'Noto Sans KR'
+*/
+
 .department {
 	width: 100%;
+	background: #f8f8f8;
+
 	.sub_visual {
 		background: #ccc;
 		background-size: cover;
@@ -18,25 +26,53 @@
 		h1{
 			font: bold 50px/1 'Spartan'; color: #444;
 			text-align: center;
-			margin-bottom: 70px;
+			margin-bottom: 10%;
+		}
+		.team_name {
+			width: 100%;
+			position: absolute;
+			top: 4%;
+			left: 50%;
+			
+			 
+			li {
+				float: left;
+			}
 		}
 
 		.wrap {
 			width: 100%;
+
+			&::before {
+				content: "";
+				display: block;
+				width: 450px;
+				height: 2px;
+				background: #111;
+				position: absolute;
+				top: 7%;
+			}
 
 
 			&::after {
 				content: "";
 				display: block;
 				clear: both;
+				width: 100%;
+				height: 2px;
+				background: #111;
+				position: absolute;
+				top: 23%;
+				
 			}
+			
 
 			.company {
 				width: 1180px;
 				height: 250px;
-				background: #ddd;
-				margin-bottom: 50px;
+				margin-bottom: 10%;
 				position: relative;
+				
 				
 				
 				.main_pic {
@@ -45,23 +81,35 @@
 					background: rgb(188, 201, 233);
 					float: left;
 
-					&::before {
-						content: "";
-						display: block;
-						width: 50px;
-						height: 1px;
-						color: #000;
-						position: absolute;
-						top: 0;
-						left: 0;
-					}
+				
 				}
 				.txt {
 					width: 55%;
 					position: absolute;
-					right: 0%;
+					right: 3%;
 					top: 50%;
 					transform: translateY(-50%);
+
+					h2 {
+						font: bold 30px/1 'Noto Sans KR';
+						color: #222;
+						margin-bottom: 20px;
+
+					}
+					p {
+						font: bold 15px/1.5 'Spartan';
+						color: #222;
+						margin-bottom: 20px;
+					}
+					a {
+						display: inline-block;
+						text-align: center;
+						border-radius: 5px;
+						width: 250px; height: 50px;
+						background: rgba(216, 216, 216, 0.665);
+						font: 13px/50px 'Spartan'; color: rgb(133, 128, 128);
+						margin-right: 20px;
+					}
 					
 					
 				}
@@ -72,27 +120,59 @@
 				width: 100%;
 				text-align: center;
 
+				h1 {
+					font: bold 50px/1 'Noto Sans KR';
+					color: #222;
+					margin-bottom: 40px;
+				}
+				h2 {
+					font: bold 23px/1.5 'Noto Sans KR';
+					color: #222;
+					margin-bottom: 50px;
+				}
+
 				
 				
 				article {
 					width: 260px;
 					height: 350px;
-					border-radius: 5px;
+					border-radius: 7px;
 					margin-right: 46px;
-					background: pink;
+					background: #fff;
 					margin-bottom: 60px;
 					float: left;
+					position: relative;
 					
 					.pic {
 						width: 120px;
 						height: 120px;
-						border: 4px solid #fff;
+						border: 5px solid #fff;
 						border-radius: 50%;
-						background: #ddd;
-						margin: 30px auto;
+						background: rgba(214, 197, 213, 0.816);
+						margin: 30px auto 45px;
 						box-sizing: border-box;
+						box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.04);
 						
 					}
+					>h3 {
+						font: bold 17px/1 'Spartan';
+						color: #222;
+						margin-bottom: 10px;
+					}
+					>p {
+						font:bold 13px/1.5 'Spartan';
+						color: #999; margin-bottom: 30px;
+					}
+					>a{
+						display: inline-block;
+						width: 40px; height: 40px;
+						background :rgba(216, 216, 216, 0.665);
+						border-radius: 10px;
+						text-align: center;
+						line-height: 40px;
+						color: rgb(133, 128, 128);
+					}
+					
 					
 					&:nth-child(4n+0){
 						margin-right: 0;
