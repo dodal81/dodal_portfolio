@@ -224,7 +224,7 @@ fieldset {
   position: relative; }
   #footer_sub .inner {
     width: 1180px;
-    padding: 0px 70px;
+    padding: 0px 10px;
     margin: 50px auto;
     position: relative; }
     #footer_sub .inner .wrap {
@@ -254,7 +254,7 @@ fieldset {
           #footer_sub .inner .wrap article.box3 span a {
             display: block;
             margin-bottom: 20px;
-            font: bold 13px/1 "arial";
+            font: bold 12px/1 "arial";
             color: #222; }
         #footer_sub .inner .wrap article.box4 {
           margin-right: 0px;
@@ -285,7 +285,7 @@ fieldset {
           border-bottom: 1px solid #aaa;
           display: inline-block; }
         #footer_sub .inner .wrap article p {
-          font: 300 13px/1.5 "arial";
+          font: 300 12px/1.5 "arial";
           color: #3c3c3b;
           margin-bottom: 20px; }
           #footer_sub .inner .wrap article p:last-child {
@@ -410,6 +410,11 @@ fieldset {
     #footer_sub .inner ul li {
       margin-left: 0;
       margin: 5px; } }
+/*
+"Spartan"
+'STIX Two Text'
+'Noto Sans KR'
+*/
 .community .sub_visual {
   background-image: url(../img/f3.jpg);
   background-size: cover;
@@ -420,7 +425,7 @@ fieldset {
 .community .inner {
   /* pagination */ }
   .community .inner h1 {
-    font: normal 50px/1 "STIX Two Text";
+    font: bold 50px/1 "Spartan";
     color: #333;
     letter-spacing: 2px;
     text-align: center;
@@ -434,7 +439,7 @@ fieldset {
     text-align: center;
     margin-bottom: 50px; }
     .community .inner .header1 span {
-      font: normal 17px/1 "STIX Two Text";
+      font: normal 17px/1 "Spartan";
       display: inline-block;
       margin-right: 30px;
       color: #666;
@@ -454,7 +459,7 @@ fieldset {
       margin: 0 auto; }
       .community .inner .header2 li a {
         display: inline-block;
-        font: bold 16px/1 "arial";
+        font: bold 16px/1 "Noto Sans KR";
         color: #666;
         margin: 0px 20px;
         text-align: center;
@@ -502,10 +507,10 @@ fieldset {
         margin-right: 15px;
         background: #333;
         color: #fff;
-        font: normal 13px/30px "STIX Two Text";
+        font: normal 13px/30px "Spartan";
         text-align: center; }
       .community .inner table tr td a:nth-of-type(1) {
-        font: normal 16px/1 "STIX Two Text";
+        font: normal 16px/1 "Spartan";
         color: #333; }
     .community .inner table thead {
       border-top: 3px solid #222;
@@ -535,7 +540,7 @@ fieldset {
       width: 130px;
       height: 40px;
       border: 1px solid #333;
-      font: normal 18px/40px "STIX Two Text";
+      font: normal 18px/40px "Spartan";
       color: #333;
       text-align: center; }
     .community .inner .pagination .numbers {
@@ -593,7 +598,7 @@ fieldset {
         display: inline-block;
         width: 20px;
         height: 30px;
-        font: bold 12px/30px "STIX Two Text";
+        font: bold 12px/30px "Spartan";
         color: #666;
         text-align: center;
         margin: 0 5px;

@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/*
+"Spartan"
+'STIX Two Text'
+'Noto Sans KR'
+*/
+
 .community {
 	.sub_visual {
 		background-image: url(../img/f3.jpg);
@@ -11,7 +17,7 @@
 	}
 	.inner {
 		h1 {
-			font: normal 50px/1 "STIX Two Text";
+			font: bold 50px/1 "Spartan";
 			color: #333;
 			letter-spacing: 2px;
 			text-align: center;
@@ -27,7 +33,7 @@
 			text-align: center;
 			margin-bottom: 50px;
 			span {
-				font: normal 17px/1 "STIX Two Text";
+				font: normal 17px/1 "Spartan";
 				display: inline-block;
 				margin-right: 30px;
 				color: #666;
@@ -54,7 +60,7 @@
 
 				a {
 					display: inline-block;
-					font: bold 16px/1 "arial";
+					font: bold 16px/1'Noto Sans KR';
 					color: #666;
 					margin: 0px 20px;
 					text-align: center;
@@ -123,11 +129,11 @@
 						margin-right: 15px;
 						background: #333;
 						color: #fff;
-						font: normal 13px/30px "STIX Two Text";
+						font: normal 13px/30px "Spartan";
 						text-align: center;
 					}
 					a:nth-of-type(1) {
-						font: normal 16px/1 "STIX Two Text";
+						font: normal 16px/1 "Spartan";
 						color: #333;
 					}
 				}
@@ -168,7 +174,7 @@
 				width: 130px;
 				height: 40px;
 				border: 1px solid #333;
-				font: normal 18px/40px "STIX Two Text";
+				font: normal 18px/40px "Spartan";
 				color: #333;
 				text-align: center;
 			}
@@ -233,7 +239,7 @@
 					display: inline-block;
 					width: 20px;
 					height: 30px;
-					font: bold 12px/30px "STIX Two Text";
+					font: bold 12px/30px "Spartan";
 					color: #666;
 					text-align: center;
 

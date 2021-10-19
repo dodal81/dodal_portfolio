@@ -261,7 +261,7 @@
 
 	.inner {
 		width: 1180px;
-		padding: 0px 70px;
+		padding: 0px 10px;
 		margin: 50px auto;
 		position: relative;
 
@@ -277,22 +277,19 @@
 				clear: both;
 			}
 			article {
-				
 				height: 200px;
 				padding: 10px 20px;
 				margin-right: 20px;
 				float: left;
-				
 
 				&.box1 {
 					width: 22%;
-					span{
-
+					span {
 						display: block;
 						margin-bottom: 20px;
 						font: normal 19px/1 "arial";
 					}
-					p{
+					p {
 						&:last-child {
 							font-size: 10px;
 						}
@@ -303,11 +300,10 @@
 					width: 13%;
 
 					span {
-
 						a {
 							display: block;
 							margin-bottom: 20px;
-							font: bold 13px/1 "arial";
+							font: bold 12px/1 "arial";
 							color: #222;
 						}
 					}
@@ -321,7 +317,6 @@
 						}
 					}
 					a {
-						
 						display: inline-block;
 						text-align: center;
 						padding: 0px 10px;
@@ -353,7 +348,7 @@
 					display: inline-block;
 				}
 				p {
-					font: 300 13px/1.5 "arial";
+					font: 300 12px/1.5 "arial";
 					color: #3c3c3b;
 					margin-bottom: 20px;
 
@@ -389,7 +384,7 @@
 				right: 5%;
 				transform: translateY(-50%);
 
-				>a {
+				> a {
 					display: inline-block;
 					content: "";
 					font-size: 20px;
@@ -400,6 +395,7 @@
 		}
 	}
 }
+
 
 //  tablet ------------------------------------------------------------------
 @media screen and (max-width: $tablet) {
