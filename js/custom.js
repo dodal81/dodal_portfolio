@@ -48,57 +48,58 @@ $(".next").on("click", function(e){
 }); 
 
 
-//start버튼 클릭시 
-$(".start").on("click", function(e){
-    e.preventDefault(); 
+// //start버튼 클릭시 
+// $(".start").on("click", function(e){
+//     e.preventDefault(); 
 
-    let isOn = $(this).hasClass("on"); 
-    if(isOn) return; 
+//     let isOn = $(this).hasClass("on"); 
+//     if(isOn) return; 
 
-    timer = setInterval(function(){
-        $(".list").animate({marginLeft:"-200%" },1000, function(){
-            $(".list").css({marginLeft : "-100%"}); 
-            $(".list li").first().appendTo(".list");          
-        }); 
-    },2000);  
+//     timer = setInterval(function(){
+//         $(".list").animate({marginLeft:"-200%" },1000, function(){
+//             $(".list").css({marginLeft : "-100%"}); 
+//             $(".list li").first().appendTo(".list");          
+//         }); 
+//     },2000);  
     
-    $(".start").addClass("on"); 
-    $(".stop").removeClass("on"); 
-});
+//     $(".start").addClass("on"); 
+//     $(".stop").removeClass("on"); 
+// });
 
-$(".stop").on("click", function(e){
-    e.preventDefault();
+// $(".stop").on("click", function(e){
+//     e.preventDefault();
     
-    let isOn = $(this).hasClass("on"); 
-    if(isOn) return; 
+//     let isOn = $(this).hasClass("on"); 
+//     if(isOn) return; 
     
-    clearInterval(timer); 
+//     clearInterval(timer); 
 
-    $(".stop").addClass("on"); 
-    $(".start").removeClass("on"); 
-}); 
+//     $(".stop").addClass("on"); 
+//     $(".start").removeClass("on"); 
+// }); 
 
 
-// 자동롤링 product만들기 -------------------------------
-let num=0;
+// // 자동롤링 product만들기 -------------------------------
+// let num=0;
 
- let timer = setInterval(move, 20);
-console.log(timer);
+//  let timer = setInterval(move, 20);
+// console.log(timer);
 
-$(".product_slider").on("mouseenter",function(){    
-    clearInterval(timer);
-});
-$(".product_slider").on("mouseleave", function(){    
-    timer = setInterval(move,20);
-});
+// $(".product_slider").on("mouseenter",function(){    
+//     clearInterval(timer);
+// });
+// $(".product_slider").on("mouseleave", function(){    
+//     timer = setInterval(move,20);
+// });
 
-//setInterval로 반복할 공통 함수 분리
-function move(){
-    if(num <= -360){        
-        num = 0;        
-        $(".product_list").find("li").first().appendTo($(".product_list"));
-    }else{ 
-        num -= 2;
-    }    
-    $(".product_list").css({left: num});
-}
+// //setInterval로 반복할 공통 함수 분리
+// function move(){
+//     if(num <= -360){        
+//         num = 0;        
+//         $(".product_list").find("li").first().appendTo($(".product_list"));
+//     }else{ 
+//         num -= 2;
+//     }    
+//     $(".product_list").css({left: num});
+// }
+
