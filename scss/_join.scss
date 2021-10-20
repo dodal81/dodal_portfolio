@@ -18,7 +18,7 @@
 		opacity: 0.8;
 	}
 	.inner {
-		width: 100%;
+		width: 80%;
 		padding: 0 150px;
 		position: relative;
 
@@ -204,8 +204,12 @@
 		}
 		.table2 {
 
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+
 			input[type="submit"], input[type="reset"] {
-				width: 50%;
+				width: 30%;
 				height: 70px;
 				margin: 0 auto;
 				margin-left: 20px;
