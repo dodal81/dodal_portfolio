@@ -32,11 +32,24 @@
 			width: 100%;
 			position: absolute;
 			top: 4%;
-			left: 50%;
+			left: 28%;
 			
 			 
 			li {
 				float: left;
+				padding-right: 20px;
+				margin-right: 20px;
+				border-right: 1px solid #555;
+
+				a {
+					font: bold 18px/1 'Noto Sans KR';
+					color: #222;
+
+				
+				}
+				&:last-child{
+					border-right: none;
+				}
 			}
 		}
 
@@ -174,7 +187,7 @@
 					}
 					
 					
-					&:nth-child(4n+0){
+					&:nth-of-type(4n+0){
 						margin-right: 0;
 					}
 				}

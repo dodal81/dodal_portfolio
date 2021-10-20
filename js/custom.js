@@ -50,17 +50,16 @@ $(".next").on("click", function(e){
 // // 자동롤링 product만들기 -------------------------------
 let num=0;
 
- let time = setInterval(move, 10);
+ let time = setInterval(move, 15);
 console.log(time);
 
 $(".product_slider").on("mouseenter",function(){    
     clearInterval(time);
 });
 $(".product_slider").on("mouseleave", function(){    
-    time = setInterval(move,10);
+    time = setInterval(move,15);
 });
 
-//setInterval로 반복할 공통 함수 분리
 function move(){
     if(num <= -360){        
         num = 0;        
