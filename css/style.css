@@ -714,7 +714,7 @@ fieldset {
     /* background-attachment: fixed; */
     opacity: 0.8; }
   .join .inner {
-    width: 80%;
+    width: 1180px;
     padding: 0 150px;
     position: relative; }
     .join .inner h1 {
@@ -752,7 +752,7 @@ fieldset {
         .join .inner .box_content .txt span {
           margin-right: 20px;
           font: bold 17px/1 "Noto Sans KR"; }
-          .join .inner .box_content .txt span:nth-of-type(2n+0) {
+          .join .inner .box_content .txt span:nth-of-type(2n + 0) {
             border-left: 1px solid #222;
             padding-left: 20px; }
     .join .inner fieldset {
@@ -762,7 +762,7 @@ fieldset {
       width: 100%;
       height: 120px;
       padding: 20px;
-      font: 14px/1.6 'Noto Sans KR';
+      font: 14px/1.6 "Noto Sans KR";
       color: #888;
       border: 1px solid #aaa;
       margin-bottom: 20px; }
@@ -772,7 +772,7 @@ fieldset {
         padding: 15px; }
     .join .inner h2 {
       display: inline-block;
-      font: normal 16px/1 'Noto Sans KR';
+      font: normal 16px/1 "Noto Sans KR";
       color: #eb5079;
       position: absolute;
       right: 20px;
@@ -784,48 +784,33 @@ fieldset {
         margin-right: 8px;
         background: #eb5079;
         border-radius: 50px; }
+    .join .inner th {
+      width: 20%;
+      padding: 5px;
+      /* border-right: 1px dashed #bbb; */
+      text-align: left;
+      margin-right: 20px; }
+      .join .inner th span {
+        font: 600 20px/1 "Noto Sans KR";
+        color: #222; }
+      .join .inner th .cir {
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        margin-left: 8px;
+        background: #eb5079;
+        border-radius: 50px; }
+    .join .inner td {
+      width: 80%;
+      padding: 20px 0px; }
     .join .inner .table1 {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 20px; }
       .join .inner .table1 tr {
         position: relative; }
-        .join .inner .table1 tr:last-child {
-          border-bottom: none;
-          border-right: none;
-          text-align: center; }
-        .join .inner .table1 tr:nth-of-type(6) .cir {
-          display: none; }
         .join .inner .table1 tr:nth-of-type(7) .cir {
           display: none; }
-        .join .inner .table1 tr th {
-          width: 15%;
-          padding: 5px;
-          /* border-right: 1px dashed #bbb; */
-          text-align: left; }
-          .join .inner .table1 tr th span {
-            font: 600 20px/1 'Noto Sans KR';
-            color: #222; }
-          .join .inner .table1 tr th .cir {
-            width: 5px;
-            height: 5px;
-            display: inline-block;
-            margin-left: 8px;
-            background: #eb5079;
-            border-radius: 50px; }
-          .join .inner .table1 tr th:last-child {
-            border-right: none;
-            border-bottom: none;
-            text-align: center;
-            background: #fff;
-            font-size: 0; }
-        .join .inner .table1 tr td {
-          width: 80%;
-          padding: 20px 0px; }
-          .join .inner .table1 tr td > #comment {
-            background: #efefef;
-            padding: 15px 10px;
-            margin: 0px 0px 15px; }
         .join .inner .table1 tr input[type="text"],
         .join .inner .table1 tr input[type="password"] {
           width: 40%;
@@ -834,9 +819,23 @@ fieldset {
           background: #fff;
           padding: 15px 10px;
           margin-bottom: 15px; }
+          .join .inner .table1 tr input[type="text"]:last-child,
+          .join .inner .table1 tr input[type="password"]:last-child {
+            width: 60%; }
+        .join .inner .table1 tr button {
+          width: 100px;
+          height: 55px;
+          margin-left: 10px;
+          background: #222;
+          border: 1px solid #fff;
+          border: none;
+          color: #fff;
+          font: bold 13px/55px "Noto Sans KR"; }
         .join .inner .table1 tr input[type="checkbox"],
         .join .inner .table1 tr input[type="radio"] {
-          margin-left: 5px; }
+          margin-left: 10px;
+          width: 15px;
+          height: 15px; }
         .join .inner .table1 tr input[type="tel"] {
           width: 40%;
           height: 55px;
@@ -845,22 +844,31 @@ fieldset {
           padding: 15px 10px;
           margin-bottom: 15px; }
     .join .inner h3 {
-      font: bold 25px/1 'Noto Sans KR';
+      font: bold 25px/1 "Noto Sans KR";
       color: #222;
       padding-bottom: 30px;
-      margin: 30px 0 30px;
+      margin: 70px 0 50px;
       border-bottom: 2px solid #222; }
     .join .inner .table2 {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 20px; }
-      .join .inner .table2 input[type="submit"], .join .inner .table2 input[type="reset"] {
+      .join .inner .table2 input[type="text"],
+      .join .inner .table2 input[type="password"] {
+        width: 40%;
+        height: 55px;
+        border: 1px solid #333;
+        background: #fff;
+        padding: 15px 10px;
+        margin-bottom: 15px; }
+      .join .inner .table2 input[type="submit"],
+      .join .inner .table2 input[type="reset"] {
         width: 30%;
         height: 70px;
         margin: 0 auto;
         margin-left: 20px;
         float: left;
-        font: 300 25px/70px 'Noto Sans KR';
+        font: 300 25px/70px "Noto Sans KR";
         transform: translateX(24px);
         box-sizing: border-box;
         color: #fff;
