@@ -757,19 +757,6 @@ fieldset {
             padding-left: 20px; }
     .join .inner fieldset {
       position: relative; }
-    .join .inner textarea {
-      resize: none;
-      width: 100%;
-      height: 120px;
-      padding: 20px;
-      font: 14px/1.6 "Noto Sans KR";
-      color: #888;
-      border: 1px solid #aaa;
-      margin-bottom: 20px; }
-      .join .inner textarea:last-child {
-        border: 1px solid #fff;
-        background: #efefef;
-        padding: 15px; }
     .join .inner h2 {
       display: inline-block;
       font: normal 16px/1 "Noto Sans KR";
@@ -873,6 +860,16 @@ fieldset {
         box-sizing: border-box;
         color: #fff;
         background: #222; }
+      .join .inner .table2 textarea {
+        resize: none;
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+        font: 14px/1.6 "Noto Sans KR";
+        color: #888;
+        border: 1px solid #aaa;
+        margin-bottom: 30px;
+        text-align: left; }
 
 @media screen and (max-width: 1179px) {
   .join {
@@ -1239,6 +1236,37 @@ fieldset {
     border-bottom: 2px solid #222;
     padding-bottom: 30px;
     letter-spacing: 1.5px; }
+  .location .inner .map_header {
+    width: 100%;
+    padding: 0 50px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+    .location .inner .map_header li {
+      width: 100%; }
+      .location .inner .map_header li span {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border: 2px solid #111;
+        box-sizing: border-box;
+        border-radius: 50%;
+        font: bold 18px/1 'Noto Sans KR';
+        color: #111; }
+        .location .inner .map_header li span img {
+          width: 50px;
+          height: 50px;
+          margin: 25px auto 10px;
+          display: block; }
+      .location .inner .map_header li h3 {
+        font: bold 20px/1 'Noto Sans KR';
+        margin: 20px 0 20px 0;
+        color: #111; }
+      .location .inner .map_header li p {
+        font: bold 14px/1 'Noto Sans KR';
+        color: #111; }
   .location .inner #map {
     width: 100%;
     height: 500px;

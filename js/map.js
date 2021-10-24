@@ -11,23 +11,23 @@ const branch_btns = document.querySelectorAll(".branch li");
 const markerOptions = [
     { 
        title: "본점", 
-       latlng : new kakao.maps.LatLng(37.5109446,127.0567967), 
+       latlng : new kakao.maps.LatLng(37.5638335,126.9741808,15), 
        imgSrc : "img/marker1.png", 
        imgSize : new kakao.maps.Size(70, 70),
        imgPos : {offset: new kakao.maps.Point(128, 99)}, 
        button :  branch_btns[0]
     },
     {
-       title: "지점1", 
-       latlng : new kakao.maps.LatLng(37.507099922888266,126.75640469886633), 
+       title: "부산지점", 
+       latlng : new kakao.maps.LatLng(35.1791656,129.0737123,17), 
        imgSrc : "img/marker1.png", 
        imgSize : new kakao.maps.Size(70, 70),
        imgPos : {offset: new kakao.maps.Point(116, 99)}, 
        button :  branch_btns[1]
     },
     {
-       title: "지점2",  //37.529852,126.9646949
-       latlng : new kakao.maps.LatLng(37.52964557140191,126.96444186998666), 
+       title: "제주지점",  //37.529852,126.9646949
+       latlng : new kakao.maps.LatLng(33.6628633,126.0125196,9), 
        imgSrc : "img/marker1.png", 
        imgSize : new kakao.maps.Size(70, 70),
        imgPos : {offset: new kakao.maps.Point(116, 99)}, 
