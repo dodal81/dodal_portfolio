@@ -1272,40 +1272,64 @@ fieldset {
     height: 500px;
     margin-top: 100px; }
   .location .inner .branch {
-    float: right;
-    margin-top: 20px; }
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px; }
     .location .inner .branch li {
+      width: 380px;
+      height: 100%;
       float: left;
-      margin-right: 10px; }
+      position: relative;
+      text-align: center;
+      margin-right: 20px;
+      margin-bottom: 50px; }
+      .location .inner .branch li:last-of-type {
+        margin-right: 0px; }
+      .location .inner .branch li::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: #111;
+        position: absolute;
+        top: 0;
+        right: 0; }
+      .location .inner .branch li:last-child::after {
+        display: none; }
       .location .inner .branch li a {
-        display: block;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 40px;
+        margin-right: 20px;
+        border: 1px solid #111;
+        border-radius: 10px;
+        font-size: 25px;
+        line-height: 50px;
+        text-align: center;
+        color: #111;
+        transition: 0.5s; }
+        .location .inner .branch li a:hover {
+          background: #111;
+          color: pink; }
+        .location .inner .branch li a:last-of-type {
+          margin-right: 0; }
+      .location .inner .branch li p {
+        margin-bottom: 40px;
+        font: bold 15px/1 'Noto Sans KR'; }
+      .location .inner .branch li .address {
+        display: inline-block;
         width: 200px;
         height: 40px;
-        border: 1px solid #555;
-        border-radius: 20px;
-        font: bold 12px/40px "Noto Sans KR";
+        border: 1px solid #111;
+        margin-right: 0px;
+        font: bold 16px/40px "Noto Sans KR";
         color: #555;
-        text-align: center; }
-      .location .inner .branch li.on a {
-        background: #ddd;
-        color: #333; }
-  .location .inner .traffic {
-    float: left;
-    margin-top: 20px; }
-    .location .inner .traffic li {
-      float: left;
-      margin-right: 10px; }
-      .location .inner .traffic li a {
-        display: block;
-        width: 200px;
-        height: 40px;
-        background: #555;
-        font: bold 12px/40px "Noto Sans KR";
-        color: #fff;
-        text-align: center; }
-      .location .inner .traffic li.on a {
-        background: #aaa;
-        color: #333; }
+        text-align: center;
+        transition: 0.5s; }
+      .location .inner .branch li.on .address {
+        background: #111;
+        color: pink; }
 
 #header {
   width: 100vw;

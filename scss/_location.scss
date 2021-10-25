@@ -77,57 +77,118 @@
 			margin-top: 100px;
 		}
 		.branch {
-			float: right;
+			width: 100%;
 			margin-top: 20px;
+			margin-bottom: 30px;
+			
 
 			li {
+			
+				width: 380px;
+				height: 100%;
 				float: left;
-				margin-right: 10px;
+				position: relative;
+				text-align: center;
+				margin-right: 20px;
+				margin-bottom: 50px;
 
-				a {
+				&:last-of-type {
+					margin-right: 0px;
+				}
+				
+
+				&::after {
+					content: "";
 					display: block;
+					width: 1px;
+					height: 100%;
+					background: #111;
+					position: absolute;
+					top: 0; right: 0;
+
+				}
+				&:last-child::after {
+					display: none;
+				}
+
+				a{
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					margin-bottom: 40px;
+					margin-right: 20px;
+					border: 1px solid #111;
+					border-radius: 10px;
+					font-size: 25px;
+					line-height: 50px;
+					text-align: center;
+					color: #111;
+					transition: 0.5s;
+
+					&:hover {
+						background: #111;
+						color: pink;
+						// border: none;
+					}
+
+
+					&:last-of-type{
+						margin-right: 0;
+					}
+				}
+
+
+				p{
+					margin-bottom: 40px;
+					font: bold 15px/1 'Noto Sans KR';
+				}
+
+				.address {
+					display: inline-block;
 					width: 200px;
 					height: 40px;
-					border: 1px solid #555;
-					border-radius: 20px;
-					font: bold 12px/40px "Noto Sans KR";
+					border: 1px solid #111;
+					margin-right: 0px;
+					// border-radius: 0px;
+					font: bold 16px/40px "Noto Sans KR";
 					color: #555;
 					text-align: center;
+					transition: 0.5s;
 				}
 				&.on {
-					a {
-						background: #ddd;
-						color: #333;
+					.address {
+						background: #111;
+						color: pink;
 					}
 				}
 			}
 		}
 
-		.traffic {
-			float: left;
-			margin-top: 20px;
+		// .traffic {
+		// 	float: left;
+		// 	margin-top: 20px;
 
-			li {
-				float: left;
-				margin-right: 10px;
+		// 	li {
+		// 		float: left;
+		// 		margin-right: 10px;
 
-				a {
-					display: block;
-					width: 200px;
-					height: 40px;
-					background: #555;
-					font: bold 12px/40px "Noto Sans KR";
-					color: #fff;
-					text-align: center;
-				}
+		// 		a {
+		// 			display: block;
+		// 			width: 200px;
+		// 			height: 40px;
+		// 			background: #555;
+		// 			font: bold 12px/40px "Noto Sans KR";
+		// 			color: #fff;
+		// 			text-align: center;
+		// 		}
 
-				&.on {
-					a {
-						background: #aaa;
-						color: #333;
-					}
-				}
-			}
-		}
+		// 		&.on {
+		// 			a {
+		// 				background: #aaa;
+		// 				color: #333;
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 }
