@@ -1272,9 +1272,7 @@ fieldset {
     height: 500px;
     margin-top: 100px; }
   .location .inner .branch {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 30px; }
+    width: 100%; }
     .location .inner .branch li {
       width: 380px;
       height: 100%;
@@ -1282,7 +1280,8 @@ fieldset {
       position: relative;
       text-align: center;
       margin-right: 20px;
-      margin-bottom: 50px; }
+      margin-bottom: 70px;
+      margin-top: 40px; }
       .location .inner .branch li:last-of-type {
         margin-right: 0px; }
       .location .inner .branch li::after {
@@ -1327,7 +1326,7 @@ fieldset {
         color: #555;
         text-align: center;
         transition: 0.5s; }
-      .location .inner .branch li.on .address {
+      .location .inner .branch lihover.on .address {
         background: #111;
         color: pink; }
 

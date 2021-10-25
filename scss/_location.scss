@@ -78,8 +78,6 @@
 		}
 		.branch {
 			width: 100%;
-			margin-top: 20px;
-			margin-bottom: 30px;
 			
 
 			li {
@@ -90,7 +88,8 @@
 				position: relative;
 				text-align: center;
 				margin-right: 20px;
-				margin-bottom: 50px;
+				margin-bottom: 70px;
+				margin-top: 40px;
 
 				&:last-of-type {
 					margin-right: 0px;
@@ -155,7 +154,7 @@
 					text-align: center;
 					transition: 0.5s;
 				}
-				&.on {
+				&hover.on {
 					.address {
 						background: #111;
 						color: pink;
