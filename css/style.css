@@ -1226,17 +1226,14 @@ fieldset {
 'STIX Two Text'
 'Noto Sans KR'
 */
-body {
-  background: #eee; }
-
-.content .inner {
+.gallery .inner {
   width: 100%;
   padding: 100px; }
-  .content .inner #gallery {
+  .gallery .inner #gallery_page {
     width: 100%;
     min-height: 500px;
     position: relative; }
-    .content .inner #gallery .loading {
+    .gallery .inner #gallery_page .loading {
       width: 100px;
       height: 100px;
       position: absolute;
@@ -1244,32 +1241,35 @@ body {
       left: 50%;
       transform: translateX(-50%);
       transition: 0.5s; }
-      .content .inner #gallery .loading.off {
+      .gallery .inner #gallery_page .loading.off {
         opacity: 0; }
-    .content .inner #gallery ul {
+    .gallery .inner #gallery_page ul {
       width: 100%;
       transition: 0.5s;
       transform: translateY(100px);
       opacity: 0; }
-      .content .inner #gallery ul.on {
+      .gallery .inner #gallery_page ul.on {
         opacity: 1;
         transform: translateY(0px); }
-      .content .inner #gallery ul::after {
+      .gallery .inner #gallery_page ul::after {
         content: "";
         display: block;
         clear: both; }
-      .content .inner #gallery ul li {
+      .gallery .inner #gallery_page ul li {
         width: 25%;
         float: left;
         padding: 10px; }
-        .content .inner #gallery ul li > div {
+        .gallery .inner #gallery_page ul li > div {
           width: 100%;
           background: #fff;
           padding: 10px;
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); }
-          .content .inner #gallery ul li > div .thumb {
+          .gallery .inner #gallery_page ul li > div .thumb {
             width: 100%;
             margin-bottom: 20px; }
+          .gallery .inner #gallery_page ul li > div .profile img {
+            width: 24px;
+            height: 24px; }
 
 .pop {
   width: 100%;
@@ -1285,7 +1285,7 @@ body {
     height: 100%;
     object-fit: cover; }
   .pop span {
-    font: bold 14px/1 "arial";
+    font: bold 14px/1 'arial';
     color: #fff;
     position: absolute;
     top: 20px;
