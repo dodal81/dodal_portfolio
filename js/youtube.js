@@ -4,7 +4,7 @@ $.ajax({
     data: {
         part: "snippet",
         key: "AIzaSyDWjF6dR3xILcieZUrGTLlC602C6k9RYnU",
-        maxResults: 6,
+        maxResults: 7,
         playlistId: "PLHKeRbsUuhBdC-WTrs6vfnWFj8mHQWomO"
     }
 })

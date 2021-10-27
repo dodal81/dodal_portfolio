@@ -1,14 +1,15 @@
 $.ajax({
-    url:"https://www.flickr.com/services/rest/?method=flickr.photos.search",
+    url: "https://www.flickr.com/services/rest/?method=flickr.people.getPhotos",
     //url:"https://www.flickr.com/services/rest/?method=flickr.interestingness.getList", 
     dataType:"json", 
     data:{
         api_key:"585462c89320318d78d565f713b9b44e", 
-        per_page:100, 
+        per_page:10, 
         format:"json",
         nojsoncallback:1, 
-        privacy_filter : 1, 
-        tags :"mood" 
+        privacy_filter : 5, 
+        user_id : "194107829@N07"
+        // tags :"mood" 
     }
 })
 .success(function(data){    
