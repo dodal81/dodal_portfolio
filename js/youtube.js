@@ -34,9 +34,8 @@ $.ajax({
                                 ),
                             $("<div class = 'con'>")
                                 .append(
-                                    $("<h2>").text(data.snippet.title),
-                                    $("<p>").text(txt),
-                                    $("<span>").text(date)
+                                    $("<h2>").text(data.snippet.title)
+                                    // $("<p>").text(txt)
                                 )
                         )
                 )
