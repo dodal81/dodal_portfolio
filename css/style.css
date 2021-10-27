@@ -1248,7 +1248,7 @@ fieldset {
   .gallery .inner #searchBox {
     display: inline-block;
     position: absolute;
-    top: 100px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%); }
     .gallery .inner #searchBox input[type="text"] {
