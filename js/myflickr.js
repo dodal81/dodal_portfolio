@@ -4,11 +4,11 @@ $.ajax({
     dataType:"json", 
     data:{
         api_key:"585462c89320318d78d565f713b9b44e", 
-        per_page:500, 
+        per_page:100, 
         format:"json",
         nojsoncallback:1, 
         privacy_filter : 1, 
-        tags :"landscape" 
+        tags :"mood" 
     }
 })
 .success(function(data){    
@@ -37,21 +37,12 @@ $.ajax({
                                     src : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_m.jpg"
                                 })
                             ),
-                            $("<p>").text(text),    
-                                                   
-                            $("<div class='profile'>")
-                            .append(
-                                $("<img class='buddy'>").attr({
-                                    //src : "https://www.flickr.com/buddyicons/"+data.owner+".jpg"
-                                    src: "http://farm"+data.farm+".staticflickr.com/"+data.server+"/buddyicons/"+data.owner+".jpg"
-                                }),
-                                $("<span>").text(data.owner)
-                            )   
+                            $("<p>").text(text)  
                                                      
                         )
                     ) 
-            )//gallery append ends       
-    });  
+            )       
+    }) 
     
     //img 태그요소가 완료된 이후 해당 img요소의 전체 갯수 구함
     const total = $("#gallery_page ul li").length;
@@ -61,16 +52,16 @@ $.ajax({
 
     $("#gallery_page img").each(function(index, data){   
         data.onerror = function(){
-            $(data).attr("src", "img/default.jpg");
+            $(data).attr("src", "img/error01.jpg");
         }
         
         data.onload = function(){            
             imgNum++;
             console.log(imgNum);
            
-            //카운트되는 이미지 갯수와 (전체이미지갯수*2)값이 동일하면
-            if(imgNum === total*2){   
-                //로딩바이미지에 off를 붙여서 안보이게 처리
+            
+            if(imgNum === total){   
+                
                 $(".loading").addClass("off");
 
                 new Isotope("#gallery_page ul",{
@@ -79,7 +70,7 @@ $.ajax({
                     transitionDuration: "0.5s"
                 });   
                 
-                //gallery ul에 on을 붙여서 서서히 보이게 처리
+               
                 $("#gallery_page ul").addClass("on");
             }
         }        

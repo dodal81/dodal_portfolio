@@ -484,7 +484,6 @@ fieldset {
       border: 1px solid #111;
       margin-right: 20px;
       margin-bottom: 100px;
-      border-radius: 7px;
       box-sizing: border-box;
       transition: 0.5s; }
       .community .inner .help article:hover {
@@ -1229,6 +1228,12 @@ fieldset {
 .gallery .inner {
   width: 100%;
   padding: 100px; }
+  .gallery .inner h1 {
+    font: bold 50px/1 "Spartan";
+    text-align: center;
+    color: #333;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px; }
   .gallery .inner #gallery_page {
     width: 100%;
     min-height: 500px;
@@ -1285,7 +1290,7 @@ fieldset {
     height: 100%;
     object-fit: cover; }
   .pop span {
-    font: bold 14px/1 'arial';
+    font: bold 14px/1 "arial";
     color: #fff;
     position: absolute;
     top: 20px;
@@ -1422,9 +1427,7 @@ fieldset {
         height: 50px;
         margin-bottom: 40px;
         margin-right: 20px;
-        border: 1px solid #111;
-        border-radius: 10px;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 50px;
         text-align: center;
         color: #111;
@@ -1436,15 +1439,15 @@ fieldset {
           margin-right: 0; }
       .location .inner .branch li p {
         margin-bottom: 40px;
-        font: bold 15px/1 'Noto Sans KR'; }
+        font: bold 16px/1 'Noto Sans KR';
+        color: #111; }
       .location .inner .branch li .address {
         display: inline-block;
         width: 200px;
         height: 40px;
-        border: 1px solid #111;
         margin-right: 0px;
-        font: bold 16px/40px "Noto Sans KR";
-        color: #555;
+        font: bold 30px/40px "Noto Sans KR";
+        color: #111;
         text-align: center;
         transition: 0.5s; }
       .location .inner .branch lihover.on .address {

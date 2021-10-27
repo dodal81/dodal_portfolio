@@ -118,9 +118,9 @@
 					height: 50px;
 					margin-bottom: 40px;
 					margin-right: 20px;
-					border: 1px solid #111;
-					border-radius: 10px;
-					font-size: 25px;
+					// border: 1px solid #111;
+					// border-radius: 10px;
+					font-size: 20px;
 					line-height: 50px;
 					text-align: center;
 					color: #111;
@@ -141,18 +141,19 @@
 
 				p{
 					margin-bottom: 40px;
-					font: bold 15px/1 'Noto Sans KR';
+					font: bold 16px/1 'Noto Sans KR';
+					color: #111;
 				}
 
 				.address {
 					display: inline-block;
 					width: 200px;
 					height: 40px;
-					border: 1px solid #111;
+					// border: 1px solid #111;
 					margin-right: 0px;
 					// border-radius: 0px;
-					font: bold 16px/40px "Noto Sans KR";
-					color: #555;
+					font: bold 30px/40px "Noto Sans KR";
+					color: #111;
 					text-align: center;
 					transition: 0.5s;
 				}
