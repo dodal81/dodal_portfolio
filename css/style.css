@@ -1375,7 +1375,7 @@ fieldset {
           padding: 20px;
           position: relative; }
           .gallery .inner #gallery_page ul li > div a {
-            display: block; }
+            display: inline-block; }
             .gallery .inner #gallery_page ul li > div a .thumb {
               width: 300px;
               height: 250px;
@@ -1433,43 +1433,77 @@ fieldset {
 .youtube {
   width: 100%;
   text-align: center; }
-  .youtube .inner h1 {
-    font: bold 50px/1 "Spartan";
-    margin-bottom: 40px;
-    letter-spacing: 1.5px;
-    color: #333; }
-  .youtube .inner .vidGallery {
-    padding: 100px; }
+  .youtube .inner {
+    position: relative; }
+    .youtube .inner h1 {
+      font: bold 50px/1 "Spartan";
+      margin-bottom: 100px;
+      letter-spacing: 1.5px;
+      color: #333; }
+    .youtube .inner .vidGallery2 {
+      width: 100%; }
+      .youtube .inner .vidGallery2 article {
+        margin-bottom: 15%;
+        position: relative; }
+        .youtube .inner .vidGallery2 article a {
+          display: block;
+          width: 50%;
+          height: 400px;
+          overflow: hidden;
+          background: #000; }
+          .youtube .inner .vidGallery2 article a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.8);
+            transition: 0.5s; }
+        .youtube .inner .vidGallery2 article .con {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          width: 40%;
+          text-align: left; }
+          .youtube .inner .vidGallery2 article .con > h2 {
+            font: bold 30px/1 "Spartan";
+            color: #111;
+            margin-bottom: 30px; }
+          .youtube .inner .vidGallery2 article .con > p {
+            font: 23px/1.5 "Spartan";
+            color: #777; }
+    .youtube .inner h2 {
+      font: bold 30px/1 "Spartan";
+      color: #111;
+      margin-bottom: 20px; }
+    .youtube .inner p {
+      font: 20px/1 "Spartan";
+      color: #777;
+      margin-bottom: 40px; }
     .youtube .inner .vidGallery::after {
       content: "";
       display: block;
       clear: both; }
-    .youtube .inner .vidGallery article:not(:first-child) {
-      width: 32%;
+    .youtube .inner .vidGallery article {
+      width: 280px;
       float: left;
-      margin-right: 2%;
-      border: 1px solid #555;
+      margin-right: 20px;
       margin-bottom: 40px;
       position: relative;
       overflow: hidden; }
-      .youtube .inner .vidGallery article:not(:first-child):nth-of-type(4) {
-        margin-right: 0%; }
-      .youtube .inner .vidGallery article:not(:first-child):nth-of-type(7) {
-        margin-right: 0%; }
-      .youtube .inner .vidGallery article:not(:first-child) a {
+      .youtube .inner .vidGallery article:nth-child(4n+0) {
+        margin-right: 0; }
+      .youtube .inner .vidGallery article a {
         display: block;
         width: 100%;
         height: 280px;
         overflow: hidden;
         background: #000; }
-        .youtube .inner .vidGallery article:not(:first-child) a img {
+        .youtube .inner .vidGallery article a img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           transform: scale(1.8);
-          filter: grayscale(1);
           transition: 0.5s; }
-      .youtube .inner .vidGallery article:not(:first-child) .con {
+      .youtube .inner .vidGallery article .con {
         width: 100%;
         height: 280px;
         padding: 20px;
@@ -1478,42 +1512,42 @@ fieldset {
         left: 0px;
         background: rgba(0, 0, 0, 0.8);
         transition: 0.5s; }
-        .youtube .inner .vidGallery article:not(:first-child) .con h2 {
+        .youtube .inner .vidGallery article .con h2 {
           font: bold 14px/1 "맑은 고딕", "arial";
           color: #fff;
           margin-bottom: 15px;
           transition: 0.5s; }
-        .youtube .inner .vidGallery article:not(:first-child) .con p {
+        .youtube .inner .vidGallery article .con p {
           font: 11px/1.2 "맑은 고딕", "arial";
           color: #ddd; }
-        .youtube .inner .vidGallery article:not(:first-child) .con span {
+        .youtube .inner .vidGallery article .con span {
           font: bold 12px/1 "arial";
           color: orange;
           position: absolute;
           bottom: 20px;
           left: 20px; }
-      .youtube .inner .vidGallery article:not(:first-child):hover a img {
+      .youtube .inner .vidGallery article:hover a img {
         transform: scale(2);
         filter: grayscale(0); }
-      .youtube .inner .vidGallery article:not(:first-child):hover .con {
+      .youtube .inner .vidGallery article:hover .con {
         top: 0%; }
-  .youtube .inner .pop {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
-    top: 0px;
-    left: 0px;
-    padding: 5vw; }
-    .youtube .inner .pop iframe {
+    .youtube .inner .pop {
+      position: fixed;
       width: 100%;
-      height: 100%; }
-    .youtube .inner .pop span {
-      position: absolute;
-      top: 50px;
-      right: 50px;
-      color: #fff;
-      cursor: pointer; }
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      top: 0px;
+      left: 0px;
+      padding: 5vw; }
+      .youtube .inner .pop iframe {
+        width: 100%;
+        height: 100%; }
+      .youtube .inner .pop span {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        color: #fff;
+        cursor: pointer; }
 
 /*
 "Spartan"

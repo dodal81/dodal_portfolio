@@ -12,35 +12,95 @@
 	.sub_visual {
 	}
 	.inner {
+		position: relative;
 		h1 {
 			font: bold 50px/1 "Spartan";
-			margin-bottom: 40px;
+			margin-bottom: 100px;
 			letter-spacing: 1.5px;
 			color: #333;
+			
+			
+		}
+		.vidGallery2 {
+			width: 100%;
+
+			article {
+				margin-bottom: 15%;
+				position: relative;
+				// width: 100%;
+				// height: 100%;
+				// position: absolute;
+				// top: 10%;
+
+				a{
+					display: block;
+					width: 50%;
+					height: 400px;
+					overflow: hidden;
+					background: #000;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						transform: scale(1.8);
+						// filter: grayscale(1);
+						transition: 0.5s;
+					}
+				}
+				.con{
+
+					position: absolute;
+					right: 20px; top: 20px;
+					width: 40%;
+					text-align: left;
+
+					>h2 {
+						font: bold 30px/1 "Spartan"; color: #111;
+						margin-bottom: 30px;
+					}
+					>p{
+						font: 23px/1.5 "Spartan"; color: #777;
+					}
+				}
+			}
+			
+		}
+		h2 {
+			font: bold 30px/1 "Spartan"; color: #111;
+						margin-bottom: 20px;
+		}
+		p{
+			font: 20px/1 "Spartan"; color: #777;
+			margin-bottom: 40px;
 		}
 		.vidGallery {
-			padding: 100px;
-
+			
 			&::after {
 				content: "";
 				display: block;
 				clear: both;
 			}
 
-			article:not(:first-child) {
-				width: 32%;
+			// article:first-of-type {
+			// 	width: 50%;
+			// 	text-align: left;
+			// 	margin-bottom: 50px;
+			// 	position: relative;
+			// }
+
+			// article:not(:first-child)
+			article {
+				width: 280px;
 				float: left;
-				margin-right: 2%;
-				border: 1px solid #555;
+				margin-right: 20px;
+				// border: 1px solid #555;
 				margin-bottom: 40px;
 				position: relative;
 				overflow: hidden;
 
-				&:nth-of-type(4) {
-					margin-right: 0%;
-				}
-				&:nth-of-type(7) {
-					margin-right: 0%;
+				&:nth-child(4n+0){
+					margin-right: 0;
 				}
 
 				a {
@@ -55,7 +115,7 @@
 						height: 100%;
 						object-fit: cover;
 						transform: scale(1.8);
-						filter: grayscale(1);
+						// filter: grayscale(1);
 						transition: 0.5s;
 					}
 				}
@@ -101,7 +161,9 @@
 					}
 				}
 			}
+
 		}
+	
 		.pop {
 			position: fixed;
 			width: 100%;

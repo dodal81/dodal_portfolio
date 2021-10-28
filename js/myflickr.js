@@ -137,10 +137,10 @@ function getList(opt){
                                     })
                                 ),
                                 $("<p>").text("Lorem is Lorem"),
-                                $("<span>").text("Mauris ut magna feugiat, dignissim velit vitae, eleifend urna. Nam ac eros elementum purus lobortis laoreet. Vivamus nisi urna, gravida eget mauris quis, consectetur tincidunt odio. In et tristique mauris, ut lacinia nisl. Pellentesque pulvinar aliquam cursus."),
-                                $("<img class='arrow'>").attr({
+                                $("<span>").text("Mauris ut magna feugiat, dignissim velit vitae, eleifend urna. Nam ac eros elementum purus lobortis laoreet. Vivamus nisi urna, gravida eget mauris quis, consectetur tincidunt odio. In et tristique mauris, ut lacinia nisl. Pellentesque pulvinar aliquam cursus.")
+                                // $("<img class='arrow'>").attr({
 
-                                src : "img/arrow_black.png"})   
+                                // src : "img/arrow_black.png"})   
                                                                    
                             )
                         ) 

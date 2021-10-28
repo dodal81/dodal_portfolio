@@ -74,7 +74,12 @@
 getYoutube({
     frame : ".vidGallery",
     playlist : "PLHKeRbsUuhBdC-WTrs6vfnWFj8mHQWomO",
-    num : 7
+    num : 8
+})
+getYoutube({
+    frame : ".vidGallery2",
+    playlist : "PLHKeRbsUuhBd9N63kAbjkW7rkte99uMkH",
+    num : 1
 })
 
 function getYoutube(opt) {
@@ -101,7 +106,7 @@ function getYoutube(opt) {
                 let txt = data.snippet.description;
                 let len = txt.length;
                 if (len > 200) {
-                    txt = txt.substr(0, 200) + "..."
+                    txt = txt.substr(0, 200) + "."
                 }
                 let date = data.snippet.publishedAt;
                 date = date.split("T")[0];
@@ -117,8 +122,8 @@ function getYoutube(opt) {
                                 $("<div class = 'con'>")
                                     .append(
                                         $("<h2>").text(data.snippet.title),
-                                        $("<p>").text(txt),
-                                        $("<span>").text(date)
+                                        $("<p>").text(txt)
+                                        // $("<span>").text(date)
                                     )
                             )
                     )
