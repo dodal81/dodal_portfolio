@@ -1463,7 +1463,7 @@ fieldset {
       height: 100%;
       float: left;
       position: relative;
-      text-align: center;
+      text-align: left;
       margin-right: 20px;
       margin-bottom: 70px;
       margin-top: 40px; }
@@ -1472,14 +1472,12 @@ fieldset {
       .location .inner .branch li::after {
         content: "";
         display: block;
-        width: 1px;
-        height: 100%;
-        background: #111;
+        width: 300px;
+        height: 1.5px;
+        background: #aaa;
         position: absolute;
-        top: 0;
-        right: 0; }
-      .location .inner .branch li:last-child::after {
-        display: none; }
+        top: 55px;
+        left: 0; }
       .location .inner .branch li a {
         display: inline-block;
         width: 50px;
@@ -1488,29 +1486,29 @@ fieldset {
         margin-right: 20px;
         font-size: 20px;
         line-height: 50px;
-        text-align: center;
         color: #111;
         transition: 0.5s; }
         .location .inner .branch li a:hover {
-          background: #111;
           color: pink; }
         .location .inner .branch li a:last-of-type {
           margin-right: 0; }
       .location .inner .branch li p {
+        display: inline-block;
+        width: 50%;
+        text-align: left;
         margin-bottom: 40px;
-        font: bold 16px/1 'Noto Sans KR';
+        font: bold 16px/1.5 'Noto Sans KR';
         color: #111; }
       .location .inner .branch li .address {
         display: inline-block;
         width: 200px;
-        height: 40px;
+        height: 50px;
         margin-right: 0px;
-        font: bold 30px/40px "Noto Sans KR";
+        font: bold 25px/50px "Noto Sans KR";
         color: #111;
-        text-align: center;
+        text-align: left;
         transition: 0.5s; }
       .location .inner .branch lihover.on .address {
-        background: #111;
         color: pink; }
 
 #header {

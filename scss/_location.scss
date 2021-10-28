@@ -88,7 +88,7 @@
 				height: 100%;
 				float: left;
 				position: relative;
-				text-align: center;
+				text-align: left;
 				margin-right: 20px;
 				margin-bottom: 70px;
 				margin-top: 40px;
@@ -101,16 +101,16 @@
 				&::after {
 					content: "";
 					display: block;
-					width: 1px;
-					height: 100%;
-					background: #111;
+					width: 300px;
+					height: 1.5px;
+					background: #aaa;
 					position: absolute;
-					top: 0; right: 0;
-
+					top: 55px; left: 0;
+					
 				}
-				&:last-child::after {
-					display: none;
-				}
+				// &:last-child::after {
+				// 	display: none;
+				// }
 
 				a{
 					display: inline-block;
@@ -122,12 +122,13 @@
 					// border-radius: 10px;
 					font-size: 20px;
 					line-height: 50px;
-					text-align: center;
 					color: #111;
+					
 					transition: 0.5s;
 
+
 					&:hover {
-						background: #111;
+						// background: #111;
 						color: pink;
 						// border: none;
 					}
@@ -140,26 +141,29 @@
 
 
 				p{
+					display: inline-block;
+					width: 50%;
+					text-align: left;
 					margin-bottom: 40px;
-					font: bold 16px/1 'Noto Sans KR';
+					font: bold 16px/1.5 'Noto Sans KR';
 					color: #111;
 				}
 
 				.address {
 					display: inline-block;
 					width: 200px;
-					height: 40px;
+					height: 50px;
 					// border: 1px solid #111;
 					margin-right: 0px;
 					// border-radius: 0px;
-					font: bold 30px/40px "Noto Sans KR";
+					font: bold 25px/50px "Noto Sans KR";
 					color: #111;
-					text-align: center;
+					text-align: left;
 					transition: 0.5s;
 				}
 				&hover.on {
 					.address {
-						background: #111;
+						// background: #111;
 						color: pink;
 					}
 				}

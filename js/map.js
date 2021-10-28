@@ -1,6 +1,6 @@
 const mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
-        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(37.5664611,126.9782482,19.88), // 지도의 중심좌표
         level: 3 // 지도의 확대 레벨
     };
 
@@ -26,7 +26,7 @@ const markerOptions = [
        button :  branch_btns[1]
     },
     {
-       title: "제주지점",  //37.529852,126.9646949
+       title: "제주지점", 
        latlng : new kakao.maps.LatLng(33.499504,126.5311894,21), 
        imgSrc : "img/marker1.png", 
        imgSize : new kakao.maps.Size(70, 70),
