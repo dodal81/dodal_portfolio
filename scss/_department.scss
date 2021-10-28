@@ -75,7 +75,7 @@
 				height: 2px;
 				background: #111;
 				position: absolute;
-				top: 23%;
+				top: 22%;
 				
 			}
 			
@@ -111,8 +111,8 @@
 
 					}
 					p {
-						font: bold 15px/1.5 'Spartan';
-						color: #222;
+						font: bold 15px/1.7 'Spartan';
+						color: #555;
 						margin-bottom: 20px;
 					}
 					a {
@@ -137,12 +137,12 @@
 				h1 {
 					font: bold 50px/1 'Noto Sans KR';
 					color: #222;
-					margin-bottom: 40px;
+					margin-bottom: 55px;
 				}
 				h2 {
 					font: bold 23px/1.5 'Noto Sans KR';
-					color: #222;
-					margin-bottom: 50px;
+					color: #666;
+					margin-bottom: 100px;
 				}
 
 				
@@ -154,6 +154,7 @@
 					margin-right: 46px;
 					background: #fff;
 					margin-bottom: 60px;
+					box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
 					float: left;
 					position: relative;
 					
@@ -172,22 +173,25 @@
 
 						.txt {
 							width: 100%; height: 100%; padding: 20px;
-							position: absolute; top: -100%; left: 0px;
+							// position: absolute; top: -100%; left: 0px;
 							background-color: rgba(0, 0, 0, 0.7);
 							border-radius: 50%; 
 							transition: 0.5s;
+							opacity: 0;
 							
 							text-align: center;
 
 							p {
 								
-								font: bold 18px/1 'Spartan'; color: #fff;
+								font: bold 18px/1 'STIX Two Text'; color: #fff;
+								letter-spacing: 1.7px;
 								position: absolute;
 								top: 50%; left: 50%; transform: translate(-50%, -50%);
 							}
 						}
 						&:hover .txt {
 							top: 0%;
+							opacity: 1;
 						}
 
 					}

@@ -18,58 +18,110 @@
 			letter-spacing: 1.5px;
 			color: #333;
 		}
-		#vidGallery {
-			width: 100%;
+		.vidGallery {
 			padding: 100px;
-			display: flex;
-			justify-content: space-around;
-			flex-wrap: wrap;
 
-			.first_youtube {
-
-				width: 100%;
-				height: 100%;
-				background: #999;
+			&::after {
+				content: "";
+				display: block;
+				clear: both;
 			}
 
-			article {
-				width: 300px;
-				height: 400px;
-				border: 1px solid #ccc;
-				padding: 30px;
-				margin-bottom: 30px;
-				text-align: center;
-				background: #aaa;
+			article:not(:first-child) {
+				width: 32%;
+				float: left;
+				margin-right: 2%;
+				border: 1px solid #555;
+				margin-bottom: 40px;
 				position: relative;
+				overflow: hidden;
 
-				&:nth-of-type(1) {
-					
-					width: 50%;
-					height: 100%;
-					border: none;
-					margin-bottom: 40px;
+				&:nth-of-type(4) {
+					margin-right: 0%;
+				}
+				&:nth-of-type(7) {
+					margin-right: 0%;
 				}
 
 				a {
-					width: 30%;
+					display: block;
+					width: 100%;
+					height: 280px;
+					overflow: hidden;
+					background: #000;
+
 					img {
 						width: 100%;
-
-						&:first-child {
-							width: 100%;
-						}
+						height: 100%;
+						object-fit: cover;
+						transform: scale(1.8);
+						filter: grayscale(1);
+						transition: 0.5s;
 					}
 				}
+
 				.con {
 					width: 100%;
+					height: 280px;
+					padding: 20px;
+					position: absolute;
+					top: 100%;
+					left: 0px;
+					background: rgba(0, 0, 0, 0.8);
+					transition: 0.5s;
 
 					h2 {
-						width: 100%;
-						display: inline-block;
-						font: bold 20px/1.5 "Noto Sans KR";
-						margin-bottom: 20px;
+						font: bold 14px/1 "맑은 고딕", "arial";
+						color: #fff;
+						margin-bottom: 15px;
+						transition: 0.5s;
+					}
+					p {
+						font: 11px/1.2 "맑은 고딕", "arial";
+						color: #ddd;
+					}
+					span {
+						font: bold 12px/1 "arial";
+						color: orange;
+						position: absolute;
+						bottom: 20px;
+						left: 20px;
 					}
 				}
+				&:hover {
+					a {
+						img {
+							transform: scale(2);
+							filter: grayscale(0);
+						}
+					}
+
+					.con {
+						top: 0%;
+					}
+				}
+			}
+		}
+		.pop {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0.9);
+			top: 0px;
+			left: 0px;
+			padding: 5vw;
+
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+
+			span {
+				position: absolute;
+				top: 50px;
+				right: 50px;
+				color: #fff;
+				cursor: pointer;
 			}
 		}
 	}

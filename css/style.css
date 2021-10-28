@@ -1135,7 +1135,7 @@ fieldset {
         height: 2px;
         background: #111;
         position: absolute;
-        top: 23%; }
+        top: 22%; }
       .department .inner .wrap .company {
         width: 1180px;
         height: 250px;
@@ -1159,8 +1159,8 @@ fieldset {
             color: #222;
             margin-bottom: 20px; }
           .department .inner .wrap .company .txt p {
-            font: bold 15px/1.5 'Spartan';
-            color: #222;
+            font: bold 15px/1.7 'Spartan';
+            color: #555;
             margin-bottom: 20px; }
           .department .inner .wrap .company .txt a {
             display: inline-block;
@@ -1179,11 +1179,11 @@ fieldset {
         .department .inner .wrap .team h1 {
           font: bold 50px/1 'Noto Sans KR';
           color: #222;
-          margin-bottom: 40px; }
+          margin-bottom: 55px; }
         .department .inner .wrap .team h2 {
           font: bold 23px/1.5 'Noto Sans KR';
-          color: #222;
-          margin-bottom: 50px; }
+          color: #666;
+          margin-bottom: 100px; }
         .department .inner .wrap .team article {
           width: 260px;
           height: 350px;
@@ -1191,6 +1191,7 @@ fieldset {
           margin-right: 46px;
           background: #fff;
           margin-bottom: 60px;
+          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
           float: left;
           position: relative; }
           .department .inner .wrap .team article .pic {
@@ -1208,22 +1209,22 @@ fieldset {
               width: 100%;
               height: 100%;
               padding: 20px;
-              position: absolute;
-              top: -100%;
-              left: 0px;
               background-color: rgba(0, 0, 0, 0.7);
               border-radius: 50%;
               transition: 0.5s;
+              opacity: 0;
               text-align: center; }
               .department .inner .wrap .team article .pic .txt p {
-                font: bold 18px/1 'Spartan';
+                font: bold 18px/1 'STIX Two Text';
                 color: #fff;
+                letter-spacing: 1.7px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%); }
             .department .inner .wrap .team article .pic:hover .txt {
-              top: 0%; }
+              top: 0%;
+              opacity: 1; }
           .department .inner .wrap .team article:nth-of-type(1) .pic {
             background-image: url("../img/mem01.jpg");
             background-size: cover;
@@ -1437,43 +1438,82 @@ fieldset {
     margin-bottom: 40px;
     letter-spacing: 1.5px;
     color: #333; }
-  .youtube .inner #vidGallery {
-    width: 100%;
-    padding: 100px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    .youtube .inner #vidGallery .first_youtube {
-      width: 100%;
-      height: 100%;
-      background: #999; }
-    .youtube .inner #vidGallery article {
-      width: 300px;
-      height: 400px;
-      border: 1px solid #ccc;
-      padding: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-      background: #aaa;
-      position: relative; }
-      .youtube .inner #vidGallery article:nth-of-type(1) {
-        width: 50%;
-        height: 100%;
-        border: none;
-        margin-bottom: 40px; }
-      .youtube .inner #vidGallery article a {
-        width: 30%; }
-        .youtube .inner #vidGallery article a img {
-          width: 100%; }
-          .youtube .inner #vidGallery article a img:first-child {
-            width: 100%; }
-      .youtube .inner #vidGallery article .con {
-        width: 100%; }
-        .youtube .inner #vidGallery article .con h2 {
+  .youtube .inner .vidGallery {
+    padding: 100px; }
+    .youtube .inner .vidGallery::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .youtube .inner .vidGallery article:not(:first-child) {
+      width: 32%;
+      float: left;
+      margin-right: 2%;
+      border: 1px solid #555;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden; }
+      .youtube .inner .vidGallery article:not(:first-child):nth-of-type(4) {
+        margin-right: 0%; }
+      .youtube .inner .vidGallery article:not(:first-child):nth-of-type(7) {
+        margin-right: 0%; }
+      .youtube .inner .vidGallery article:not(:first-child) a {
+        display: block;
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        background: #000; }
+        .youtube .inner .vidGallery article:not(:first-child) a img {
           width: 100%;
-          display: inline-block;
-          font: bold 20px/1.5 "Noto Sans KR";
-          margin-bottom: 20px; }
+          height: 100%;
+          object-fit: cover;
+          transform: scale(1.8);
+          filter: grayscale(1);
+          transition: 0.5s; }
+      .youtube .inner .vidGallery article:not(:first-child) .con {
+        width: 100%;
+        height: 280px;
+        padding: 20px;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.8);
+        transition: 0.5s; }
+        .youtube .inner .vidGallery article:not(:first-child) .con h2 {
+          font: bold 14px/1 "맑은 고딕", "arial";
+          color: #fff;
+          margin-bottom: 15px;
+          transition: 0.5s; }
+        .youtube .inner .vidGallery article:not(:first-child) .con p {
+          font: 11px/1.2 "맑은 고딕", "arial";
+          color: #ddd; }
+        .youtube .inner .vidGallery article:not(:first-child) .con span {
+          font: bold 12px/1 "arial";
+          color: orange;
+          position: absolute;
+          bottom: 20px;
+          left: 20px; }
+      .youtube .inner .vidGallery article:not(:first-child):hover a img {
+        transform: scale(2);
+        filter: grayscale(0); }
+      .youtube .inner .vidGallery article:not(:first-child):hover .con {
+        top: 0%; }
+  .youtube .inner .pop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0px;
+    left: 0px;
+    padding: 5vw; }
+    .youtube .inner .pop iframe {
+      width: 100%;
+      height: 100%; }
+    .youtube .inner .pop span {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      color: #fff;
+      cursor: pointer; }
 
 /*
 "Spartan"
@@ -1489,7 +1529,8 @@ fieldset {
     font: bold 50px/1 "Spartan";
     margin-bottom: 40px;
     letter-spacing: 1.5px;
-    color: #333; }
+    color: #333;
+    position: relative; }
   .location .inner h2 {
     font: bold 35px/1 "Noto Sans KR";
     color: #222;
@@ -1516,8 +1557,8 @@ fieldset {
         font: bold 18px/1 'Noto Sans KR';
         color: #111; }
         .location .inner .map_header li span img {
-          width: 50px;
-          height: 50px;
+          width: 42px;
+          height: 42px;
           margin: 25px auto 10px;
           display: block; }
       .location .inner .map_header li h3 {
@@ -1533,16 +1574,17 @@ fieldset {
     margin-top: 100px; }
   .location .inner .branch {
     width: 100%;
-    text-align: center; }
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px; }
     .location .inner .branch li {
       width: 380px;
       height: 100%;
       float: left;
       position: relative;
       text-align: left;
-      margin-right: 20px;
-      margin-bottom: 70px;
-      margin-top: 40px; }
+      margin: 40px -10px 0px; }
       .location .inner .branch li:last-of-type {
         margin-right: 0px; }
       .location .inner .branch li::after {
