@@ -1144,7 +1144,9 @@ fieldset {
         .department .inner .wrap .company .main_pic {
           width: 450px;
           height: 100%;
-          background: #bcc9e9;
+          background: url(../img/members.jpg) no-repeat;
+          background-size: cover;
+          background-position: center;
           float: left; }
         .department .inner .wrap .company .txt {
           width: 55%;
@@ -1194,12 +1196,60 @@ fieldset {
           .department .inner .wrap .team article .pic {
             width: 120px;
             height: 120px;
-            border: 5px solid #fff;
+            border: 5px solid pink;
             border-radius: 50%;
-            background: rgba(214, 197, 213, 0.816);
+            background: rgba(153, 127, 127, 0.405);
             margin: 30px auto 45px;
             box-sizing: border-box;
-            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.04); }
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1); }
+          .department .inner .wrap .team article:nth-of-type(1) .pic {
+            background-image: url("../img/mem01.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(2) .pic {
+            background-image: url("../img/mem02.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(3) .pic {
+            background-image: url("../img/mem03.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(4) .pic {
+            background-image: url("../img/mem04.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(5) .pic {
+            background-image: url("../img/mem05.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(6) .pic {
+            background-image: url("../img/mem06.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(7) .pic {
+            background-image: url("../img/mem07.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(8) .pic {
+            background-image: url("../img/mem08.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(9) .pic {
+            background-image: url("../img/mem09.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(10) .pic {
+            background-image: url("../img/mem10.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(11) .pic {
+            background-image: url("../img/mem11.jpg");
+            background-size: cover;
+            background-position: center; }
+          .department .inner .wrap .team article:nth-of-type(12) .pic {
+            background-image: url("../img/mem12.jpg");
+            background-size: cover;
+            background-position: center; }
           .department .inner .wrap .team article > h3 {
             font: bold 17px/1 'Spartan';
             color: #222;
@@ -1216,7 +1266,10 @@ fieldset {
             border-radius: 10px;
             text-align: center;
             line-height: 40px;
-            color: #858080; }
+            color: #858080;
+            transition: 1s; }
+            .department .inner .wrap .team article > a:hover i {
+              color: #fff; }
           .department .inner .wrap .team article:nth-of-type(4n+0) {
             margin-right: 0; }
 
@@ -1457,7 +1510,8 @@ fieldset {
     height: 500px;
     margin-top: 100px; }
   .location .inner .branch {
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     .location .inner .branch li {
       width: 380px;
       height: 100%;
