@@ -1096,37 +1096,18 @@ fieldset {
   .department .inner {
     width: 1180px;
     margin: 0 auto;
+    padding: 150px 0;
     position: relative; }
-    .department .inner h1 {
-      font: bold 50px/1 'Spartan';
-      color: #444;
-      text-align: center;
-      margin-bottom: 10%; }
-    .department .inner .team_name {
-      width: 100%;
-      position: absolute;
-      top: 4%;
-      left: 28%; }
-      .department .inner .team_name li {
-        float: left;
-        padding-right: 20px;
-        margin-right: 20px;
-        border-right: 1px solid #555; }
-        .department .inner .team_name li a {
-          font: bold 18px/1 'Noto Sans KR';
-          color: #222; }
-        .department .inner .team_name li:last-child {
-          border-right: none; }
     .department .inner .wrap {
       width: 100%; }
       .department .inner .wrap::before {
         content: "";
         display: block;
-        width: 450px;
+        width: 500px;
         height: 2px;
         background: #111;
         position: absolute;
-        top: 7%; }
+        top: 3%; }
       .department .inner .wrap::after {
         content: "";
         display: block;
@@ -1135,74 +1116,131 @@ fieldset {
         height: 2px;
         background: #111;
         position: absolute;
-        top: 22%; }
+        top: 18%; }
       .department .inner .wrap .company {
-        width: 1180px;
+        width: 100%;
         height: 250px;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         position: relative; }
         .department .inner .wrap .company .main_pic {
-          width: 450px;
-          height: 100%;
+          width: 500px;
+          height: 450px;
           background: url(../img/members.jpg) no-repeat;
           background-size: cover;
           background-position: center;
           float: left; }
         .department .inner .wrap .company .txt {
+          text-align: left;
+          display: inline-block;
           width: 55%;
           position: absolute;
-          right: 3%;
           top: 50%;
-          transform: translateY(-50%); }
+          left: 50%;
+          margin-left: -25px;
+          margin-top: -60px; }
           .department .inner .wrap .company .txt h2 {
-            font: bold 30px/1 'Noto Sans KR';
+            width: 90%;
+            font: bold 60px/1 "Spartan";
+            border-bottom: 5px solid #111;
+            padding-bottom: 25px;
             color: #222;
-            margin-bottom: 20px; }
+            margin-bottom: 45px; }
           .department .inner .wrap .company .txt p {
-            font: bold 15px/1.7 'Spartan';
-            color: #555;
-            margin-bottom: 20px; }
+            width: 80%;
+            font: 400 20px/1.7 "Spartan";
+            color: #888;
+            margin-bottom: 45px; }
           .department .inner .wrap .company .txt a {
             display: inline-block;
             text-align: center;
             border-radius: 5px;
-            width: 250px;
-            height: 50px;
+            width: 280px;
+            height: 60px;
             background: rgba(216, 216, 216, 0.665);
-            font: 13px/50px 'Spartan';
+            font: 15px/60px "Spartan";
             color: #858080;
             margin-right: 20px; }
+      .department .inner .wrap .help {
+        display: inline-block;
+        padding: 20px 0;
+        width: 100%;
+        height: 100%;
+        margin: 140px auto;
+        text-align: center;
+        position: relative; }
+        .department .inner .wrap .help .help_txt {
+          display: inline-block;
+          padding: 70px 0;
+          width: 500px;
+          height: 100%;
+          margin-right: 120px;
+          text-align: left; }
+          .department .inner .wrap .help .help_txt:last-child {
+            margin-right: 0; }
+          .department .inner .wrap .help .help_txt h2 {
+            font: bold 35px/1 "Spartan";
+            color: #222;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #222;
+            margin-bottom: 50px; }
+            .department .inner .wrap .help .help_txt h2 .btn_class {
+              width: 100%;
+              position: relative; }
+              .department .inner .wrap .help .help_txt h2 .btn_class::before {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 3px;
+                position: absolute;
+                top: 50%;
+                right: -200px;
+                background: #222; }
+              .department .inner .wrap .help .help_txt h2 .btn_class::after {
+                content: "";
+                width: 25px;
+                height: 25px;
+                border-top: 3px solid #121212;
+                border-right: 3px solid #121212;
+                display: block;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 7px;
+                right: -197px; }
+          .department .inner .wrap .help .help_txt p {
+            font: bold 20px/1.7 "Spartan";
+            color: #333; }
       .department .inner .wrap .team {
         display: inline-block;
         width: 100%;
         text-align: center; }
-        .department .inner .wrap .team h1 {
-          font: bold 50px/1 'Noto Sans KR';
+        .department .inner .wrap .team > h1 {
+          font: bold 50px/1 "Spartan";
           color: #222;
           margin-bottom: 55px; }
-        .department .inner .wrap .team h2 {
-          font: bold 23px/1.5 'Noto Sans KR';
+        .department .inner .wrap .team > h2 {
+          display: inline-block;
+          width: 70%;
+          font: bold 23px/1.5 "Spartan";
           color: #666;
           margin-bottom: 100px; }
         .department .inner .wrap .team article {
-          width: 260px;
-          height: 350px;
+          width: 350px;
+          height: 450px;
           border-radius: 7px;
-          margin-right: 46px;
+          margin-right: 65px;
           background: #fff;
           margin-bottom: 60px;
           box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
           float: left;
           position: relative; }
           .department .inner .wrap .team article .pic {
-            width: 120px;
-            height: 120px;
-            border: 5px solid pink;
+            width: 170px;
+            height: 170px;
             border-radius: 50%;
             background: rgba(153, 127, 127, 0.405);
-            margin: 30px auto 45px;
+            margin: 40px auto 45px;
             box-sizing: border-box;
-            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+            box-shadow: 2px 10px 10px 5px rgba(0, 0, 0, 0.15);
             position: relative;
             overflow: hidden; }
             .department .inner .wrap .team article .pic .txt {
@@ -1215,7 +1253,7 @@ fieldset {
               opacity: 0;
               text-align: center; }
               .department .inner .wrap .team article .pic .txt p {
-                font: bold 18px/1 'STIX Two Text';
+                font: bold 20px/1 "Spartan";
                 color: #fff;
                 letter-spacing: 1.7px;
                 position: absolute;
@@ -1274,26 +1312,28 @@ fieldset {
             background-size: cover;
             background-position: center; }
           .department .inner .wrap .team article > h3 {
-            font: bold 17px/1 'Spartan';
+            font: bold 22px/1 "Spartan";
             color: #222;
-            margin-bottom: 10px; }
+            margin-bottom: 15px; }
           .department .inner .wrap .team article > p {
-            font: bold 13px/1.5 'Spartan';
+            font: bold 17px/1.5 "Spartan";
             color: #999;
             margin-bottom: 30px; }
           .department .inner .wrap .team article > a {
             display: inline-block;
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             background: rgba(216, 216, 216, 0.665);
             border-radius: 10px;
+            margin-right: 5px;
             text-align: center;
-            line-height: 40px;
+            font-size: 20px;
+            line-height: 50px;
             color: #858080;
             transition: 1s; }
             .department .inner .wrap .team article > a:hover i {
               color: #fff; }
-          .department .inner .wrap .team article:nth-of-type(4n+0) {
+          .department .inner .wrap .team article:nth-of-type(3n + 0) {
             margin-right: 0; }
 
 /*
