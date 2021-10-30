@@ -1189,7 +1189,7 @@ fieldset {
               .department .inner .wrap .help .help_txt h2 .btn_class::before {
                 content: "";
                 display: block;
-                width: 100px;
+                width: 70px;
                 height: 3px;
                 position: absolute;
                 top: 50%;
