@@ -120,13 +120,13 @@
 						right: 5%;
 
 						p {
-							font: bold 25px/1 "Spartan";
+							font: bold 23px/1 "Spartan";
 							color: #222;
 							margin-bottom: 20px;
 						}
 						span {
 							width: 100%;
-							font: 17px/1.6 "Spartan";
+							font: 15px/1.6 "Spartan";
 							color: #888;
 						}
 					}
@@ -192,18 +192,41 @@
 	}
 }
 
+@media screen and (max-width: 1179px) {
+	.gallery .inner #gallery_page ul li {
+		// width: 25%;
+
+		>div {
+			width: 100%;
+			.thumb {
+				width: 200px;
+				height: 100px;
+			}
+			.gallery_txt {
+				width: 20%;
+
+				p{
+					font: bold 15px/1;
+				}
+				span {
+					font : 11px/1;
+				}
+			}
+		}
+	}
+}
 @media screen and (max-width: 999px) {
-	.content .inner #gallery ul li {
+	.gallery .inner #gallery_page ul li {
 		width: 33.333%;
 	}
 }
 @media screen and (max-width: 599px) {
-	.content .inner #gallery ul li {
+	.gallery .inner #gallery_page ul li {
 		width: 50%;
 	}
 }
 @media screen and (max-width: 499px) {
-	.content .inner #gallery ul li {
+	.gallery .inner #gallery_page ul li {
 		width: 100%;
 	}
 }
