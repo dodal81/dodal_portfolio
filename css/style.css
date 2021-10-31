@@ -424,28 +424,29 @@ fieldset {
   position: relative; }
   .community .sub_visual > h1 {
     text-align: center;
-    font: bold 30px/1 "Noto Sans KR";
+    font: 400 40px/1 "Spartan";
     letter-spacing: 1.5px;
     color: #fff;
-    padding-top: 40px;
-    margin-bottom: 30px; }
+    padding-top: 63px;
+    margin-bottom: 11px; }
   .community .sub_visual .coummity_search {
     display: inline-block;
     width: 100%;
     margin-top: 20px;
     text-align: center;
     position: absolute;
-    left: -3%; }
+    left: -5%; }
     .community .sub_visual .coummity_search label {
-      font: 500 20px/1.5 "Noto Sans KR";
+      font: bold 25px/1.5 "Noto Sans KR";
       color: #fff;
-      margin-right: 20px; }
+      margin-right: 20px;
+      letter-spacing: 1.5px; }
       .community .sub_visual .coummity_search label i {
         font-size: 25px;
         margin-right: 10px; }
     .community .sub_visual .coummity_search input[type="text"] {
       width: 600px;
-      height: 50px;
+      height: 60px;
       padding-left: 30px;
       font: 17px/1 "Noto Sans KR";
       letter-spacing: 1.5px;
