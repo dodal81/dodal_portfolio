@@ -1477,17 +1477,19 @@ fieldset {
     cursor: pointer; }
 
 @media screen and (max-width: 1179px) {
-  .gallery .inner #gallery_page ul li > div {
-    width: 100%; }
-    .gallery .inner #gallery_page ul li > div .thumb {
-      width: 200px;
-      height: 100px; }
-    .gallery .inner #gallery_page ul li > div .gallery_txt {
-      width: 20%; }
-      .gallery .inner #gallery_page ul li > div .gallery_txt p {
-        font: bold 15px/1; }
-      .gallery .inner #gallery_page ul li > div .gallery_txt span {
-        font: 11px/1; } }
+  .gallery .inner #gallery_page ul li {
+    width: 50%; }
+    .gallery .inner #gallery_page ul li div {
+      width: 100%; }
+      .gallery .inner #gallery_page ul li div .thumb {
+        width: 50%;
+        height: 100px; }
+      .gallery .inner #gallery_page ul li div .gallery_txt {
+        width: 20%; }
+        .gallery .inner #gallery_page ul li div .gallery_txt p {
+          font: bold 15px/1; }
+        .gallery .inner #gallery_page ul li div .gallery_txt span {
+          font: 11px/1; } }
 @media screen and (max-width: 999px) {
   .gallery .inner #gallery_page ul li {
     width: 33.333%; } }

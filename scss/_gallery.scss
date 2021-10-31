@@ -194,12 +194,12 @@
 
 @media screen and (max-width: 1179px) {
 	.gallery .inner #gallery_page ul li {
-		// width: 25%;
+		width: 50%;
 
-		>div {
+		div {
 			width: 100%;
 			.thumb {
-				width: 200px;
+				width: 50%;
 				height: 100px;
 			}
 			.gallery_txt {
