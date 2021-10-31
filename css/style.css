@@ -1383,11 +1383,11 @@ fieldset {
     right: 120px;
     top: 50px; }
     .gallery .inner .typography h2 {
-      font: bold 22px/1 'Spartan';
+      font: bold 22px/1 "Spartan";
       color: #222;
       margin-bottom: 10px; }
     .gallery .inner .typography p {
-      font: 18px/1.7 'Spartan';
+      font: 18px/1.7 "Spartan";
       color: #888; }
   .gallery .inner #gallery_page {
     width: 100%;
@@ -1412,28 +1412,48 @@ fieldset {
         .gallery .inner #gallery_page ul li > div {
           width: 100%;
           border: 1px solid #aaa;
-          padding: 20px;
+          padding: 40px;
           position: relative; }
           .gallery .inner #gallery_page ul li > div a {
             display: inline-block; }
             .gallery .inner #gallery_page ul li > div a .thumb {
               width: 300px;
-              height: 250px;
-              margin-bottom: 20px;
+              height: 260px;
               object-fit: cover; }
-          .gallery .inner #gallery_page ul li > div p {
-            font: bold 25px/1 "Spartan";
-            color: #222;
-            margin-bottom: 25px; }
-          .gallery .inner #gallery_page ul li > div span {
-            display: block;
-            width: 50%;
-            font: 15px/1.5 "Spartan";
-            color: #888; }
-          .gallery .inner #gallery_page ul li > div .arrow {
+          .gallery .inner #gallery_page ul li > div .gallery_txt {
+            width: 38%;
+            display: inline-block;
             position: absolute;
+            top: 55px;
+            right: 5%; }
+            .gallery .inner #gallery_page ul li > div .gallery_txt p {
+              font: bold 25px/1 "Spartan";
+              color: #222;
+              margin-bottom: 20px; }
+            .gallery .inner #gallery_page ul li > div .gallery_txt span {
+              width: 100%;
+              font: 17px/1.6 "Spartan";
+              color: #888; }
+          .gallery .inner #gallery_page ul li > div .btn::before {
+            content: "";
+            display: block;
+            width: 90px;
+            height: 2px;
+            position: absolute;
+            bottom: 40px;
             right: 40px;
-            bottom: 55px; }
+            background: #222; }
+          .gallery .inner #gallery_page ul li > div .btn::after {
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-top: 2px solid #121212;
+            border-right: 2px solid #121212;
+            display: block;
+            transform: rotate(45deg);
+            position: absolute;
+            bottom: 28px;
+            right: 43px; }
 
 .pop {
   width: 100%;
@@ -1508,7 +1528,7 @@ fieldset {
             color: #111;
             margin-bottom: 30px; }
           .youtube .inner .vidGallery2 article .con > p {
-            font: 23px/1.5 "Spartan";
+            font: 20px/1.5 "Spartan";
             color: #777; }
     .youtube .inner h2 {
       font: bold 30px/1 "Spartan";
@@ -1571,23 +1591,24 @@ fieldset {
         filter: grayscale(0); }
       .youtube .inner .vidGallery article:hover .con {
         top: 0%; }
-    .youtube .inner .pop {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.9);
-      top: 0px;
-      left: 0px;
-      padding: 5vw; }
-      .youtube .inner .pop iframe {
-        width: 100%;
-        height: 100%; }
-      .youtube .inner .pop span {
-        position: absolute;
-        top: 50px;
-        right: 50px;
-        color: #fff;
-        cursor: pointer; }
+
+.pop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0px;
+  left: 0px;
+  padding: 5vw; }
+  .pop iframe {
+    width: 100%;
+    height: 100%; }
+  .pop span {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: #fff;
+    cursor: pointer; }
 
 /*
 "Spartan"

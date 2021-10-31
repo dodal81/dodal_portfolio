@@ -32,10 +32,9 @@
 		}
 	}
 	#searchBox {
-
 		display: inline-block;
 		position: absolute;
-		top: 150px; 
+		top: 150px;
 		left: 50%;
 		transform: translateX(-50%);
 
@@ -59,13 +58,13 @@
 		top: 50px;
 
 		h2 {
-			font: bold 22px/1 'Spartan';
+			font: bold 22px/1 "Spartan";
 			color: #222;
 			margin-bottom: 10px;
 		}
-		p{
-			font: 18px/1.7 'Spartan';
-			 color: #888;
+		p {
+			font: 18px/1.7 "Spartan";
+			color: #888;
 		}
 	}
 	#gallery_page {
@@ -73,14 +72,12 @@
 		min-height: 500px;
 		position: relative;
 
-		
 		ul {
 			width: 100%;
 			transition: 0.5s;
 			transform: translateY(100px);
 			opacity: 0;
 
-			
 			&.on {
 				opacity: 1;
 				transform: translateY(0px);
@@ -101,7 +98,7 @@
 					width: 100%;
 					// background: #fff;
 					border: 1px solid #aaa;
-					padding: 20px;
+					padding: 40px;
 					position: relative;
 					// box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
@@ -110,28 +107,60 @@
 
 						.thumb {
 							width: 300px;
-							height: 250px;
-							margin-bottom: 20px;
+							height: 260px;
 							object-fit: cover;
 						}
 					}
-					p {
-						font: bold 25px/1 "Spartan";
-						color: #222;
-						margin-bottom: 25px;
-					}
-					span {
-						display: block;
-						width: 50%;
-						font: 15px/1.5 "Spartan";
-						color: #888;
-					}
-					.arrow {
-						// width: 100px;
+
+					.gallery_txt {
+						width: 38%;
+						display: inline-block;
 						position: absolute;
-						right: 40px;
-						bottom: 55px;
+						top: 55px;
+						right: 5%;
+
+						p {
+							font: bold 25px/1 "Spartan";
+							color: #222;
+							margin-bottom: 20px;
+						}
+						span {
+							width: 100%;
+							font: 17px/1.6 "Spartan";
+							color: #888;
+						}
 					}
+					.btn {
+						&::before {
+							content: "";
+							display: block;
+							width: 90px;
+							height: 2px;
+							position: absolute;
+							bottom: 40px;
+							right: 40px;
+							background: #222;
+						}
+						&::after {
+							content: "";
+							width: 25px;
+							height: 25px;
+							border-top: 2px solid #121212;
+							border-right: 2px solid #121212;
+							display: block;
+							transform: rotate(45deg);
+							position: absolute;
+							bottom: 28px;
+							right: 43px;
+						}
+					}
+
+					// .arrow {
+					// 	// width: 100px;
+					// 	position: absolute;
+					// 	right: 40px;
+					// 	bottom: 55px;
+					// }
 				}
 			}
 		}

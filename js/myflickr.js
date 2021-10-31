@@ -136,8 +136,15 @@ function getList(opt){
                                         src : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_m.jpg"
                                     })
                                 ),
-                                $("<p>").text("Lorem is Lorem"),
-                                $("<span>").text("Mauris ut magna feugiat, dignissim velit vitae, eleifend urna. Nam ac eros elementum purus lobortis laoreet. Vivamus nisi urna, gravida eget mauris quis, consectetur tincidunt odio. In et tristique mauris, ut lacinia nisl. Pellentesque pulvinar aliquam cursus.")
+                                $("<div class='gallery_txt'>")
+                                .append(
+                                    $("<p>").text("Lorem is Lorem"),
+                                $("<span>").text("Mauris ut magna feugiat, dignissim velit vitae, eleifend urna. Nam ac eros elementum purus lobortis laoreet. Vivamus nisi urna, gravida eget mauris quis, consectetur tincidunt odio..")
+                                ),
+                                $("<a class='btn'>").attr({
+                                    href : '#' ,
+                                    onclick : "return "+ false
+                                })                     
                                 // $("<img class='arrow'>").attr({
 
                                 // src : "img/arrow_black.png"})   
