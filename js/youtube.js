@@ -201,14 +201,32 @@ function getYoutube2(opt) {
                                         // $("<span>").text(date)
                                     ),
                                 $("<div class='icon_content'>")
-                                .append(
-                                    $("<p class='icon'>").text("246")
-                                        .append(
-                                            $("<i class='far fa-bookmark'>")
-                                        ),
-                                    $("<span>").text("Bookmark")
+                                    .append(
+                                        $("<p class='icon'>").text("246")
+                                            .append(
+                                                $("<i class='far fa-bookmark'>")
+                                            ),
+                                        $("<span>").text("Bookmark")
+                                        ,
+                                        $("<p class='icon'>").text("246")
+                                            .append(
+                                                $("<i class='far fa-bookmark'>")
+                                            ),
+                                        $("<span>").text("Bookmark")
+                                        ,
+                                        $("<p class='icon'>").text("246")
+                                            .append(
+                                                $("<i class='far fa-bookmark'>")
+                                            ),
+                                        $("<span>").text("Bookmark")
+                                        ,
+                                        $("<p class='icon'>").text("246")
+                                            .append(
+                                                $("<i class='far fa-bookmark'>")
+                                            ),
+                                        $("<span>").text("Bookmark")
 
-                                )
+                                    )
 
 
                             )
