@@ -122,8 +122,8 @@ function getYoutube1(opt) {
                                 $("<div class = 'con'>")
                                     .append(
                                         $("<h2>").text(data.snippet.title),
-                                        $("<p>").text(txt)
-                                        // $("<span>").text(date)
+                                        // $("<p>").text(txt)
+                                        $("<span>").text(date)
                                     )
                             )
                     )
@@ -202,35 +202,41 @@ function getYoutube2(opt) {
                                     ),
                                 $("<div class='icon_content'>")
                                     .append(
-                                        $("<p class='icon'>").text("246")
-                                            .append(
-                                                $("<i class='far fa-bookmark'>")
-                                            ),
-                                        $("<span>").text("Bookmark")
-                                        ,
-                                        $("<p class='icon'>").text("246")
-                                            .append(
-                                                $("<i class='far fa-bookmark'>")
-                                            ),
-                                        $("<span>").text("Bookmark")
-                                        ,
-                                        $("<p class='icon'>").text("246")
-                                            .append(
-                                                $("<i class='far fa-bookmark'>")
-                                            ),
-                                        $("<span>").text("Bookmark")
-                                        ,
-                                        $("<p class='icon'>").text("246")
-                                            .append(
-                                                $("<i class='far fa-bookmark'>")
-                                            ),
-                                        $("<span>").text("Bookmark")
+                                        $("<article class='icon'>").append(
+
+                                            $("<i class='far fa-bookmark'>")
+                                            ,
+                                            $("<p>").text("246")
+                                            ,
+                                            $("<span>").text("Bookmark")
+                                        ),
+                                        $("<article class='icon'>").append(
+
+                                            $("<i class='fas fa-laptop-house'>")
+                                            ,
+                                            $("<p>").text("375")
+                                            ,
+                                            $("<span>").text("Project")
+                                        ),
+                                        $("<article class='icon'>").append(
+
+                                            $("<i class='far fa-clipboard'>")
+                                            ,
+                                            $("<p>").text("118")
+                                            ,
+                                            $("<span>").text("Note")
+                                        ),
+                                        $("<article class='icon'>").append(
+
+                                            $("<i class='fas fa-wifi'>")
+                                            ,
+                                            $("<p>").text("105")
+                                            ,
+                                            $("<span>").text("WiFi")
+                                        )
 
                                     )
-
-
                             )
-
                     )
             });
         })
@@ -262,3 +268,4 @@ function getYoutube2(opt) {
         $(".pop").remove();
     });
 }
+
