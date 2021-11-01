@@ -1569,10 +1569,13 @@ fieldset {
           .youtube .inner .vidGallery2 article .con > p {
             font: 20px/1.5 "Spartan";
             color: #777; }
+        .youtube .inner .vidGallery2 article:hover a img {
+          transform: scale(2);
+          filter: grayscale(0); }
         .youtube .inner .vidGallery2 article .icon_content {
           display: inline-block;
           position: absolute;
-          right: 50px;
+          right: 94px;
           bottom: 0px; }
           .youtube .inner .vidGallery2 article .icon_content > .icon {
             display: inline-block;

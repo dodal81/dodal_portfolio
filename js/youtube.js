@@ -198,7 +198,6 @@ function getYoutube2(opt) {
                                     .append(
                                         $("<h2>").text(data.snippet.title),
                                         $("<p>").text(txt)
-                                        // $("<span>").text(date)
                                     ),
                                 $("<div class='icon_content'>")
                                     .append(
