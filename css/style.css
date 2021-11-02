@@ -1376,7 +1376,8 @@ fieldset {
       padding-left: 20px;
       border: none;
       font: bold 20px/1 'Noto Sans KR';
-      border-bottom: 3px solid #222; }
+      border-bottom: 3px solid #222;
+      outline: none; }
     .gallery .inner #searchBox button {
       display: none; }
   .gallery .inner .typography {
@@ -1726,7 +1727,7 @@ fieldset {
   .location .sub_visual {
     background-color: #bbb; }
   .location .inner h1 {
-    font: bold 50px/1 "Spartan";
+    font: bold 50px/1 'Noto Sans KR';
     margin-bottom: 40px;
     letter-spacing: 1.5px;
     color: #333;
@@ -1993,21 +1994,23 @@ fieldset {
 #visual {
   width: 100%;
   height: calc(100vh - 100px);
-  position: relative;
-  overflow: hidden; }
+  background: url(../img/main2.jpg) no-repeat center/cover;
+  overflow: hidden;
+  position: relative; }
   #visual .txt {
     width: 60%;
     position: absolute;
-    top: 25%;
+    top: 55%;
     left: 5%;
     z-index: 2; }
     #visual .txt h1 {
       font: 300 100px/1 "Spartan";
-      color: #111;
+      color: #fff;
       margin-bottom: 30px; }
     #visual .txt p {
-      font: 35px/1.5 "Spartan";
-      color: #111;
+      font: 33px/1.5 "Spartan";
+      letter-spacing: 1.5px;
+      color: #fff;
       margin-bottom: 70px; }
     #visual .txt a {
       display: inline-block;
@@ -2080,10 +2083,10 @@ fieldset {
 #popup {
   width: 400px;
   height: 300px;
-  background: #edd6da;
+  background: #fff;
   padding: 20px;
   box-sizing: border-box;
-  color: #fff;
+  color: #111;
   position: absolute;
   top: 100px;
   right: 10%;
@@ -2092,27 +2095,28 @@ fieldset {
   #popup .pop_inner {
     width: 100%;
     height: 100%;
-    border: 2px solid #fff;
+    border: 2px solid #111;
     padding: 40px; }
     #popup .pop_inner h1 {
       text-align: center;
-      font: bold 30px/1 "Spartan"; }
+      font: bold 30px/1 'Noto Sans KR'; }
     #popup .pop_inner .pop_content {
       width: 100%;
       min-height: 150px;
-      padding-top: 30px; }
+      padding-top: 50px;
+      text-align: center; }
     #popup .pop_inner::after {
       content: "";
       display: block; }
     #popup .pop_inner .wrap {
       float: left; }
       #popup .pop_inner .wrap label {
-        font: bold 13px/1 "Spartan";
+        font: bold 13px/1 'Noto Sans KR';
         margin-left: 4px; }
     #popup .pop_inner .close {
       float: right;
-      font: 14px/1 "Spartan";
-      color: #fff; }
+      font: 14px/1 'Noto Sans KR';
+      color: #111; }
 
 #news {
   width: 100%;
