@@ -416,7 +416,7 @@ fieldset {
 'Noto Sans KR'
 */
 .community .sub_visual {
-  background: url(../img/came2.jpg);
+  background: #111;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -424,7 +424,7 @@ fieldset {
   position: relative; }
   .community .sub_visual > h1 {
     text-align: center;
-    font: 400 40px/1 "Spartan";
+    font: 400 40px/1 'Noto Sans KR';
     letter-spacing: 1.5px;
     color: #fff;
     padding-top: 63px;
@@ -455,7 +455,7 @@ fieldset {
   width: 1180px;
   /* pagination */ }
   .community .inner h1 {
-    font: bold 40px/1 "arial";
+    font: bold 40px/1 'Noto Sans KR';
     color: #444; }
   .community .inner .help {
     width: 100%;
@@ -504,7 +504,7 @@ fieldset {
         color: #111;
         transition: 0.5s; }
   .community .inner h2 {
-    font: bold 50px/1 "Spartan";
+    font: bold 50px/1 'Noto Sans KR';
     color: #333;
     letter-spacing: 1.5px;
     text-align: center;
@@ -513,7 +513,7 @@ fieldset {
     text-align: center;
     margin-bottom: 50px; }
     .community .inner .header1 span {
-      font: normal 17px/1 "Spartan";
+      font: normal 17px/1 'Noto Sans KR';
       display: inline-block;
       margin-right: 30px;
       color: #666;
@@ -578,10 +578,10 @@ fieldset {
         margin-right: 15px;
         background: #333;
         color: #fff;
-        font: normal 13px/30px "Spartan";
+        font: normal 13px/30px 'Noto Sans KR';
         text-align: center; }
       .community .inner table tr td a:nth-of-type(1) {
-        font: normal 16px/1 "Spartan";
+        font: normal 16px/1 'Noto Sans KR';
         color: #333; }
     .community .inner table thead {
       border-top: 3px solid #222;
@@ -611,7 +611,7 @@ fieldset {
       width: 130px;
       height: 40px;
       border: 1px solid #333;
-      font: normal 18px/40px "Spartan";
+      font: normal 18px/40px 'Noto Sans KR';
       color: #333;
       text-align: center; }
     .community .inner .pagination .numbers {
@@ -669,7 +669,7 @@ fieldset {
         display: inline-block;
         width: 20px;
         height: 30px;
-        font: bold 12px/30px "Spartan";
+        font: bold 12px/30px 'Noto Sans KR';
         color: #666;
         text-align: center;
         margin: 0 5px;
@@ -689,9 +689,9 @@ fieldset {
       margin-left: 10px;
       margin-right: 10px; }
     .community .inner table tr td a {
-      font: 13px/1 "arial"; }
+      font: 13px/1 'Noto Sans KR'; }
     .community .inner table tr td:nth-of-type(2) {
-      font: normal 12px/30px "arial"; }
+      font: normal 12px/30px 'Noto Sans KR'; }
     .community .inner .pagination .search {
       font: bold 8px/1px;
       color: #666;
@@ -727,7 +727,7 @@ fieldset {
     .community .inner .pagination .next {
       width: 100px;
       height: 30px;
-      font: normal 16px/30px "STIX Two Text"; } }
+      font: normal 16px/30px 'Noto Sans KR'; } }
 @media screen and (max-width: 539px) {
   .community .inner {
     /* pagination */ }
@@ -1089,11 +1089,10 @@ fieldset {
   width: 100%;
   background: #f8f8f8; }
   .department .sub_visual {
-    background: #ccc;
+    background: #111;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.8; }
+    background-position: center center; }
   .department .inner {
     width: 1180px;
     margin: 0 auto;
@@ -1141,14 +1140,14 @@ fieldset {
           margin-top: -60px; }
           .department .inner .wrap .company .txt h2 {
             width: 90%;
-            font: bold 60px/1 "Spartan";
+            font: bold 60px/1 'Noto Sans KR';
             border-bottom: 5px solid #111;
-            padding-bottom: 25px;
+            padding-bottom: 35px;
             color: #222;
             margin-bottom: 45px; }
           .department .inner .wrap .company .txt p {
             width: 80%;
-            font: 400 20px/1.7 "Spartan";
+            font: 400 20px/1.7 'Noto Sans KR';
             color: #888;
             margin-bottom: 45px; }
           .department .inner .wrap .company .txt a {
@@ -1158,7 +1157,7 @@ fieldset {
             width: 280px;
             height: 60px;
             background: rgba(216, 216, 216, 0.665);
-            font: 15px/60px "Spartan";
+            font: 15px/60px 'Noto Sans KR';
             color: #858080;
             margin-right: 20px; }
       .department .inner .wrap .help {
@@ -1179,7 +1178,7 @@ fieldset {
           .department .inner .wrap .help .help_txt:last-child {
             margin-right: 0; }
           .department .inner .wrap .help .help_txt h2 {
-            font: bold 35px/1 "Spartan";
+            font: bold 35px/1 'Noto Sans KR';
             color: #222;
             padding-bottom: 30px;
             border-bottom: 3px solid #222;
@@ -1205,23 +1204,23 @@ fieldset {
                 display: block;
                 transform: rotate(45deg);
                 position: absolute;
-                top: 7px;
+                top: 13px;
                 right: -197px; }
           .department .inner .wrap .help .help_txt p {
-            font: bold 20px/1.7 "Spartan";
+            font: bold 20px/1.7 'Noto Sans KR';
             color: #333; }
       .department .inner .wrap .team {
         display: inline-block;
         width: 100%;
         text-align: center; }
         .department .inner .wrap .team > h1 {
-          font: bold 50px/1 "Spartan";
+          font: bold 50px/1 'Noto Sans KR';
           color: #222;
           margin-bottom: 55px; }
         .department .inner .wrap .team > h2 {
           display: inline-block;
           width: 70%;
-          font: bold 23px/1.5 "Spartan";
+          font: bold 23px/1.5 'Noto Sans KR';
           color: #666;
           margin-bottom: 100px; }
         .department .inner .wrap .team article {
@@ -1254,7 +1253,7 @@ fieldset {
               opacity: 0;
               text-align: center; }
               .department .inner .wrap .team article .pic .txt p {
-                font: bold 20px/1 "Spartan";
+                font: bold 20px/1 'Noto Sans KR';
                 color: #fff;
                 letter-spacing: 1.7px;
                 position: absolute;
@@ -1313,11 +1312,11 @@ fieldset {
             background-size: cover;
             background-position: center; }
           .department .inner .wrap .team article > h3 {
-            font: bold 22px/1 "Spartan";
+            font: bold 22px/1 'Noto Sans KR';
             color: #222;
             margin-bottom: 15px; }
           .department .inner .wrap .team article > p {
-            font: bold 17px/1.5 "Spartan";
+            font: bold 17px/1.5 'Noto Sans KR';
             color: #999;
             margin-bottom: 30px; }
           .department .inner .wrap .team article > a {
@@ -1342,12 +1341,14 @@ fieldset {
 'STIX Two Text'
 'Noto Sans KR'
 */
+.gallery .sub_visual {
+  background: #111; }
 .gallery .inner {
   width: 100%;
   padding: 100px;
   position: relative; }
   .gallery .inner h1 {
-    font: bold 50px/1.5 "Spartan";
+    font: bold 50px/1.5 'Noto Sans KR';
     text-align: left;
     color: #333;
     letter-spacing: 1.5px;
@@ -1374,7 +1375,7 @@ fieldset {
       height: 40px;
       padding-left: 20px;
       border: none;
-      font: bold 20px/1 "Spartan";
+      font: bold 20px/1 'Noto Sans KR';
       border-bottom: 3px solid #222; }
     .gallery .inner #searchBox button {
       display: none; }
@@ -1383,13 +1384,13 @@ fieldset {
     text-align: right;
     position: absolute;
     right: 120px;
-    top: 50px; }
+    top: 70px; }
     .gallery .inner .typography h2 {
-      font: bold 22px/1 "Spartan";
+      font: bold 22px/1 'Noto Sans KR';
       color: #222;
       margin-bottom: 10px; }
     .gallery .inner .typography p {
-      font: 18px/1.7 "Spartan";
+      font: 18px/1.7 'Noto Sans KR';
       color: #888; }
   .gallery .inner #gallery_page {
     width: 100%;
@@ -1429,12 +1430,12 @@ fieldset {
             top: 55px;
             right: 5%; }
             .gallery .inner #gallery_page ul li > div .gallery_txt p {
-              font: bold 23px/1 "Spartan";
+              font: bold 23px/1 'Noto Sans KR';
               color: #222;
               margin-bottom: 20px; }
             .gallery .inner #gallery_page ul li > div .gallery_txt span {
               width: 100%;
-              font: 15px/1.6 "Spartan";
+              font: 15px/1.6 'Noto Sans KR';
               color: #888; }
           .gallery .inner #gallery_page ul li > div .btn::before {
             content: "";
@@ -1454,7 +1455,7 @@ fieldset {
             display: block;
             transform: rotate(45deg);
             position: absolute;
-            bottom: 28px;
+            bottom: 27.5px;
             right: 43px; }
 
 .pop {
@@ -1520,7 +1521,7 @@ fieldset {
       border-radius: 30px;
       margin-bottom: 120px;
       border: 2px solid #fff;
-      font: bold 15px/1.5 "Spartan";
+      font: bold 15px/1.5 'Noto Sans KR';
       letter-spacing: 1.5px;
       margin-top: 92px;
       color: #eee;
@@ -1563,11 +1564,11 @@ fieldset {
           width: 40%;
           text-align: left; }
           .youtube .inner .vidGallery2 article .con > h2 {
-            font: bold 30px/1 "Spartan";
+            font: bold 30px/1 'Noto Sans KR';
             color: #111;
             margin-bottom: 30px; }
           .youtube .inner .vidGallery2 article .con > p {
-            font: 20px/1.5 "Spartan";
+            font: 20px/1.5 'Noto Sans KR';
             color: #777; }
         .youtube .inner .vidGallery2 article:hover a img {
           transform: scale(2);
@@ -1575,11 +1576,11 @@ fieldset {
         .youtube .inner .vidGallery2 article .icon_content {
           display: inline-block;
           position: absolute;
-          right: 94px;
+          right: 95px;
           bottom: 0px; }
           .youtube .inner .vidGallery2 article .icon_content > .icon {
             display: inline-block;
-            margin-right: 60px;
+            margin-right: 70px;
             margin-bottom: 0px; }
             .youtube .inner .vidGallery2 article .icon_content > .icon:last-child {
               margin-right: 0px; }
@@ -1588,11 +1589,11 @@ fieldset {
               color: #aaa;
               margin-bottom: 20px; }
             .youtube .inner .vidGallery2 article .icon_content > .icon p {
-              font: bold 25px/1 "Spantan";
+              font: bold 25px/1 'Noto Sans KR';
               color: #222;
               margin-bottom: 10px; }
             .youtube .inner .vidGallery2 article .icon_content > .icon span {
-              font: 16px/1 "Spartan";
+              font: 16px/1 'Noto Sans KR';
               color: #333; }
     .youtube .inner .vidGallery {
       margin-bottom: 170px; }
@@ -1601,11 +1602,11 @@ fieldset {
         display: block;
         clear: both; }
       .youtube .inner .vidGallery h2 {
-        font: bold 30px/1 "Spartan";
+        font: bold 30px/1 'Noto Sans KR';
         color: #111;
         margin-bottom: 20px; }
       .youtube .inner .vidGallery p {
-        font: 20px/1 "Spartan";
+        font: 20px/1 'Noto Sans KR';
         color: #777;
         margin-bottom: 120px; }
       .youtube .inner .vidGallery article {
@@ -1640,12 +1641,12 @@ fieldset {
           transition: 0.5s;
           text-align: left; }
           .youtube .inner .vidGallery article .con h2 {
-            font: bold 17px/1.5 "맑은 고딕", "Spartan";
+            font: bold 17px/1.5 "맑은 고딕", 'Noto Sans KR';
             color: #fff;
             margin-bottom: 15px;
             transition: 0.5s; }
           .youtube .inner .vidGallery article .con span {
-            font: bold 12px/1 "Spartan";
+            font: bold 12px/1 'Noto Sans KR';
             color: pink;
             position: absolute;
             bottom: 20px;
@@ -1662,13 +1663,13 @@ fieldset {
       .youtube .inner table thead tr {
         border-bottom: 2px solid #444; }
         .youtube .inner table thead tr th:nth-of-type(1) {
-          font: bold 60px/1 "Spartan";
+          font: bold 50px/1 'Noto Sans KR';
           text-align: left;
           padding-left: 40px;
           padding-bottom: 30px;
           width: 80%; }
         .youtube .inner table thead tr th:nth-of-type(2) {
-          font-size: 40px;
+          font-size: 30px;
           padding-bottom: 30px;
           text-align: right;
           width: 20%; }
@@ -1683,7 +1684,7 @@ fieldset {
               font-size: 30px; }
           .youtube .inner table tbody tr td:nth-of-type(2) {
             width: 20%;
-            font: bold 17px/1 "Spartan";
+            font: bold 17px/1 'Noto Sans KR';
             letter-spacing: 1.5px; }
           .youtube .inner table tbody tr td:nth-of-type(3) {
             width: 10%;
@@ -1693,7 +1694,7 @@ fieldset {
               font-size: 20px; }
           .youtube .inner table tbody tr td a {
             margin-left: 20px;
-            font: bold 25px/1.5 "Spartan";
+            font: bold 20px/1.5 'Noto Sans KR';
             color: #222; }
 
 .pop {

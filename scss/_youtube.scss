@@ -25,7 +25,7 @@
 			border-radius: 30px;
 			margin-bottom: 120px;
 			border: 2px solid #fff;
-			font: bold 15px/1.5 "Spartan";
+			font: bold 15px/1.5 'Noto Sans KR';
 			letter-spacing: 1.5px;
 			margin-top: 92px;
 			color: #eee;
@@ -96,12 +96,12 @@
 					text-align: left;
 
 					> h2 {
-						font: bold 30px/1 "Spartan";
+						font: bold 30px/1 'Noto Sans KR';
 						color: #111;
 						margin-bottom: 30px;
 					}
 					> p {
-						font: 20px/1.5 "Spartan";
+						font: 20px/1.5 'Noto Sans KR';
 						color: #777;
 					}
 				}
@@ -116,12 +116,12 @@
 				.icon_content {
 					display: inline-block;
 					position: absolute;
-					right: 94px;
+					right: 95px;
 					bottom: 0px;
 
 					> .icon {
 						display: inline-block;
-						margin-right: 60px;
+						margin-right: 70px;
 						margin-bottom: 0px;
 
 						&:last-child {
@@ -134,12 +134,12 @@
 							margin-bottom: 20px;
 						}
 						p {
-							font: bold 25px/1 "Spantan";
+							font: bold 25px/1 'Noto Sans KR';
 							color: #222;
 							margin-bottom: 10px;
 						}
 						span {
-							font: 16px/1 "Spartan";
+							font: 16px/1 'Noto Sans KR';
 							color: #333;
 						}
 					}
@@ -154,12 +154,12 @@
 				clear: both;
 			}
 			h2 {
-				font: bold 30px/1 "Spartan";
+				font: bold 30px/1 'Noto Sans KR';
 				color: #111;
 				margin-bottom: 20px;
 			}
 			p {
-				font: 20px/1 "Spartan";
+				font: 20px/1 'Noto Sans KR';
 				color: #777;
 				margin-bottom: 120px;
 			}
@@ -213,7 +213,7 @@
 					text-align: left;
 
 					h2 {
-						font: bold 17px/1.5 "맑은 고딕", "Spartan";
+						font: bold 17px/1.5 "맑은 고딕", 'Noto Sans KR';
 						color: #fff;
 						margin-bottom: 15px;
 						transition: 0.5s;
@@ -223,7 +223,7 @@
 					// 	color: #ddd;
 					// }
 					span {
-						font: bold 12px/1 "Spartan";
+						font: bold 12px/1 'Noto Sans KR';
 						color: pink;
 						position: absolute;
 						bottom: 20px;
@@ -256,14 +256,14 @@
 
 					th {
 						&:nth-of-type(1) {
-							font: bold 60px/1 "Spartan";
+							font: bold 50px/1 'Noto Sans KR';
 							text-align: left;
 							padding-left: 40px;
 							padding-bottom: 30px;
 							width: 80%;
 						}
 						&:nth-of-type(2) {
-							font-size: 40px;
+							font-size: 30px;
 							padding-bottom: 30px;
 							text-align: right;
 							width: 20%;
@@ -287,7 +287,7 @@
 						}
 						&:nth-of-type(2) {
 							width: 20%;
-							font: bold 17px/1 "Spartan";
+							font: bold 17px/1 'Noto Sans KR';
 							letter-spacing: 1.5px;
 						}
 						&:nth-of-type(3) {
@@ -302,7 +302,7 @@
 
 						a {
 							margin-left: 20px;
-							font: bold 25px/1.5 "Spartan";
+							font: bold 20px/1.5 'Noto Sans KR';
 							color: #222;
 						}
 					}

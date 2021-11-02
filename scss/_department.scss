@@ -11,11 +11,11 @@
 	background: #f8f8f8;
 
 	.sub_visual {
-		background: #ccc;
+		background: #111;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-		opacity: 0.8;
+		// opacity: 0.8;
 	}
 
 	.inner {
@@ -102,15 +102,15 @@
 
 					h2 {
 						width: 90%;
-						font: bold 60px/1 "Spartan";
+						font: bold 60px/1 'Noto Sans KR';
 						border-bottom: 5px solid #111;
-						padding-bottom: 25px;
+						padding-bottom: 35px;
 						color: #222;
 						margin-bottom: 45px;
 					}
 					p {
 						width: 80%;
-						font: 400 20px/1.7 "Spartan";
+						font: 400 20px/1.7 'Noto Sans KR';
 						color: #888;
 						margin-bottom: 45px;
 					}
@@ -121,7 +121,7 @@
 						width: 280px;
 						height: 60px;
 						background: rgba(216, 216, 216, 0.665);
-						font: 15px/60px "Spartan";
+						font: 15px/60px 'Noto Sans KR';
 						color: rgb(133, 128, 128);
 						margin-right: 20px;
 					}
@@ -149,7 +149,7 @@
 					}
 
 					h2 {
-						font: bold 35px/1 "Spartan";
+						font: bold 35px/1 'Noto Sans KR';
 						color: #222;
 						padding-bottom: 30px;
 						border-bottom: 3px solid #222;
@@ -178,13 +178,13 @@
 								display: block;
 								transform: rotate(45deg);
 								position: absolute;
-								top: 7px;
+								top: 13px;
 								right: -197px;
 							}
 						}
 					}
 					p {
-						font: bold 20px/1.7 "Spartan";
+						font: bold 20px/1.7 'Noto Sans KR';
 						color: #333;
 					}
 				}
@@ -196,14 +196,14 @@
 				text-align: center;
 
 				> h1 {
-					font: bold 50px/1 "Spartan";
+					font: bold 50px/1 'Noto Sans KR';
 					color: #222;
 					margin-bottom: 55px;
 				}
 				> h2 {
 					display: inline-block;
 					width: 70%;
-					font: bold 23px/1.5 "Spartan";
+					font: bold 23px/1.5 'Noto Sans KR';
 					color: #666;
 					margin-bottom: 100px;
 				}
@@ -244,7 +244,7 @@
 							text-align: center;
 
 							p {
-								font: bold 20px/1 "Spartan";
+								font: bold 20px/1 'Noto Sans KR';
 								color: #fff;
 								letter-spacing: 1.7px;
 								position: absolute;
@@ -319,12 +319,12 @@
 						background-position: center;
 					}
 					> h3 {
-						font: bold 22px/1 "Spartan";
+						font: bold 22px/1 'Noto Sans KR';
 						color: #222;
 						margin-bottom: 15px;
 					}
 					> p {
-						font: bold 17px/1.5 "Spartan";
+						font: bold 17px/1.5 'Noto Sans KR';
 						color: #999;
 						margin-bottom: 30px;
 					}

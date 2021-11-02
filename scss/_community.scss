@@ -9,7 +9,8 @@
 .community {
 	// background: #fff;
 	.sub_visual {
-		background: url(../img/came2.jpg);
+		// background: url(../img/came2.jpg);
+		background: #111;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -18,7 +19,7 @@
 
 		>h1 {
 			text-align: center;
-			font: 400 40px/1 "Spartan";
+			font: 400 40px/1 'Noto Sans KR';
 			letter-spacing: 1.5px;
 			color: #fff;
 			padding-top: 63px;
@@ -59,7 +60,7 @@
 
 
 		h1 {
-			font: bold 40px/1 "arial";
+			font: bold 40px/1 'Noto Sans KR';
 			color: #444;
 		}
 		.help {
@@ -125,7 +126,7 @@
 		}
 		h2 {
 			
-			font: bold 50px/1 "Spartan";
+			font: bold 50px/1 'Noto Sans KR';
 			color: #333;
 			letter-spacing: 1.5px;
 			text-align: center;
@@ -135,7 +136,7 @@
 			text-align: center;
 			margin-bottom: 50px;
 			span {
-				font: normal 17px/1 "Spartan";
+				font: normal 17px/1 'Noto Sans KR';
 				display: inline-block;
 				margin-right: 30px;
 				color: #666;
@@ -228,11 +229,11 @@
 						margin-right: 15px;
 						background: #333;
 						color: #fff;
-						font: normal 13px/30px "Spartan";
+						font: normal 13px/30px 'Noto Sans KR';
 						text-align: center;
 					}
 					a:nth-of-type(1) {
-						font: normal 16px/1 "Spartan";
+						font: normal 16px/1 'Noto Sans KR';
 						color: #333;
 					}
 				}
@@ -273,7 +274,7 @@
 				width: 130px;
 				height: 40px;
 				border: 1px solid #333;
-				font: normal 18px/40px "Spartan";
+				font: normal 18px/40px 'Noto Sans KR';
 				color: #333;
 				text-align: center;
 			}
@@ -338,7 +339,7 @@
 					display: inline-block;
 					width: 20px;
 					height: 30px;
-					font: bold 12px/30px "Spartan";
+					font: bold 12px/30px 'Noto Sans KR';
 					color: #666;
 					text-align: center;
 
@@ -375,10 +376,10 @@
 							margin-right: 10px;
 						}
 						a {
-							font: 13px/1 "arial";
+							font: 13px/1 'Noto Sans KR';
 						}
 						&:nth-of-type(2) {
-							font: normal 12px/30px "arial";
+							font: normal 12px/30px 'Noto Sans KR';
 						}
 					}
 				}
@@ -438,7 +439,7 @@
 				.next {
 					width: 100px;
 					height: 30px;
-					font: normal 16px/30px "STIX Two Text";
+					font: normal 16px/30px 'Noto Sans KR';
 				}
 			}
 		}
