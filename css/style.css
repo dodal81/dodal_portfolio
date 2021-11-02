@@ -2029,56 +2029,23 @@ fieldset {
         right: 10%;
         top: 50%;
         transform: translateY(-50%); }
-  #visual #slider {
-    width: 60%;
-    height: 100%;
+  #visual .visual_box {
+    width: 700px;
+    height: 250px;
+    background: #fff;
     position: absolute;
-    right: 0%;
-    top: 50%;
-    overflow: hidden;
-    transform: skew(-20deg) translateY(-50%); }
-    #visual #slider .list {
-      width: calc(100% * 4);
-      height: inherit;
-      margin-left: -100%; }
-      #visual #slider .list > li {
-        width: calc(100% / 4);
-        height: inherit;
-        float: left;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        #visual #slider .list > li[data-index="1"] {
-          background: #9cc6ed;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat; }
-        #visual #slider .list > li[data-index="2"] {
-          background: #ffdadf;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat; }
-        #visual #slider .list > li[data-index="3"] {
-          background: #ffeea8;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat; }
-        #visual #slider .list > li[data-index="4"] {
-          background: #b3ffc2;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat; }
-  #visual .btns_inner {
-    width: 100%;
-    margin: 0 auto; }
-    #visual .btns_inner .next {
-      display: inline-block;
-      font-size: 80px;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      right: 5%;
-      transform: translateY(-50%); }
+    bottom: 0;
+    right: 0; }
+    #visual .visual_box h2 {
+      font: bold 27px/1.3 "Spartan";
+      margin-top: 50px;
+      margin-left: 100px; }
+    #visual .visual_box input[type="text"] {
+      width: 350px;
+      margin-left: 100px;
+      margin-top: 30px;
+      border: none;
+      border-bottom: 4px solid #111; }
 
 #popup {
   width: 400px;
