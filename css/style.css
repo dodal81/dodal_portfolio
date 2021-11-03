@@ -2004,53 +2004,60 @@ fieldset {
     left: 5%;
     z-index: 2; }
     #visual .txt h1 {
-      font: 300 100px/1 "Spartan";
+      font: 300 85px/1 "Spartan";
       color: #fff;
       margin-bottom: 30px; }
     #visual .txt p {
-      font: 33px/1.5 "Spartan";
+      font: 27px/1.5 "Spartan";
       letter-spacing: 1.5px;
       color: #fff;
       margin-bottom: 70px; }
-    #visual .txt a {
-      display: inline-block;
-      width: 350px;
-      height: 70px;
-      background: #ccc;
-      color: #fff;
-      font: 30px/70px "Spartan";
-      text-align: center;
-      position: relative;
-      padding-right: 10px;
-      text-align: left;
-      padding-left: 40px; }
-      #visual .txt a img {
-        position: absolute;
-        right: 10%;
-        top: 50%;
-        transform: translateY(-50%); }
   #visual .visual_box {
-    width: 700px;
+    width: 600px;
     height: 250px;
     background: #fff;
     position: absolute;
     bottom: 0;
     right: 0; }
     #visual .visual_box h2 {
-      font: bold 27px/1.3 "Spartan";
+      font: bold 25px/1.3 "Spartan";
       margin-top: 50px;
-      margin-left: 100px; }
+      margin-left: 90px; }
     #visual .visual_box input[type="text"] {
-      width: 350px;
-      margin-left: 100px;
+      width: 150px;
+      margin-left: 90px;
       margin-top: 30px;
       border: none;
-      border-bottom: 4px solid #111; }
+      border-bottom: 4px solid #111;
+      outline: none;
+      transition: 0.5s; }
+    #visual .visual_box .right_box {
+      position: absolute;
+      top: 125px;
+      right: 70px; }
+      #visual .visual_box .right_box p {
+        display: inline-block;
+        font: bold 23px/1 "Spartan";
+        color: #111;
+        position: absolute;
+        bottom: 0px;
+        right: 50px; }
+      #visual .visual_box .right_box .right1 {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #111;
+        text-align: center;
+        font-size: 20px;
+        line-height: 35px;
+        color: #111; }
+    #visual .visual_box:hover input[type="text"] {
+      width: 300px; }
 
 #popup {
   width: 400px;
   height: 300px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   box-sizing: border-box;
   color: #111;
@@ -2066,7 +2073,7 @@ fieldset {
     padding: 40px; }
     #popup .pop_inner h1 {
       text-align: center;
-      font: bold 30px/1 'Noto Sans KR'; }
+      font: bold 30px/1 "Noto Sans KR"; }
     #popup .pop_inner .pop_content {
       width: 100%;
       min-height: 150px;
@@ -2078,91 +2085,125 @@ fieldset {
     #popup .pop_inner .wrap {
       float: left; }
       #popup .pop_inner .wrap label {
-        font: bold 13px/1 'Noto Sans KR';
+        font: bold 13px/1 "Noto Sans KR";
         margin-left: 4px; }
     #popup .pop_inner .close {
       float: right;
-      font: 14px/1 'Noto Sans KR';
+      font: 14px/1 "Noto Sans KR";
       color: #111; }
 
 #news {
   width: 100%;
-  padding: 100px 0;
-  background-color: rgba(233, 175, 180, 0.562); }
+  padding: 170px 0;
+  background: #fff; }
   #news .inner {
     width: 1180px;
-    margin: 0 auto;
-    text-align: center; }
+    margin: 0 auto; }
     #news .inner h1 {
       display: inline-block;
-      font: 700 25px/1 "Spartan";
-      color: #ce616f;
-      margin-bottom: 25px; }
-    #news .inner h2 {
-      font: 100 17px/1 "Spartan";
-      color: #fff;
-      margin-bottom: 50px; }
+      font: bold 35px/1.5 "Spartan";
+      color: #111;
+      margin-bottom: 25px;
+      text-align: left; }
+    #news .inner .header_txt {
+      font: 600 17px/1.6 "Spartan";
+      color: #111;
+      float: right;
+      margin-top: 40px;
+      text-align: left;
+      position: relative; }
+      #news .inner .header_txt::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #111;
+        position: absolute;
+        left: -70px;
+        top: 10px; }
     #news .inner .wrap {
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row; }
+      width: 100%; }
       #news .inner .wrap article {
-        width: 280px;
-        height: 280px;
+        width: 360px;
+        height: 200px;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: 0.5s; }
-        #news .inner .wrap article .icon {
-          display: inline-block; }
-          #news .inner .wrap article .icon i {
-            font-size: 30px;
-            color: #ce616f; }
-        #news .inner .wrap article .news_txt {
-          width: 80%; }
-          #news .inner .wrap article .news_txt h2 {
-            margin-bottom: 10px;
-            margin-top: 10px; }
-            #news .inner .wrap article .news_txt h2 a {
-              display: inline-block;
-              font: bold 16px/30px "Spartan";
-              width: 150px;
-              height: 30px;
-              text-align: center;
-              color: #ce616f;
-              box-sizing: border-box; }
-            #news .inner .wrap article .news_txt h2:hover a {
-              background: #ffbdc7;
-              border: 1px dashed transparent;
-              border: none;
-              color: #fff; }
-          #news .inner .wrap article .news_txt p {
-            font: 14px/1.4 "Spartan";
-            color: #fff; }
+        text-align: left;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        background: #efefef;
+        position: relative;
+        float: left;
+        transition: 0.5s;
+        padding: 40px; }
+        #news .inner .wrap article:hover {
+          background: #fff;
+          box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.05); }
+        #news .inner .wrap article:nth-of-type(3n + 0) {
+          margin-right: 0; }
+        #news .inner .wrap article p {
+          font: bold 23px/1 "Spartan";
+          color: #111;
+          margin-bottom: 15px; }
+        #news .inner .wrap article span {
+          font: 500 15px/1.5 "Spartan";
+          color: #111; }
+        #news .inner .wrap article i {
+          position: absolute;
+          top: 35px;
+          right: 30px;
+          font-size: 30px;
+          color: #111; }
+        #news .inner .wrap article .arrow {
+          position: relative;
+          width: 44px;
+          height: 10px;
+          margin-top: 20px; }
+          #news .inner .wrap article .arrow::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 43px;
+            height: 2px;
+            background: #000; }
+          #news .inner .wrap article .arrow::after {
+            width: 0px;
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0px;
+            height: 0px;
+            border-bottom: 5px solid transparent;
+            border-top: 5px solid transparent;
+            border-left: 5px solid #000; }
 
 #product {
   width: 100%;
-  padding: 200px 0;
+  padding: 100px 0;
   background: #fff; }
   #product .inner {
     width: 1180px;
     margin: 0 auto;
-    position: relative;
-    text-align: center; }
+    position: relative; }
     #product .inner h1 {
       font: bold 35px/1 "Spartan";
       color: #111;
-      text-align: center;
+      text-align: left;
       margin-bottom: 40px; }
-    #product .inner > a {
-      display: inline;
+      #product .inner h1::after {
+        content: "";
+        display: block;
+        width: 83%;
+        height: 2px;
+        background: #111;
+        position: absolute;
+        top: 16px;
+        right: 0px; }
+    #product .inner a {
+      display: inline-block;
       height: 50px;
-      font: bold 25px/50px 'Spartan';
+      font: bold 25px/50px "Spartan";
       border: 1px solid #888;
       color: #888;
       border-radius: 30px;
@@ -2170,75 +2211,17 @@ fieldset {
       padding: 10px 30px;
       box-sizing: border-box;
       transition: 0.5s; }
-      #product .inner > a:hover {
+      #product .inner a:hover {
         background: #91b6d6;
         border: none;
         color: #fff; }
     #product .inner .wrap {
       width: 100%; }
-      #product .inner .wrap .product_slider {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        transition: 1s; }
-        #product .inner .wrap .product_slider .product_list {
-          width: 3600px;
-          height: 100%;
-          overflow: hidden; }
-          #product .inner .wrap .product_slider .product_list li {
-            width: 360px;
-            height: 500px;
-            float: left;
-            margin-right: 40px;
-            border-radius: 10px;
-            margin-top: 50px;
-            position: relative;
-            text-align: center; }
-            #product .inner .wrap .product_slider .product_list li[data-index="1"] {
-              background: #9cc6ed; }
-            #product .inner .wrap .product_slider .product_list li[data-index="2"] {
-              background: #ffdadf; }
-            #product .inner .wrap .product_slider .product_list li[data-index="3"] {
-              background: #ffeea8; }
-            #product .inner .wrap .product_slider .product_list li[data-index="4"] {
-              background: #b3ffc2; }
-            #product .inner .wrap .product_slider .product_list li[data-index="5"] {
-              background: #77A1D3; }
-            #product .inner .wrap .product_slider .product_list li[data-index="6"] {
-              background: #fbc7d4; }
-            #product .inner .wrap .product_slider .product_list li[data-index="7"] {
-              background: #1488CC; }
-            #product .inner .wrap .product_slider .product_list li[data-index="8"] {
-              background: #B79891; }
-            #product .inner .wrap .product_slider .product_list li[data-index="9"] {
-              background: #536976; }
-            #product .inner .wrap .product_slider .product_list li .txt {
-              position: absolute;
-              bottom: 10%;
-              left: 50%;
-              transform: translateX(-50%); }
-              #product .inner .wrap .product_slider .product_list li .txt h2 {
-                font: bold 23px/1 "Spartan";
-                color: #111;
-                margin-bottom: 10px; }
-              #product .inner .wrap .product_slider .product_list li .txt p {
-                font: bold 20px/1.5 "Noto Sans KR";
-                color: #111;
-                letter-spacing: 1.5px;
-                margin-bottom: 20px; }
-              #product .inner .wrap .product_slider .product_list li .txt a {
-                display: inline-block;
-                width: 180px;
-                height: 50px;
-                border: 1px solid #fff;
-                font: bold 15px/50px 'Spartan';
-                text-align: center;
-                color: #fff; }
 
 #banner {
   width: 100%;
   padding: 80px 0;
-  background: #9cc6ed;
+  background: #ddd;
   background-image: rgba(0, 0, 0, 0.02); }
   #banner .inner {
     width: 1180px;
