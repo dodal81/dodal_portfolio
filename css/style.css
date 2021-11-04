@@ -2094,7 +2094,7 @@ fieldset {
 
 #news {
   width: 100%;
-  padding: 200px 0;
+  padding: 200px 0 180px;
   background: #fff; }
   #news .inner {
     width: 1180px;
@@ -2284,7 +2284,17 @@ fieldset {
     #brand .inner h1 {
       font: bold 35px/1.5 "Spartan";
       letter-spacing: 1.3px;
-      text-align: left; }
+      text-align: left;
+      position: relative; }
+      #brand .inner h1::after {
+        content: "loremislorem";
+        display: inline-block;
+        font: 13px/1 "Spartan";
+        color: #111;
+        position: absolute;
+        left: -120px;
+        bottom: 25px;
+        transform: rotate(-90deg); }
     #brand .inner .wrap {
       width: 100%;
       margin-top: 30px;
@@ -2303,24 +2313,28 @@ fieldset {
           padding-bottom: 15px;
           letter-spacing: 1.3px;
           position: relative; }
-          #brand .inner .wrap article h2:nth-of-type(1)::after {
-            content: "";
-            display: block;
+          #brand .inner .wrap article h2 .brand_arrow {
             width: 30px;
-            height: 2px;
-            background: #111;
+            height: 30px;
             position: absolute;
             right: 0;
             top: 14.5px; }
-          #brand .inner .wrap article h2:nth-of-type(2)::after {
-            content: "";
-            display: block;
-            width: 30px;
-            height: 2px;
-            background: #111;
-            position: absolute;
-            right: 0;
-            top: 14.5px; }
+            #brand .inner .wrap article h2 .brand_arrow:nth-of-type(1)::after {
+              content: "";
+              display: block;
+              width: 30px;
+              height: 2px;
+              background: #111; }
+            #brand .inner .wrap article h2 .brand_arrow:nth-of-type(2)::after {
+              content: "";
+              display: block;
+              width: 30px;
+              height: 2px;
+              background: #111;
+              border-left: 1px solid #111;
+              position: absolute;
+              right: 0;
+              top: 14.5px; }
         #brand .inner .wrap article p {
           display: inline-block;
           width: 56%;
