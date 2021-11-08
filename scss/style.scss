@@ -484,6 +484,12 @@ $mobile: 539px;
 				transition: 0.5s;
 				padding: 40px;
 
+				transform: translateY(100px); opacity:0; 
+				&:nth-of-type(1){ transition-delay : 0s; }
+				&:nth-of-type(2){ transition-delay : 0.2s; }
+				&:nth-of-type(3){ transition-delay : 0.4s; }
+				&:nth-of-type(4){transition-delay : 0.6s;}
+
 				&:hover {
 					background: #fff;
 					box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.05);
@@ -928,19 +934,6 @@ $mobile: 539px;
 				margin-left: 30px;
 				transition: 0.7s;
 
-				&:nth-of-type(1) {
-					position: relative;
-				}
-				&:nth-of-type(2) {
-					position: absolute;
-					left: 380px;
-					// margin-left: 0;
-				}
-				&:nth-of-type(3) {
-					position: absolute;
-					left: 710px;
-					// margin-left: 0;
-				}
 				.pic {
 					transform: translate(-50%, -50%);
 					text-align: center;
@@ -948,23 +941,7 @@ $mobile: 539px;
 					position: absolute;
 					top: 50%;
 					left: 50%;
-					
-					p {
-						font: bold 15px/1.5 "Spartan";
-						margin-bottom: 20px;
-						color: #444;
-						transition: 0.7s;
-					}
-					i {
-						font-size: 23px;
-						color: rgb(221, 123, 139);
-					}
-				}
-				&:hover {
-					border-color: rgb(221, 123, 139);
-					p{
-						color: rgb(221, 123, 139);
-					}
+		
 				}
 			}
 		}
