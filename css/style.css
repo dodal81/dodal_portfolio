@@ -2461,15 +2461,82 @@ fieldset {
         #podcasts .inner .wrap article:nth-of-type(3) {
           position: absolute;
           left: 710px; }
-        #podcasts .inner .wrap article:hover {
-          border-color: #dd7b8b;
-          color: #dd7b8b; }
         #podcasts .inner .wrap article .txt {
           transform: translate(-50%, -50%);
+          text-align: center;
           margin: 0 auto;
           position: absolute;
           top: 50%;
           left: 50%; }
+          #podcasts .inner .wrap article .txt p {
+            font: bold 15px/1.5 "Spartan";
+            margin-bottom: 20px;
+            color: #444;
+            transition: 0.7s; }
+          #podcasts .inner .wrap article .txt i {
+            font-size: 23px;
+            color: #dd7b8b; }
+        #podcasts .inner .wrap article:hover {
+          border-color: #dd7b8b; }
+          #podcasts .inner .wrap article:hover p {
+            color: #dd7b8b; }
+
+#comment {
+  width: 100%;
+  padding: 170px 0;
+  background: rgba(255, 252, 251, 0.8); }
+  #comment .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #comment .inner h1 {
+      text-align: left;
+      font: bold 40px/1 "Spartan";
+      color: #111;
+      margin-right: 50px;
+      position: absolute;
+      top: -99999px;
+      opacity: 0; }
+    #comment .inner .wrap {
+      width: 100%;
+      margin-top: 60px;
+      padding: 0px 50px; }
+      #comment .inner .wrap .list {
+        display: inline-block;
+        width: 360px;
+        height: 360px;
+        border: 1px solid #555;
+        border-radius: 50%;
+        text-align: center;
+        margin-left: 30px;
+        transition: 0.7s; }
+        #comment .inner .wrap .list:nth-of-type(1) {
+          position: relative; }
+        #comment .inner .wrap .list:nth-of-type(2) {
+          position: absolute;
+          left: 380px; }
+        #comment .inner .wrap .list:nth-of-type(3) {
+          position: absolute;
+          left: 710px; }
+        #comment .inner .wrap .list .pic {
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin: 0 auto;
+          position: absolute;
+          top: 50%;
+          left: 50%; }
+          #comment .inner .wrap .list .pic p {
+            font: bold 15px/1.5 "Spartan";
+            margin-bottom: 20px;
+            color: #444;
+            transition: 0.7s; }
+          #comment .inner .wrap .list .pic i {
+            font-size: 23px;
+            color: #dd7b8b; }
+        #comment .inner .wrap .list:hover {
+          border-color: #dd7b8b; }
+          #comment .inner .wrap .list:hover p {
+            color: #dd7b8b; }
 
 #footer {
   width: 100%;

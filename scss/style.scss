@@ -540,7 +540,7 @@ $mobile: 539px;
 		}
 	}
 }
-//  brand ---------------------------------------------------------------
+//  product ---------------------------------------------------------------
 #product {
 	width: 100%;
 	padding: 100px 0;
@@ -814,7 +814,7 @@ $mobile: 539px;
 	}
 }
 
-//  comment ---------------------------------------------------------------
+//  podcasts ---------------------------------------------------------------
 #podcasts {
 	width: 100%;
 	padding: 170px 0;
@@ -861,16 +861,110 @@ $mobile: 539px;
 					left: 710px;
 					// margin-left: 0;
 				}
-				&:hover {
-					border-color: rgb(221, 123, 139);
-					color: rgb(221, 123, 139);
-				}
 				.txt {
 					transform: translate(-50%, -50%);
+					text-align: center;
 					margin: 0 auto;
 					position: absolute;
 					top: 50%;
 					left: 50%;
+					
+					p {
+						font: bold 15px/1.5 "Spartan";
+						margin-bottom: 20px;
+						color: #444;
+						transition: 0.7s;
+					}
+					i {
+						font-size: 23px;
+						color: rgb(221, 123, 139);
+					}
+				}
+				&:hover {
+					border-color: rgb(221, 123, 139);
+					p{
+						color: rgb(221, 123, 139);
+					}
+				}
+			}
+		}
+	}
+}
+//  comment ---------------------------------------------------------------
+#comment {
+	width: 100%;
+	padding: 170px 0;
+	background: rgba(255, 252, 251, 0.8);
+
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+
+		h1 {
+			text-align: left;
+			font: bold 40px/1 "Spartan";
+			color: #111;
+			margin-right: 50px;
+			position: absolute;
+			top: -99999px;
+			opacity: 0;
+
+		}
+
+		.wrap {
+			width: 100%;
+			margin-top: 60px;
+			padding: 0px 50px;
+
+			.list {
+				display: inline-block;
+				// float: left;
+				width: 360px;
+				height: 360px;
+				border: 1px solid #555;
+				border-radius: 50%;
+				text-align: center;
+				margin-left: 30px;
+				transition: 0.7s;
+
+				&:nth-of-type(1) {
+					position: relative;
+				}
+				&:nth-of-type(2) {
+					position: absolute;
+					left: 380px;
+					// margin-left: 0;
+				}
+				&:nth-of-type(3) {
+					position: absolute;
+					left: 710px;
+					// margin-left: 0;
+				}
+				.pic {
+					transform: translate(-50%, -50%);
+					text-align: center;
+					margin: 0 auto;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					
+					p {
+						font: bold 15px/1.5 "Spartan";
+						margin-bottom: 20px;
+						color: #444;
+						transition: 0.7s;
+					}
+					i {
+						font-size: 23px;
+						color: rgb(221, 123, 139);
+					}
+				}
+				&:hover {
+					border-color: rgb(221, 123, 139);
+					p{
+						color: rgb(221, 123, 139);
+					}
 				}
 			}
 		}
