@@ -10,14 +10,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/18f037b822.js" crossorigin="anonymous"></script>
-	<!-- <script defer src="js/slider.js"></script> -->
+
 	<script defer src="js/custom.js"></script>
 	<script defer src="js/popup.js"></script>
+	<script defer src="js/scroll.js"></script>
 
 </head>
 <body>
 
-	<header id="header">
+	<header id="header" class="myScroll">
 		<div class="inner">
 			<h1><a href="index.html">DODAL</a></h1>
 
@@ -180,7 +181,7 @@
 		</div>
 	</aside>
 
-	<section id="news">
+	<section id="news" class="myScroll">
 		<div class="inner">
 			<h1>Lorem ipsum dolor<br> sit amet consectetur.</h1>
 			<span class="header_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Voluptatem,
@@ -226,7 +227,7 @@
 		</div>
 	</section>
 
-	<section id="product">
+	<section id="product" class="myScroll">
 		<div class="inner">
 			<h1>Products</h1>
 			<div class="wrap">
@@ -256,7 +257,7 @@
 		</div>
 	</section>
 
-	<section id="brand">
+	<section id="brand" class="myScroll">
 		<div class="inner">
 			<h1>Lorem ipsum dolor sit<br> amet consectetur adip<br>isicing elit. Libero.</h1>
 			<div class="wrap">
@@ -282,7 +283,7 @@
 		</div>
 	</section>
 
-	<section id="banner">
+	<section id="banner" class="myScroll">
 		<div class="inner">
 			<h1>WANT MORE CONTENT<br>LIKE THIS?</h1>
 
@@ -294,7 +295,7 @@
 		</div>
 	</section>
 
-	<section id="podcasts">
+	<section id="podcasts" class="myScroll">
 		<div class="inner">
 			<h1>PODCASTS</h1>
 			<div class="wrap">
@@ -322,7 +323,7 @@
 		</div>
 	</section>
 
-	<section id="comment">
+	<section id="comment" class="myScroll">
 		<div class="inner">
 			<h1>Comment</h1>
 			
@@ -414,6 +415,16 @@
 			</div>
 		</div>
 	</footer>
+
+	<ul id="navi">
+		<li><a href="#header" class="on"></a></li>
+		<li><a href="#news"></a></li>
+		<li><a href="#product"></a></li>
+		<li><a href="#brand"></a></li>
+		<li><a href="#banner"></a></li>
+		<li><a href="#podcasts"></a></li>
+		<li><a href="#comment"></a></li>
+	</ul>
 
 </body>
 

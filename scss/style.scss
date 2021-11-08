@@ -478,21 +478,19 @@ $mobile: 539px;
 				text-align: left;
 				margin-right: 50px;
 				margin-bottom: 50px;
-				background: #efefef;
+				background: #ededed;
 				position: relative;
 				float: left;
 				transition: 0.5s;
 				padding: 40px;
 
 				transform: translateY(100px); opacity:0; 
-				&:nth-of-type(1){ transition-delay : 0s; }
-				&:nth-of-type(2){ transition-delay : 0.2s; }
-				&:nth-of-type(3){ transition-delay : 0.4s; }
-				&:nth-of-type(4){transition-delay : 0.6s;}
+			
 
 				&:hover {
 					background: #fff;
 					box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.05);
+					// transition: 0.5s;
 				}
 
 				&:nth-of-type(3n + 0) {
@@ -541,6 +539,15 @@ $mobile: 539px;
 						border-top: 5px solid transparent;
 						border-left: 5px solid #000;
 					}
+				}
+			}
+		}
+	}
+	&.on {
+		.inner {
+			.wrap {
+				article {
+					transform: translateY(0px); opacity: 1;
 				}
 			}
 		}
@@ -682,6 +689,9 @@ $mobile: 539px;
 			letter-spacing: 1.3px;
 			text-align: left;
 			position: relative;
+			transition: 1s;
+			transform: translateY(-100px);
+			opacity: 0;
 
 			&::after {
 				content: "loremislorem";
@@ -767,6 +777,14 @@ $mobile: 539px;
 			}
 		}
 	}
+	&.on{
+		.inner {
+			h1 {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	}
 }
 
 //  banner ---------------------------------------------------------------
@@ -823,7 +841,7 @@ $mobile: 539px;
 //  podcasts ---------------------------------------------------------------
 #podcasts {
 	width: 100%;
-	padding: 170px 0;
+	padding: 200px 0;
 	background: rgba(255, 252, 251, 0.8);
 
 	.inner {
@@ -853,18 +871,23 @@ $mobile: 539px;
 				text-align: center;
 				margin-left: 30px;
 				transition: 0.7s;
+				transform: translateY(100px);
+				opacity: 0;
 
 				&:nth-of-type(1) {
 					position: relative;
+					transition-delay: 0s;
 				}
 				&:nth-of-type(2) {
 					position: absolute;
 					left: 380px;
+					transition-delay: 0.4s;
 					// margin-left: 0;
 				}
 				&:nth-of-type(3) {
 					position: absolute;
 					left: 710px;
+					transition-delay: 0.8s;
 					// margin-left: 0;
 				}
 				.txt {
@@ -872,17 +895,17 @@ $mobile: 539px;
 					text-align: center;
 					margin: 0 auto;
 					position: absolute;
-					top: 50%;
+					top: 60%;
 					left: 50%;
 					
 					p {
 						font: bold 15px/1.5 "Spartan";
-						margin-bottom: 20px;
+						margin-bottom: 50px;
 						color: #444;
 						transition: 0.7s;
 					}
 					i {
-						font-size: 23px;
+						font-size: 20px;
 						color: rgb(221, 123, 139);
 					}
 				}
@@ -891,6 +914,16 @@ $mobile: 539px;
 					p{
 						color: rgb(221, 123, 139);
 					}
+				}
+			}
+		}
+	}
+	&.on {
+		.inner {
+			.wrap{
+				article {
+					transform: translateY(0);
+					opacity: 1;
 				}
 			}
 		}
@@ -1092,6 +1125,25 @@ $mobile: 539px;
 		}
 	}
 }
+
+// navi ----------------------------------------------------
+#navi{
+	position:fixed; right:50px; top:50%; transform:translateY(-50%); 
+ 
+	li{ 
+	   margin:20px 0; 
+	   a{
+		  display:block; 
+		  width:10px; height:10px; border-radius:5px; 
+		  background:#888; 
+		  transition:0.5s; 
+ 
+		  &.on{ 
+			 background:#111; height:60px; 
+		  }
+	   }
+	}
+ }
 
 //  tablet ------------------------------------------------------------------
 @media screen and (max-width: $tablet) {
