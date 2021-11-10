@@ -484,8 +484,8 @@ $mobile: 539px;
 				transition: 0.5s;
 				padding: 40px;
 
-				transform: translateY(100px); opacity:0; 
-			
+				transform: translateY(100px);
+				opacity: 0;
 
 				&:hover {
 					background: #fff;
@@ -547,7 +547,8 @@ $mobile: 539px;
 		.inner {
 			.wrap {
 				article {
-					transform: translateY(0px); opacity: 1;
+					transform: translateY(0px);
+					opacity: 1;
 				}
 			}
 		}
@@ -777,7 +778,7 @@ $mobile: 539px;
 			}
 		}
 	}
-	&.on{
+	&.on {
 		.inner {
 			h1 {
 				transform: translateY(0);
@@ -897,9 +898,9 @@ $mobile: 539px;
 					position: absolute;
 					top: 60%;
 					left: 50%;
-					
+
 					p {
-						font: bold 15px/1.5 "Spartan";
+						font: bold 15px/1.5 "Noto Sans KR";
 						margin-bottom: 50px;
 						color: #444;
 						transition: 0.7s;
@@ -911,7 +912,7 @@ $mobile: 539px;
 				}
 				&:hover {
 					border-color: rgb(221, 123, 139);
-					p{
+					p {
 						color: rgb(221, 123, 139);
 					}
 				}
@@ -920,7 +921,7 @@ $mobile: 539px;
 	}
 	&.on {
 		.inner {
-			.wrap{
+			.wrap {
 				article {
 					transform: translateY(0);
 					opacity: 1;
@@ -929,52 +930,153 @@ $mobile: 539px;
 		}
 	}
 }
-//  comment ---------------------------------------------------------------
-#comment {
+//  content ---------------------------------------------------------------
+#content {
 	width: 100%;
-	padding: 170px 0;
+	padding: 50px 0px 300px;
 	background: rgba(255, 252, 251, 0.8);
 
 	.inner {
-		width: 1180px;
+		width: 1200px;
 		margin: 0 auto;
 		position: relative;
 
 		h1 {
 			text-align: left;
-			font: bold 40px/1 "Spartan";
+			font: bold 25px/1.5 "Spartan";
 			color: #111;
 			margin-right: 50px;
 			position: absolute;
 			top: -99999px;
 			opacity: 0;
-
 		}
-
 		.wrap {
 			width: 100%;
 			margin-top: 60px;
-			padding: 0px 50px;
+			// padding: 0px 50px;
+			display: flex;
+			justify-content: space-between;
 
-			.list {
-				display: inline-block;
-				// float: left;
-				width: 360px;
-				height: 360px;
-				border: 1px solid #555;
-				border-radius: 50%;
-				text-align: center;
-				margin-left: 30px;
-				transition: 0.7s;
+			article {
+				&:nth-of-type(1) {
+					h2 {
+						font: bold 25px/1.5 "Spartan";
+						color: #111;
+						margin-bottom: 30px;
+						margin-top: 80px;
+					}
+					p {
+						font: 15px/1.5 "Spartan";
+						color: #888;
+					}
+				}
+				&:nth-of-type(2) {
+					width: 200px;
+					ul {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						margin-top: 80px;
+						li {
+							&:nth-of-type(1) {
+								font: bold 17px/1 "Spartan";
+								color: #111;
+								margin-bottom: 40px;
+							}
+							&:nth-of-type(2) {
+								margin-bottom: 30px;
+								font: bold 15px/1 "Spartan";
+								color: #111;
+								i {
+									margin-right: 20px;
+									font-size: 25px;
+								}
+							}
+							&:nth-of-type(3) {
+								margin-bottom: 30px;
+								font: bold 15px/1 "Spartan";
+								color: #111;
+								i {
+									margin-right: 20px;
+									font-size: 25px;
+								}
+							}
+							&:nth-of-type(4) {
+								font: bold 15px/1 "Spartan";
+								color: #111;
+								i {
+									margin-right: 20px;
+									font-size: 25px;
+								}
+							}
+						}
+					}
+				}
+				&:nth-of-type(3) {
+					width: 5%;
+					ul {
+						margin-top: 80px;
+						width: 80px;
+						// height: 100%;
+						li {
+							width: 80px;
+							height: 90px;
+							margin-bottom: 10px;
 
-				.pic {
-					transform: translate(-50%, -50%);
-					text-align: center;
-					margin: 0 auto;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-		
+							&:nth-of-type(1) {
+								background: url(../img/phone02.jpg) no-repeat
+									center/cover;
+							}
+							&:nth-of-type(2) {
+								background: url(../img/phone03.jpg) no-repeat
+									center/cover;
+							}
+							&:nth-of-type(3) {
+								background: url(../img/phone04.jpg) no-repeat
+									center/cover;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+				&:nth-of-type(4) {
+					width: 350px;
+					height: 450px;
+					position: relative;
+					.pic {
+						width: 100%;
+						height: 100%;
+						background: url(../img/phone03.jpg) no-repeat
+							center/cover;
+						span {
+							font: bold 25px/1.7 "arial";
+							color: #fff;
+							margin: 0 auto;
+							position: absolute;
+							top: 60%;
+							left: 30px;
+						}
+						.icon {
+							position: absolute;
+							bottom: 0px;
+							right: 0px;
+							width: 80px;
+							height: 80px;
+							background: #fff;
+							text-align: center;
+							font-size: 20px;
+							line-height: 80px;
+
+							i {
+								color: #666;
+							}
+						}
+					}
+					p {
+						margin-top: 20px;
+						font: bold 13px/1 "Spartan";
+						text-align: left;
+					}
 				}
 			}
 		}
@@ -1127,23 +1229,29 @@ $mobile: 539px;
 }
 
 // navi ----------------------------------------------------
-#navi{
-	position:fixed; right:50px; top:50%; transform:translateY(-50%); 
- 
-	li{ 
-	   margin:20px 0; 
-	   a{
-		  display:block; 
-		  width:10px; height:10px; border-radius:5px; 
-		  background:#888; 
-		  transition:0.5s; 
- 
-		  &.on{ 
-			 background:#111; height:60px; 
-		  }
-	   }
+#navi {
+	position: fixed;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	li {
+		margin: 20px 0;
+		a {
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			background: #888;
+			transition: 0.5s;
+
+			&.on {
+				background: #111;
+				height: 60px;
+			}
+		}
 	}
- }
+}
 
 //  tablet ------------------------------------------------------------------
 @media screen and (max-width: $tablet) {
