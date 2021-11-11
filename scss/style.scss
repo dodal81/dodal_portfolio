@@ -1038,7 +1038,7 @@ $mobile: 539px;
 			justify-content: space-between;
 
 			article {
-				&:nth-of-type(1) {
+				&.box1 {
 					h2 {
 						font: bold 25px/1.5 "Spartan";
 						color: #111;
@@ -1050,7 +1050,7 @@ $mobile: 539px;
 						color: #888;
 					}
 				}
-				&:nth-of-type(2) {
+				&.box2 {
 					width: 200px;
 					ul {
 						display: flex;
@@ -1095,23 +1095,24 @@ $mobile: 539px;
 						}
 					}
 				}
-				&:nth-of-type(3) {
+				&.box3 {
 					width: 5%;
 					ul {
 						margin-top: 80px;
 						width: 80px;
-						// height: 100%;
 						li {
 							width: 80px;
 							height: 90px;
 							margin-bottom: 10px;
+							opacity: 0.4;
+							box-shadow:5px 5px 5px rgba(0, 0, 0, 0.1);
 
 							&:nth-of-type(1) {
-								background: url(../img/phone02.jpg) no-repeat
+								background: url(../img/phone03.jpg) no-repeat
 									center/cover;
 							}
 							&:nth-of-type(2) {
-								background: url(../img/phone03.jpg) no-repeat
+								background: url(../img/phone02.jpg) no-repeat
 									center/cover;
 							}
 							&:nth-of-type(3) {
@@ -1119,10 +1120,14 @@ $mobile: 539px;
 									center/cover;
 								margin-bottom: 0;
 							}
+
+							&.on {
+								opacity: 1;
+							}
 						}
 					}
 				}
-				&:nth-of-type(4) {
+				&.box4 {
 					width: 350px;
 					height: 450px;
 					position: relative;
