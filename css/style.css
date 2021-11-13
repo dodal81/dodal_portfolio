@@ -1900,14 +1900,26 @@ fieldset {
           right: 0;
           background: #fff;
           display: none;
-          z-index: 3; }
+          z-index: 3;
+          box-sizing: border-box; }
           #header .inner .menuWeb #gnb > li .sub .left {
-            width: 30%;
+            width: 20%;
             height: 100%;
-            background: lightgreen;
+            background: #fff;
             float: left; }
+            #header .inner .menuWeb #gnb > li .sub .left .pic {
+              width: 100px;
+              height: 100px; }
+              #header .inner .menuWeb #gnb > li .sub .left .pic img {
+                width: 100%;
+                height: 100%; }
+          #header .inner .menuWeb #gnb > li .sub .center {
+            width: 40%;
+            height: 100%;
+            background: #fff;
+            float: right; }
           #header .inner .menuWeb #gnb > li .sub .right {
-            width: 70%;
+            width: 40%;
             height: 100%;
             background: #fff;
             float: right; }
@@ -1919,10 +1931,11 @@ fieldset {
             position: absolute;
             top: 0;
             left: -100%;
-            background: lightgreen; }
+            background: #fff; }
           #header .inner .menuWeb #gnb > li .sub::after {
             content: "";
             display: block;
+            clear: both;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -2813,6 +2826,17 @@ fieldset {
       #navi li a.on {
         background: #111;
         height: 60px; }
+
+.result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+  border-radius: 100%;
+  transform: translate(-50%, -50%); }
 
 @media screen and (max-width: 1179px) {
   #header .inner {
