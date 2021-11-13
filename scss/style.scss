@@ -36,6 +36,9 @@ $mobile: 539px;
 // body {
 // 	overflow: hidden;
 // }
+// body {
+// 	cursor: none;
+// }
 
 //  header ---------------------------------------------------------------
 #header {
@@ -1366,10 +1369,10 @@ $mobile: 539px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #000;
-	width: 30px;
-	height: 30px;
-	opacity: 0.4;
+	background: rgb(255, 168, 184);
+	width: 40px;
+	height: 40px;
+	opacity: 0.7;
 	border-radius: 100%;
 	transform: translate(-50%, -50%);
 }

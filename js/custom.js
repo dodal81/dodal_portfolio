@@ -24,17 +24,20 @@ $("#gnb>li").each(function (index) {
     })
 });
 
-// const result = document.querySelector(".result");
+document.body.style.cursor = 'none';
 
-// document.addEventListener("mousemove", (e) => {
-//     const mouseX = e.clientX;
-//     const mouseY = e.clientY;
-//     result.style.left = mouseX + 'px';
-//     result.style.top = mouseY + 'px';
+const result = document.querySelector(".result");
 
-//     console.log(e.clientX);
-//     console.log(e.clientY);
-// });
+document.addEventListener("mousemove", (e) => {
+    const mouseX = e.pageX;
+    const mouseY = e.pageY;
+    result.style.left = mouseX + 'px';
+    result.style.top = mouseY +  'px';
+
+    console.log(e.pageX);
+    console.log(e.pageY);
+});
+
 
 
 

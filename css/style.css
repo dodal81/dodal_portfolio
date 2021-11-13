@@ -2831,10 +2831,10 @@ fieldset {
   position: absolute;
   top: 0;
   left: 0;
-  background: #000;
-  width: 30px;
-  height: 30px;
-  opacity: 0.4;
+  background: #ffa8b8;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
   border-radius: 100%;
   transform: translate(-50%, -50%); }
 
