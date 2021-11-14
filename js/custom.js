@@ -10,10 +10,12 @@ btnCall.onclick = function (e) {
 }
 $("#gnb>li").on("mouseenter", function () {
     $(this).find(".sub").show();
+   
 
 });
-$("#gnb>li").on("mouseleave", function () {
-    $(this).find(".sub").hide();
+$("#gnb>li .sub").on("mouseleave", function () {
+    // $(this).find(".sub").hide();
+    $(this).hide();
 });
 $("#gnb>li").each(function (index) {
     $("#gnb>li").eq(index).find("a").on("focusin", function () {
@@ -24,7 +26,7 @@ $("#gnb>li").each(function (index) {
     })
 });
 
-document.body.style.cursor = 'none';
+// document.body.style.cursor = 'none';
 
 const result = document.querySelector(".result");
 
