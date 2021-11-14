@@ -36,9 +36,10 @@ $mobile: 539px;
 // body {
 // 	overflow: hidden;
 // }
-// body {
-// 	cursor: none;
-// }
+
+cursor {
+	z-index: 5;
+}
 
 //  header ---------------------------------------------------------------
 #header {

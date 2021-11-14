@@ -29,13 +29,15 @@ document.body.style.cursor = 'none';
 const result = document.querySelector(".result");
 
 document.addEventListener("mousemove", (e) => {
+    e.preventDefault();
     const mouseX = e.pageX;
     const mouseY = e.pageY;
-    result.style.left = mouseX + 'px';
-    result.style.top = mouseY +  'px';
+    result.style.left = mouseX + -20 +'px';
+    result.style.top = mouseY + -10 + 'px';
 
-    console.log(e.pageX);
-    console.log(e.pageY);
+
+    console.log(mouseX);
+    console.log(mouseY);
 });
 
 

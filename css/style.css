@@ -1849,6 +1849,9 @@ fieldset {
       .location .inner .branch lihover.on .address {
         color: pink; }
 
+cursor {
+  z-index: 5; }
+
 #header {
   width: 100%;
   background: #fff; }
