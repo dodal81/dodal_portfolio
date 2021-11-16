@@ -354,6 +354,18 @@ fieldset {
           color: #fff;
           margin-right: 20px; }
 
+.result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffa8b8;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 3; }
+
 @media screen and (max-width: 1179px) {
   #header_sub .inner {
     width: 100vw; }
@@ -1886,6 +1898,8 @@ body {
           transition: 0.5s;
           box-sizing: border-box;
           border-top: 1px solid transparent; }
+          #header .inner .menuWeb #gnb > li > a.title:hover {
+            color: pink; }
           #header .inner .menuWeb #gnb > li > a:nth-of-type(1)::after {
             content: "";
             display: inline-block;
@@ -1903,7 +1917,6 @@ body {
           top: 51px;
           right: -230px;
           background: #fff;
-          display: none;
           z-index: 3;
           box-sizing: border-box; }
           #header .inner .menuWeb #gnb > li .sub a {
@@ -1913,14 +1926,16 @@ body {
             height: 100%;
             background: #fff;
             float: left;
-            margin-right: 55px; }
+            margin-right: 55px;
+            text-align: -webkit-center; }
             #header .inner .menuWeb #gnb > li .sub .line1 h2 {
               display: inline-block;
               font: bold 22px/1 "Spartan";
               border-bottom: 2px solid #555;
               margin-bottom: 22px;
               margin-top: 40px;
-              padding-bottom: 10px; }
+              padding-bottom: 10px;
+              letter-spacing: 1.5px; }
             #header .inner .menuWeb #gnb > li .sub .line1 .pic {
               width: 230px;
               height: 180px; }
@@ -2012,8 +2027,6 @@ body {
             right: -100%;
             background: #fff;
             box-sizing: border-box; }
-        #header .inner .menuWeb #gnb > li:hover a {
-          color: #ee93a9; }
     #header .inner .menuWeb .util {
       position: absolute;
       bottom: 20%;

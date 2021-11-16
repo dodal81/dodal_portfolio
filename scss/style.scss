@@ -41,8 +41,6 @@ body {
 #header {
 	width: 100%;
 	background: #fff;
-	// border-bottom: 1px solid #aaa;
-	// overflow: hidden;
 
 	.inner {
 		width: 1180px;
@@ -66,15 +64,34 @@ body {
 				bottom: 25%;
 				right: 20%;
 
+				
 				&::after {
 					content: "";
 					display: block;
 					clear: both;
 				}
-
+				
 				> li {
 					float: left;
+				
+					// div {
 
+					// 	&:nth-of-type(2) {
+					// 		&.line1{
+
+					// 			h2{
+					// 				letter-spacing: 10px;
+					// 			}
+					// 		}
+					// 		&.line2 {
+					// 			width: 30%;
+					// 		}
+					// 		&.line3 {
+					// 			width: 30%;
+					// 		}
+					// 	}
+					// }
+					
 					> a {
 						display: block;
 						padding: 10px 20px;
@@ -83,6 +100,10 @@ body {
 						transition: 0.5s;
 						box-sizing: border-box;
 						border-top: 1px solid transparent;
+
+						&.title:hover {
+							color: pink;
+						}
 
 						&:nth-of-type(1)::after {
 							content: "";
@@ -103,20 +124,22 @@ body {
 						top: 51px;
 						right: -230px;
 						background: #fff;
-						display: none;
+						// display: none;
 						z-index: 3;
 						box-sizing: border-box;
+					
 
 						a {
 							color: #111;
 						}
-					
+
 						.line1 {
 							width: 25%;
 							height: 100%;
 							background: #fff;
 							float: left;
 							margin-right: 55px;
+							text-align: -webkit-center;
 
 							h2 {
 								display: inline-block;
@@ -125,6 +148,7 @@ body {
 								margin-bottom: 22px;
 								margin-top: 40px;
 								padding-bottom: 10px;
+								letter-spacing: 1.5px;
 							}
 							.pic {
 								width: 230px;
@@ -240,9 +264,6 @@ body {
 							// border-top: 1px solid #555;
 							box-sizing: border-box;
 						}
-					}
-					&:hover a {
-						color: rgb(238, 147, 169);
 					}
 				}
 			}

@@ -442,7 +442,19 @@
 		}
 	}
 }
-
+// cursor_pointer ------------------------------------------
+.result {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(255, 168, 184);
+	width: 40px;
+	height: 40px;
+	opacity: 0.7;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
 
 //  tablet ------------------------------------------------------------------
 @media screen and (max-width: $tablet) {
