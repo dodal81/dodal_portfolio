@@ -24,7 +24,7 @@ $("#gnb>li").each(function (index) {
     $("#gnb>li").eq(index).find("a").last().on("focusout", function () {
     // $("#gnb>li").eq(index).find(".sub").on("focusout", function () {
     
-        // $("#gnb>li").eq(index).find(".sub").hide();
+        $("#gnb>li").eq(index).find(".sub").hide();
     })
 });
 
