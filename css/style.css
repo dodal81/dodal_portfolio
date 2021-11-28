@@ -1878,7 +1878,7 @@ body {
       left: 0%;
       bottom: 25%; }
       #header .inner > h1 a {
-        font: bold 25px/1 "Spartan";
+        font: bold 25px/1 "STIX Two Text";
         color: #111; }
     #header .inner .menuWeb #gnb {
       position: absolute;
@@ -1923,22 +1923,23 @@ body {
           #header .inner .menuWeb #gnb > li .sub a {
             color: #111; }
           #header .inner .menuWeb #gnb > li .sub .line1 {
-            width: 25%;
+            width: 24%;
             height: 100%;
             background: #fff;
             float: left;
             margin-right: 55px;
             text-align: -webkit-center; }
             #header .inner .menuWeb #gnb > li .sub .line1 h2 {
-              display: inline-block;
-              font: bold 22px/1 "Spartan";
+              display: block;
+              font: bold 22px/1 "STIX Two Text";
               border-bottom: 2px solid #555;
               margin-bottom: 22px;
-              margin-top: 40px;
-              padding-bottom: 10px;
-              letter-spacing: 1.5px; }
+              margin-top: 29px;
+              padding-bottom: 15px;
+              letter-spacing: 1.5px;
+              text-align: left; }
             #header .inner .menuWeb #gnb > li .sub .line1 .pic {
-              width: 230px;
+              width: 280px;
               height: 180px; }
               #header .inner .menuWeb #gnb > li .sub .line1 .pic img {
                 width: 100%;
