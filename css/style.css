@@ -45,7 +45,7 @@ fieldset {
       left: 0%;
       bottom: 25%; }
       #header_sub .inner > h1 a {
-        font: bold 25px/1 "Spartan";
+        font: bold 25px/1 "STIX Two Text";
         color: #111; }
     #header_sub .inner .menuWeb #gnb {
       position: absolute;
@@ -57,6 +57,24 @@ fieldset {
         clear: both; }
       #header_sub .inner .menuWeb #gnb > li {
         float: left; }
+        #header_sub .inner .menuWeb #gnb > li:nth-of-type(2) .sub .line2 {
+          width: 25%;
+          margin-left: 50px; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(2) .sub .line2 h2 {
+            width: 250px; }
+        #header_sub .inner .menuWeb #gnb > li:nth-of-type(2) .sub .line3 {
+          width: 25%; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(2) .sub .line3 h2 {
+            width: 250px; }
+        #header_sub .inner .menuWeb #gnb > li:nth-of-type(5) .sub .line2 {
+          width: 25%;
+          margin-left: 50px; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(5) .sub .line2 h2 {
+            width: 250px; }
+        #header_sub .inner .menuWeb #gnb > li:nth-of-type(5) .sub .line3 {
+          width: 25%; }
+          #header_sub .inner .menuWeb #gnb > li:nth-of-type(5) .sub .line3 h2 {
+            width: 250px; }
         #header_sub .inner .menuWeb #gnb > li > a {
           display: block;
           padding: 10px 20px;
@@ -65,6 +83,8 @@ fieldset {
           transition: 0.5s;
           box-sizing: border-box;
           border-top: 1px solid transparent; }
+          #header_sub .inner .menuWeb #gnb > li > a.title:hover {
+            color: pink; }
           #header_sub .inner .menuWeb #gnb > li > a:nth-of-type(1)::after {
             content: "";
             display: inline-block;
@@ -80,40 +100,123 @@ fieldset {
           height: 300px;
           position: absolute;
           top: 51px;
-          right: 0;
+          right: -230px;
           background: #fff;
           display: none;
-          z-index: 3; }
-          #header_sub .inner .menuWeb #gnb > li .sub .left {
-            width: 30%;
-            height: 100%;
-            background: lightgreen;
-            float: left; }
-          #header_sub .inner .menuWeb #gnb > li .sub .right {
-            width: 70%;
+          z-index: 3;
+          box-sizing: border-box; }
+          #header_sub .inner .menuWeb #gnb > li .sub a {
+            color: #111; }
+          #header_sub .inner .menuWeb #gnb > li .sub .line1 {
+            width: 24%;
             height: 100%;
             background: #fff;
-            float: right; }
+            float: left;
+            margin-right: 55px;
+            text-align: -webkit-center; }
+            #header_sub .inner .menuWeb #gnb > li .sub .line1 h2 {
+              display: block;
+              font: bold 22px/1 "STIX Two Text";
+              border-bottom: 2px solid #555;
+              margin-bottom: 22px;
+              margin-top: 29px;
+              padding-bottom: 15px;
+              letter-spacing: 1.5px;
+              text-align: left; }
+            #header_sub .inner .menuWeb #gnb > li .sub .line1 .pic {
+              width: 280px;
+              height: 180px; }
+              #header_sub .inner .menuWeb #gnb > li .sub .line1 .pic img {
+                width: 100%;
+                height: 100%; }
+          #header_sub .inner .menuWeb #gnb > li .sub .line2 {
+            width: 20%;
+            height: 100%;
+            background: #fff;
+            float: left;
+            text-align: center;
+            padding-top: 65px;
+            margin-right: 40px; }
+            #header_sub .inner .menuWeb #gnb > li .sub .line2 .btns {
+              display: inline-block;
+              width: 200px;
+              height: 50px;
+              border: 1px solid #111;
+              font: bold 18px/50px "Spartan";
+              color: #111;
+              margin-bottom: 30px; }
+            #header_sub .inner .menuWeb #gnb > li .sub .line2 li {
+              font: 16px/1 "Spartan";
+              margin-bottom: 13px; }
+              #header_sub .inner .menuWeb #gnb > li .sub .line2 li a {
+                text-align: left;
+                color: #111;
+                letter-spacing: 1.2px; }
+          #header_sub .inner .menuWeb #gnb > li .sub .line3 {
+            width: 20%;
+            height: 100%;
+            background: #fff;
+            float: left;
+            text-align: center;
+            padding-top: 65px;
+            margin-right: 40px; }
+            #header_sub .inner .menuWeb #gnb > li .sub .line3 .btns {
+              display: inline-block;
+              width: 200px;
+              height: 50px;
+              border: 1px solid #111;
+              font: bold 18px/50px "Spartan";
+              color: #111;
+              margin-bottom: 30px; }
+            #header_sub .inner .menuWeb #gnb > li .sub .line3 li {
+              font: 16px/1 "Spartan";
+              margin-bottom: 13px; }
+              #header_sub .inner .menuWeb #gnb > li .sub .line3 li a {
+                text-align: left;
+                color: #111;
+                letter-spacing: 1.2px; }
+          #header_sub .inner .menuWeb #gnb > li .sub .line4 {
+            width: 20%;
+            height: 100%;
+            background: #fff;
+            float: left;
+            padding-top: 65px;
+            text-align: center; }
+            #header_sub .inner .menuWeb #gnb > li .sub .line4 .btns {
+              display: inline-block;
+              width: 200px;
+              height: 50px;
+              border: 1px solid #111;
+              font: bold 18px/50px "Spartan";
+              color: #111;
+              margin-bottom: 30px; }
+            #header_sub .inner .menuWeb #gnb > li .sub .line4 li {
+              font: 16px/1 "Spartan";
+              margin-bottom: 13px; }
+              #header_sub .inner .menuWeb #gnb > li .sub .line4 li a {
+                text-align: left;
+                color: #111;
+                letter-spacing: 1.2px; }
           #header_sub .inner .menuWeb #gnb > li .sub::before {
             content: "";
             display: block;
             width: 100%;
-            height: 100%;
+            height: 300px;
             position: absolute;
             top: 0;
             left: -100%;
-            background: lightgreen; }
+            background: #fff; }
           #header_sub .inner .menuWeb #gnb > li .sub::after {
             content: "";
             display: block;
+            clear: both;
             width: 100%;
-            height: 100%;
+            height: 300px;
             position: absolute;
             top: 0;
             right: -100%;
-            background: inherit; }
-        #header_sub .inner .menuWeb #gnb > li:hover a {
-          color: #d8778f; }
+            background: #fff;
+            box-sizing: border-box; }
     #header_sub .inner .menuWeb .util {
       position: absolute;
       bottom: 20%;
@@ -134,7 +237,7 @@ fieldset {
           transition: 0.5s;
           text-align: center; }
         #header_sub .inner .menuWeb .util li:last-child > a {
-          width: 30%;
+          width: 45%;
           position: absolute;
           top: 55%;
           transform: translateY(-50%);
@@ -143,6 +246,9 @@ fieldset {
           font-family: "Spartan";
           line-height: 15px;
           border-right: none; }
+          #header_sub .inner .menuWeb .util li:last-child > a > i {
+            display: inline-block;
+            padding-left: 5px; }
     #header_sub .inner .btnCall {
       position: absolute;
       top: 20%;
@@ -1890,6 +1996,24 @@ body {
         clear: both; }
       #header .inner .menuWeb #gnb > li {
         float: left; }
+        #header .inner .menuWeb #gnb > li:nth-of-type(2) .sub .line2 {
+          width: 25%;
+          margin-left: 50px; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(2) .sub .line2 h2 {
+            width: 250px; }
+        #header .inner .menuWeb #gnb > li:nth-of-type(2) .sub .line3 {
+          width: 25%; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(2) .sub .line3 h2 {
+            width: 250px; }
+        #header .inner .menuWeb #gnb > li:nth-of-type(5) .sub .line2 {
+          width: 25%;
+          margin-left: 50px; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(5) .sub .line2 h2 {
+            width: 250px; }
+        #header .inner .menuWeb #gnb > li:nth-of-type(5) .sub .line3 {
+          width: 25%; }
+          #header .inner .menuWeb #gnb > li:nth-of-type(5) .sub .line3 h2 {
+            width: 250px; }
         #header .inner .menuWeb #gnb > li > a {
           display: block;
           padding: 10px 20px;
@@ -1965,7 +2089,8 @@ body {
               margin-bottom: 13px; }
               #header .inner .menuWeb #gnb > li .sub .line2 li a {
                 text-align: left;
-                color: #111; }
+                color: #111;
+                letter-spacing: 1.2px; }
           #header .inner .menuWeb #gnb > li .sub .line3 {
             width: 20%;
             height: 100%;
@@ -1987,7 +2112,8 @@ body {
               margin-bottom: 13px; }
               #header .inner .menuWeb #gnb > li .sub .line3 li a {
                 text-align: left;
-                color: #111; }
+                color: #111;
+                letter-spacing: 1.2px; }
           #header .inner .menuWeb #gnb > li .sub .line4 {
             width: 20%;
             height: 100%;
@@ -2008,7 +2134,8 @@ body {
               margin-bottom: 13px; }
               #header .inner .menuWeb #gnb > li .sub .line4 li a {
                 text-align: left;
-                color: #111; }
+                color: #111;
+                letter-spacing: 1.2px; }
           #header .inner .menuWeb #gnb > li .sub::before {
             content: "";
             display: block;

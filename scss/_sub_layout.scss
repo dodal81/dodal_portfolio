@@ -4,7 +4,6 @@
 #header_sub {
 	width: 100%;
 	background: #fff;
-	// overflow: hidden;
 
 	.inner {
 		width: 1180px;
@@ -18,7 +17,7 @@
 			bottom: 25%;
 
 			a {
-				font: bold 25px/1 "Spartan";
+				font: bold 25px/1 "STIX Two Text";
 				color: #111;
 			}
 		}
@@ -28,15 +27,56 @@
 				bottom: 25%;
 				right: 20%;
 
+				
 				&::after {
 					content: "";
 					display: block;
 					clear: both;
 				}
-
+				
 				> li {
 					float: left;
 
+
+					&:nth-of-type(2) {
+						.sub {
+							.line2 {
+								width: 25%;
+								margin-left: 50px;
+								
+								h2 {
+									width: 250px;
+								}
+							}
+							.line3 {
+								width: 25%;
+
+								h2 {
+									width: 250px;
+								}
+							}
+						}
+					}
+					&:nth-of-type(5) {
+						.sub {
+							.line2 {
+								width: 25%;
+								margin-left: 50px;
+								
+								h2 {
+									width: 250px;
+								}
+							}
+							.line3 {
+								width: 25%;
+
+								h2 {
+									width: 250px;
+								}
+							}
+						}
+					}
+					
 					> a {
 						display: block;
 						padding: 10px 20px;
@@ -45,6 +85,10 @@
 						transition: 0.5s;
 						box-sizing: border-box;
 						border-top: 1px solid transparent;
+
+						&.title:hover {
+							color: pink;
+						}
 
 						&:nth-of-type(1)::after {
 							content: "";
@@ -63,46 +107,154 @@
 						height: 300px;
 						position: absolute;
 						top: 51px;
-						right: 0;
+						right: -230px;
 						background: #fff;
 						display: none;
 						z-index: 3;
+						box-sizing: border-box;
+						// position: relative;
 
-						.left {
-							width: 30%;
-							height: 100%;
-							background: lightgreen;
-							float: left;
+
+						
+
+						a {
+							color: #111;
 						}
-						.right {
-							width: 70%;
+
+						.line1 {
+							width: 24%;
 							height: 100%;
 							background: #fff;
-							float: right;
+							float: left;
+							margin-right: 55px;
+							text-align: -webkit-center;
+
+							h2 {
+								display: block;
+								font: bold 22px/1 "STIX Two Text";
+								border-bottom: 2px solid #555;
+								margin-bottom: 22px;
+								margin-top: 29px;
+								padding-bottom: 15px;
+								letter-spacing: 1.5px;
+								text-align: left;
+							}
+							.pic {
+								width: 280px;
+								height: 180px;
+
+								img {
+									width: 100%;
+									height: 100%;
+								}
+							}
+						}
+						.line2 {
+							width: 20%;
+							height: 100%;
+							background: #fff;
+							float: left;
+							text-align: center;
+							padding-top: 65px;
+							margin-right: 40px;
+
+							.btns {
+								display: inline-block;
+								width: 200px;
+								height: 50px;
+								border: 1px solid #111;
+								font: bold 18px/50px "Spartan";
+								color: #111;
+								margin-bottom: 30px;
+							}
+							li {
+								font: 16px/1 "Spartan";
+								margin-bottom: 13px;
+								a {
+									text-align: left;
+									color: #111;
+									letter-spacing: 1.2px;
+								}
+							}
+						}
+						.line3 {
+							width: 20%;
+							height: 100%;
+							background: #fff;
+							float: left;
+							text-align: center;
+							padding-top: 65px;
+							margin-right: 40px;
+
+							.btns {
+								display: inline-block;
+								width: 200px;
+								height: 50px;
+								border: 1px solid #111;
+								font: bold 18px/50px "Spartan";
+								color: #111;
+								margin-bottom: 30px;
+							}
+							li {
+								font: 16px/1 "Spartan";
+								margin-bottom: 13px;
+								a {
+									text-align: left;
+									color: #111;
+									letter-spacing: 1.2px;
+								}
+							}
+						}
+						.line4 {
+							width: 20%;
+							height: 100%;
+							background: #fff;
+							float: left;
+							padding-top: 65px;
+							text-align: center;
+
+							.btns {
+								display: inline-block;
+								width: 200px;
+								height: 50px;
+								border: 1px solid #111;
+								font: bold 18px/50px "Spartan";
+								color: #111;
+								margin-bottom: 30px;
+							}
+							li {
+								font: 16px/1 "Spartan";
+								margin-bottom: 13px;
+								a {
+									text-align: left;
+									color: #111;
+									letter-spacing: 1.2px;
+								}
+							}
 						}
 						&::before {
 							content: "";
 							display: block;
 							width: 100%;
-							height: 100%;
+							height: 300px;
 							position: absolute;
 							top: 0;
 							left: -100%;
-							background: lightgreen;
+							background: #fff;
+							// border-top: 1px solid #555;
 						}
 						&::after {
 							content: "";
 							display: block;
+							clear: both;
 							width: 100%;
-							height: 100%;
+							height: 300px;
 							position: absolute;
 							top: 0;
 							right: -100%;
-							background: inherit;
+							background: #fff;
+							box-sizing: border-box;
 						}
-					}
-					&:hover a {
-						color: rgb(216, 119, 143);
 					}
 				}
 			}
@@ -131,7 +283,7 @@
 					}
 
 					&:last-child > a {
-						width: 30%;
+						width: 45%;
 						position: absolute;
 						top: 55%;
 						transform: translateY(-50%);
@@ -141,8 +293,10 @@
 						line-height: 15px;
 						border-right: none;
 
-						// > i {
-						// }
+						> i {
+							display: inline-block;
+							padding-left: 5px;
+						}
 					}
 				}
 			}
