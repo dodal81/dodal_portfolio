@@ -117,19 +117,16 @@
 				background: #eb5079;
 				border-radius: 50px;
 			}
-
-		
 		}
 		td {
 			width: 80%;
 			padding: 20px 0px;
-	
 		}
 		.table1 {
 			width: 100%;
 			border-collapse: collapse;
 			margin-bottom: 20px;
-		
+
 			tr {
 				position: relative;
 
@@ -159,7 +156,6 @@
 					border: none;
 					color: #fff;
 					font: bold 13px/55px "Noto Sans KR";
-
 				}
 
 				input[type="checkbox"],
@@ -167,8 +163,6 @@
 					margin-left: 10px;
 					width: 15px;
 					height: 15px;
-					
-
 				}
 				input[type="tel"] {
 					width: 40%;
@@ -191,9 +185,32 @@
 			width: 100%;
 			border-collapse: collapse;
 			margin-bottom: 20px;
-			tr{
-				th{
-					
+			tr {
+				th {
+				
+				}
+				td {
+				}
+				input[type="radio"] {
+					margin-right: 5px;
+				}
+				label {
+					font-size: 18px;
+					font-family: "Noto Sans KR";
+					margin-right: 10px;
+				}
+
+				select {
+					width: 200px;
+					height: 55px;
+					margin-right: 20px;
+					padding-left: 10px;
+					font-size: 18px;
+					color: #666;
+
+					&:nth-of-type(3) {
+						margin-right: 0;
+					}
 				}
 			}
 
@@ -222,7 +239,15 @@
 				background: #222;
 				// background: linear-gradient(60deg, #d9a7c7, #fffcdc);
 			}
-			.box1 {
+			.box {
+				padding: 30px 0px;
+				
+				span {
+					padding-bottom: 20px;
+				}
+			}
+
+			textarea {
 				display: block;
 				resize: none;
 				width: 100%;
@@ -232,8 +257,9 @@
 				color: #888;
 				border: 1px solid #aaa;
 				margin-bottom: 30px;
+				margin-top: 20px;
 				text-align: left;
-				// overflow: auto;
+
 			}
 		}
 	}
@@ -276,7 +302,7 @@
 					padding-bottom: 30px;
 				}
 			}
-			
+
 			h3 {
 				display: inline-block;
 				font: normal 10px/1 "arial";
@@ -326,7 +352,6 @@
 						padding: 5px;
 						/* border-right: 1px dashed #bbb; */
 						text-align: left;
-
 
 						span {
 							font: 600 11px/1 "Spartan";
