@@ -985,7 +985,7 @@ fieldset {
       color: #eb5079;
       position: absolute;
       right: 20px;
-      top: -2%; }
+      top: -1%; }
       .join .inner h2 > .cir {
         width: 5px;
         height: 5px;
@@ -1062,12 +1062,19 @@ fieldset {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 20px; }
+      .join .inner .table2 tr:last-of-type > th {
+        width: 20%; }
       .join .inner .table2 tr input[type="radio"] {
         margin-right: 5px; }
       .join .inner .table2 tr label {
         font-size: 18px;
-        font-family: "Noto Sans KR";
-        margin-right: 10px; }
+        font-family: "Noto Sans KR"; }
+      .join .inner .table2 tr .recommend {
+        padding: 40px 0px 20px 0; }
+        .join .inner .table2 tr .recommend > label {
+          display: inline-block;
+          width: 110px;
+          height: 50px; }
       .join .inner .table2 tr select {
         width: 200px;
         height: 55px;
@@ -1089,18 +1096,31 @@ fieldset {
       .join .inner .table2 input[type="reset"] {
         width: 30%;
         height: 70px;
-        margin: 0 auto;
         margin-left: 20px;
         float: left;
         font: 300 25px/70px "Noto Sans KR";
-        transform: translateX(24px);
-        box-sizing: border-box;
+        transform: translateX(120px);
         color: #fff;
-        background: #222; }
+        background: #222;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        cursor: pointer; }
       .join .inner .table2 .box1 {
-        padding: 80px 0px 0px; }
+        padding: 60px 0px 0px; }
+        .join .inner .table2 .box1 #box1_agree {
+          width: 20px;
+          height: 20px;
+          vertical-align: text-bottom; }
         .join .inner .table2 .box1 span {
-          padding-bottom: 20px; }
+          padding-left: 10px; }
+      .join .inner .table2 .box2 {
+        padding: 30px 0px 30px; }
+        .join .inner .table2 .box2 #box2_agree {
+          width: 20px;
+          height: 20px;
+          vertical-align: text-bottom; }
+        .join .inner .table2 .box2 span {
+          padding-left: 10px; }
       .join .inner .table2 textarea {
         display: block;
         resize: none;
@@ -1115,9 +1135,13 @@ fieldset {
         text-align: left; }
       .join .inner .table2 .agree {
         margin-top: 40px;
-        text-align: center; }
+        text-align: center;
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 40px; }
+        .join .inner .table2 .agree input[type="checkbox"] {
+          vertical-align: middle; }
         .join .inner .table2 .agree > span {
-          font: bold 17px/1 "Noto Sans KR";
+          font: 17px/1 "arial";
           letter-spacing: 1.1px; }
 
 @media screen and (max-width: 1179px) {

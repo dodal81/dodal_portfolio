@@ -370,14 +370,6 @@
 						</tr>
 
 
-						<!-- <tr>
-							<th scope="rows"><span>COMMENT</span><div class="cir"></div></label></th>
-							<td>
-								<textarea name="comment" id="comment" cols="30" rows="10"
-									placeholder="코멘트를 입력해주세요"></textarea>
-							</td>
-						</tr> -->
-
 					</table>
 					<h3>추가정보</h3>
 					<table class="table2" summary="회원가입 추가정보 가입경로, 가입추천, 이용약관동의">
@@ -406,7 +398,7 @@
 
 						<tr>
 							<th scope="row"><span>추천경로</span></th>
-							<td>
+							<td class="recommend">
 								<input type="radio" name="recomm" id="broadcast" value="broadcast">
 								<label for="broadcast">방송</label>
 
@@ -422,8 +414,20 @@
 								<input type="radio" name="recomm" id="newspaper" value="newspaper">
 								<label for="newspaper">신문</label>
 
+								<input type="radio" name="recomm" id="daum" value="daum">
+								<label for="daum">다음</label>
+
 								<input type="radio" name="recomm" id="kakao" value="kakao">
 								<label for="kakao">카카오</label>
+
+								<input type="radio" name="recomm" id="naver" value="naver">
+								<label for="naver">네이버</label>
+
+								<input type="radio" name="recomm" id="email" value="email">
+								<label for="email">이메일</label>
+
+								<input type="radio" name="recomm" id="site_banner" value="site_banner">
+								<label for="site_banner">배너</label>
 							</td>
 						</tr>
 
@@ -493,7 +497,8 @@
 							</th>
 						</tr>
 						<tr>
-							<th colspan="2" scope="row" class="box2"><input type="checkbox" name="box2_agree" id="box2_agree"><span>(필수)개인정보 수집 및 이용</span>
+							<th colspan="2" scope="row" class="box2"><input type="checkbox" name="box2_agree" id="box2_agree">
+								<span>(필수)개인정보 수집 및 이용</span>
 								<textarea name="box" cols="30" rows="10">
 'ㅇㅇㅇ' (이하 '회사'로 표기) 는 고객의 개인정보를 보호하기 위해 노력하고 있으며 통신비밀보호법, 정보통신망 이용촉진 등의 법률을 준수하고 있습니다. 회사는 개인정보취급방침을 통해 고객이 제공하는 개인정보의 용도와 개인정보보호 조치에 대해 알려드립니다.
 본 방침은 2018년 07월 01일부터 시행됩니다.
@@ -570,10 +575,7 @@
 
 					</table>
 				</fieldset>
-
 			</form>
-
-
 		</div>
 	</section>
 
