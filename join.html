@@ -11,9 +11,32 @@
 	<script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
 	<script src="js/jquery.mCustomScrollbar.js"></script>
 	<script defer src="js/myform.js"></script>
-	<script defer src="js/custom.js"></script>
 	<script defer src="js/mouse.js"></script>
+	<script defer src="js/birthday.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(document).ready(function () {
+			setDateBox();
+		});
+		$(document).ready(function () {
+			new MyForm("#myForm", [
+				{
+					type: "text",
+					name: "userId",
+					len: 5
+				},
+				{
+					type: "email",
+					name: "email",
+				},
+				{
+					type: "password",
+					name: ["pwd1", "pwd2"],
+					len: 5
+				}
+			])
+		});
+	</script>
 </head>
 
 <body>
@@ -31,7 +54,7 @@
 								<div class="pic">
 									<img src="img/br7.jpg" alt="헤더 이미지">
 								</div>
-							
+
 							</div>
 							<div class="line2">
 								<ul>
@@ -67,7 +90,7 @@
 								<div class="pic">
 									<img src="img/4.jpg" alt="헤더 이미지">
 								</div>
-							
+
 							</div>
 							<div class="line2">
 								<ul>
@@ -95,7 +118,7 @@
 								<div class="pic">
 									<img src="img/br8.jpg" alt="헤더 이미지">
 								</div>
-							
+
 							</div>
 							<div class="line2">
 								<ul>
@@ -131,7 +154,7 @@
 								<div class="pic">
 									<img src="img/br12.jpg" alt="헤더 이미지">
 								</div>
-							
+
 							</div>
 							<div class="line2">
 								<ul>
@@ -167,7 +190,7 @@
 								<div class="pic">
 									<img src="img/br10.jpg" alt="헤더 이미지">
 								</div>
-							
+
 							</div>
 							<div class="line2">
 								<ul>
@@ -185,7 +208,7 @@
 									<li><a href="#" onclick="return false">Products two thr</a></li>
 								</ul>
 							</div>
-						
+
 						</div>
 					</li>
 					<li>
@@ -196,7 +219,7 @@
 								<div class="pic">
 									<img src="img/br11.jpg" alt="헤더 이미지">
 								</div>
-							
+
 							</div>
 							<div class="line2">
 								<ul>
@@ -282,7 +305,7 @@
 				</div>
 			</article>
 
-			<form action="" method="get">
+			<form action="" method="get" id="myForm">
 				<fieldset>
 					<legend class="hidden">회원가입 입력양식폼</legend>
 
@@ -306,7 +329,8 @@
 							<th scope="rows"><span>비밀번호</span>
 								<div class="cir"></div>
 							</th>
-							<td><input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요" required>
+							<td>
+								<input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력해주세요" required>
 							</td>
 						</tr>
 
@@ -315,8 +339,7 @@
 								<div class="cir"></div>
 							</th>
 							<td>
-								<label for="reading"><input type="password" name="hobby" id="reading"
-										placeholder="비밀번호를 다시 입력해주세요" required></label>
+								<input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 다시 입력해주세요" required></label>
 							</td>
 						</tr>
 
@@ -497,7 +520,8 @@
 							</th>
 						</tr>
 						<tr>
-							<th colspan="2" scope="row" class="box2"><input type="checkbox" name="box2_agree" id="box2_agree">
+							<th colspan="2" scope="row" class="box2"><input type="checkbox" name="box2_agree"
+									id="box2_agree">
 								<span>(필수)개인정보 수집 및 이용</span>
 								<textarea name="box" cols="30" rows="10">
 'ㅇㅇㅇ' (이하 '회사'로 표기) 는 고객의 개인정보를 보호하기 위해 노력하고 있으며 통신비밀보호법, 정보통신망 이용촉진 등의 법률을 준수하고 있습니다. 회사는 개인정보취급방침을 통해 고객이 제공하는 개인정보의 용도와 개인정보보호 조치에 대해 알려드립니다.
