@@ -1,16 +1,18 @@
 
-// document.body.style.cursor = 'none';
+document.body.style.cursor = 'none';
+const cursor = document.querySelector(".cursor");
+let mouse = {};
 
-const result = document.querySelector(".result");
+window.addEventListener("mousemove", e=>{
+    mouse = {
+        x : e.clientX,
+        y : e.clientY
+    }
+    moveCursor();
+})
+window.addEventListener("scroll", moveCursor);
 
-document.addEventListener("mousemove", (e) => {
-    e.preventDefault();
-    const mouseX = e.pageX;
-    const mouseY = e.pageY;
-    result.style.left = mouseX + -20 +'px';
-    result.style.top = mouseY + -10 + 'px';
-
-
-    console.log(mouseX);
-    console.log(mouseY);
-});
+function moveCursor() {
+    cursor.style.left = mouse.x + -15 + 'px';
+    cursor.style.top = mouse.y + scrollY + -15 + 'px';
+}

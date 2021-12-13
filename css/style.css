@@ -460,7 +460,7 @@ fieldset {
           color: #fff;
           margin-right: 20px; }
 
-.result {
+.cursor {
   position: absolute;
   top: 0;
   left: 0;
@@ -3092,17 +3092,17 @@ body {
         background: #111;
         height: 60px; }
 
-.result {
+.cursor {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   background: #ffa8b8;
   width: 40px;
   height: 40px;
   opacity: 0.7;
   border-radius: 100%;
   transform: translate(-50%, -50%);
-  z-index: 3; }
+  z-index: 10; }
 
 @media screen and (max-width: 1179px) {
   #header .inner {
