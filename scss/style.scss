@@ -1092,6 +1092,7 @@ body {
 			align-items: end;
 
 			article {
+
 				width: 650px;
 				float: right;
 				display: block;
@@ -1106,10 +1107,11 @@ body {
 					position: relative;
 
 					.brand_arrow {
-						width: 18px;
-						height: 18px;
+						width: 20px;
+						height: 20px;
 						float: right;
 						position: relative;
+						cursor: pointer;
 
 						// &:nth-of-type(1)::after{
 						// 	display: none;
@@ -1119,7 +1121,7 @@ body {
 							content: "";
 							display: block;
 							width: 100%;
-							height: 1px;
+							height: 2px;
 							background: #111;
 							position: absolute;
 							top: 50%;
@@ -1128,7 +1130,7 @@ body {
 						&::after {
 							content: "";
 							display: block;
-							width: 1px;
+							width: 2px;
 							height: 100%;
 							background: #111;
 							position: absolute;
@@ -1145,6 +1147,8 @@ body {
 					font: 15px/1.5 "Spartan";
 					letter-spacing: 1.3px;
 					color: #333;
+					display: none;
+					transition: 0.5s;
 				}
 				span {
 					float: right;
@@ -1152,6 +1156,15 @@ body {
 					border-bottom: 1px solid #444;
 					color: #555;
 					font: 14px/1.3 "Spartan";
+					display: none;
+					transition: 0.5s;
+				}
+				&.brand_on {
+					.brand_arrow{
+						&::after{display: none;}
+					}
+					p{display: inline-block;}
+					span{display: inline-block;}
 				}
 			}
 		}

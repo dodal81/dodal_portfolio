@@ -1,5 +1,5 @@
 
-document.body.style.cursor = 'none';
+// document.body.style.cursor = 'none';
 const cursor = document.querySelector(".cursor");
 let mouse = {};
 
