@@ -1,16 +1,20 @@
 var btnCall = document.querySelector(".btnCall");
 var menuMo = document.querySelector(".menuMo");
+const brand = document.querySelector("#brand");
+const brand_on = brand.querySelectorAll("article");
 
-
+// 메뉴 토글
 btnCall.onclick = function (e) {
     e.preventDefault();
 
     btnCall.classList.toggle("on");
     menuMo.classList.toggle("on");
 }
+
+// 2depth바 메뉴바
 $("#gnb>li").on("mouseenter", function () {
     $(this).find(".sub").show();
-   
+
 
 });
 $("#gnb>li .sub").on("mouseleave", function () {
@@ -22,13 +26,22 @@ $("#gnb>li").each(function (index) {
         $("#gnb>li").eq(index).find(".sub").show();
     });
     $("#gnb>li").eq(index).find("a").last().on("focusout", function () {
-    // $("#gnb>li").eq(index).find(".sub").on("focusout", function () {
-    
+        // $("#gnb>li").eq(index).find(".sub").on("focusout", function () {
+
         $("#gnb>li").eq(index).find(".sub").hide();
     })
 });
 
 
+
+// brand 클릭이벤트 
+window.onload = function(){
+    let isOn = brand_on.classList.contains("brand_on");
+}
+$(".brand_arrow").on("click", function(e) {
+    e.preventDefault();
+    $(".brand_arrow").parent().find("article").removeClass("brand_on");
+});
 
 
 
