@@ -35,9 +35,21 @@ $("#gnb>li").each(function (index) {
 
 
 // brand 클릭이벤트 
-window.onload = function(){
-    let isOn = brand_on.classList.contains("brand_on");
-}
+brand_on.forEach((btn,index)=>{
+    brand_on.addEventListener("click",e=>{
+       e.preventDefault();
+       let isOn = e.currentTarget.classList.contains("on");
+       if(isOn) return;   
+       
+       if(enableClick){
+          enableClick = false;
+          activation(btns,index);
+          activation(boxs,index);
+ 
+    
+       }      
+    })
+ })
 $(".brand_arrow").on("click", function(e) {
     e.preventDefault();
     $(".brand_arrow").parent().find("article").removeClass("brand_on");
