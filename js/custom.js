@@ -2,6 +2,7 @@ var btnCall = document.querySelector(".btnCall");
 var menuMo = document.querySelector(".menuMo");
 const brand = document.querySelector("#brand");
 const brand_on = brand.querySelectorAll("article");
+console.log(brand_on);
 
 // 메뉴 토글
 btnCall.onclick = function (e) {
@@ -35,21 +36,12 @@ $("#gnb>li").each(function (index) {
 
 
 // brand 클릭이벤트 
-brand_on.forEach((btn,index)=>{
-    brand_on.addEventListener("click",e=>{
-       e.preventDefault();
-       let isOn = e.currentTarget.classList.contains("on");
-       if(isOn) return;   
-       
-       if(enableClick){
-          enableClick = false;
-          activation(btns,index);
-          activation(boxs,index);
- 
-    
-       }      
-    })
- })
+ window.onload = function() {
+    let brand_content = brand.querySelector(".brand_on");
+    console.log(brand_content);
+    brand_content.classList.remove("brand_on");
+};
+
 $(".brand_arrow").on("click", function(e) {
     e.preventDefault();
     $(".brand_arrow").parent().find("article").removeClass("brand_on");
