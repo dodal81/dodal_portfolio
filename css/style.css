@@ -1143,6 +1143,9 @@ fieldset {
         .join .inner .table2 .agree > span {
           font: 17px/1 "arial";
           letter-spacing: 1.1px; }
+    .join .inner p {
+      font: 15px/1 'Noto Sans KR';
+      color: #eb5079; }
 
 @media screen and (max-width: 1179px) {
   .join {
