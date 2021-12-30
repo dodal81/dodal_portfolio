@@ -41,11 +41,13 @@ $("#gnb>li").each(function (index) {
     console.log(brand_content);
     brand_content.classList.remove("brand_on");
 };
-
-$(".brand_arrow").on("click", function(e) {
+$(".brand_arrow").on("click", function(e){
     e.preventDefault();
-    $(".brand_arrow").parent().find("article").removeClass("brand_on");
+    console.log(brand_on);
+    let brand_target = $(e.target);
+    brand_target.addClass(".brand_on");
 });
+
 
 
 
