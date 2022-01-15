@@ -340,7 +340,7 @@ fieldset {
   padding: 0px 0px 150px; }
   .content .sub_visual {
     width: 100%;
-    height: 250px;
+    height: 350px;
     background: #bbb;
     margin-bottom: 100px; }
   .content .inner {
@@ -1279,10 +1279,17 @@ fieldset {
   width: 100%;
   background: #f8f8f8; }
   .department .sub_visual {
-    background: #111;
+    background: rgba(20, 20, 20, 0.925);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
+    .department .sub_visual h1 {
+      display: inline-block;
+      font: bold 45px/1.5 "Spartan";
+      color: #fff;
+      position: absolute;
+      left: 22%;
+      top: 13%; }
   .department .inner {
     width: 1180px;
     margin: 0 auto;
@@ -1310,7 +1317,6 @@ fieldset {
       .department .inner .wrap .company {
         width: 100%;
         height: 250px;
-        margin-bottom: 15%;
         position: relative; }
         .department .inner .wrap .company .main_pic {
           width: 500px;
@@ -1324,32 +1330,44 @@ fieldset {
           display: inline-block;
           width: 55%;
           position: absolute;
-          top: 50%;
-          left: 50%;
+          top: 35%;
+          left: 55%;
           margin-left: -25px;
           margin-top: -60px; }
           .department .inner .wrap .company .txt h2 {
-            width: 90%;
-            font: bold 60px/1 'Noto Sans KR';
-            border-bottom: 5px solid #111;
-            padding-bottom: 35px;
+            width: 100%;
+            font: 55px/1 'Noto Sans KR';
+            padding-bottom: 30px;
             color: #222;
-            margin-bottom: 45px; }
+            margin-bottom: 30px;
+            letter-spacing: 3.3px; }
+            .department .inner .wrap .company .txt h2::after {
+              content: "";
+              display: block;
+              clear: both;
+              width: 480px;
+              height: 2px;
+              background: #111;
+              position: absolute;
+              top: 85px; }
           .department .inner .wrap .company .txt p {
-            width: 80%;
-            font: 400 20px/1.7 'Noto Sans KR';
+            width: 84%;
+            font: 400 22px/1.7 'Noto Sans KR';
             color: #888;
-            margin-bottom: 45px; }
+            margin-bottom: 25px;
+            text-align: justify; }
           .department .inner .wrap .company .txt a {
             display: inline-block;
             text-align: center;
             border-radius: 5px;
-            width: 280px;
+            width: 260px;
             height: 60px;
             background: rgba(216, 216, 216, 0.665);
             font: 15px/60px 'Noto Sans KR';
             color: #858080;
             margin-right: 20px; }
+            .department .inner .wrap .company .txt a:last-of-type {
+              margin-right: 0px; }
       .department .inner .wrap .help {
         display: inline-block;
         padding: 20px 0;
@@ -1368,7 +1386,7 @@ fieldset {
           .department .inner .wrap .help .help_txt:last-child {
             margin-right: 0; }
           .department .inner .wrap .help .help_txt h2 {
-            font: bold 35px/1 'Noto Sans KR';
+            font: 35px/1 'Noto Sans KR';
             color: #222;
             padding-bottom: 30px;
             border-bottom: 3px solid #222;
@@ -1379,38 +1397,38 @@ fieldset {
               .department .inner .wrap .help .help_txt h2 .btn_class::before {
                 content: "";
                 display: block;
-                width: 70px;
-                height: 3px;
+                width: 55px;
+                height: 2px;
                 position: absolute;
-                top: 50%;
-                right: -200px;
+                top: 55%;
+                right: -242px;
                 background: #222; }
               .department .inner .wrap .help .help_txt h2 .btn_class::after {
                 content: "";
                 width: 25px;
                 height: 25px;
-                border-top: 3px solid #121212;
-                border-right: 3px solid #121212;
+                border-top: 2px solid #121212;
+                border-right: 2px solid #121212;
                 display: block;
                 transform: rotate(45deg);
                 position: absolute;
                 top: 13px;
-                right: -197px; }
+                right: -238px; }
           .department .inner .wrap .help .help_txt p {
-            font: bold 20px/1.7 'Noto Sans KR';
+            font: 20px/1.7 'Noto Sans KR';
             color: #333; }
       .department .inner .wrap .team {
         display: inline-block;
         width: 100%;
         text-align: center; }
         .department .inner .wrap .team > h1 {
-          font: bold 50px/1 'Noto Sans KR';
+          font: 50px/1 'Noto Sans KR';
           color: #222;
           margin-bottom: 55px; }
         .department .inner .wrap .team > h2 {
           display: inline-block;
           width: 70%;
-          font: bold 23px/1.5 'Noto Sans KR';
+          font: 23px/1.5 'Noto Sans KR';
           color: #666;
           margin-bottom: 100px; }
         .department .inner .wrap .team article {
