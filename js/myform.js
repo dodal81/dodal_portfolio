@@ -24,7 +24,7 @@ class MyForm {
                     if (!this.isTxt(opt.name, opt.len)) e.preventDefault();
                 }
 
-                if (opt.type === "text" && opt.name === "phone1") {
+                if (opt.type === "tel" && opt.name === "phone1") {
                     if (!this.isPhone(opt.name, opt.len)) e.preventDefault();
                 }
 

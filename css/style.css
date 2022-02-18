@@ -1016,6 +1016,13 @@ fieldset {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 20px; }
+      .join .inner .table1 input:-webkit-autofill {
+        -webkit-text-fill-color: #000; }
+      .join .inner .table1 input:-webkit-autofill,
+      .join .inner .table1 input:-webkit-autofill:hover,
+      .join .inner .table1 input:-webkit-autofill:focus,
+      .join .inner .table1 input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s; }
       .join .inner .table1 tr {
         position: relative; }
         .join .inner .table1 tr:nth-of-type(7) .cir {
@@ -1144,7 +1151,7 @@ fieldset {
           font: 17px/1 "arial";
           letter-spacing: 1.1px; }
     .join .inner p {
-      font: 15px/1 'Noto Sans KR';
+      font: 15px/1 "Noto Sans KR";
       color: #eb5079; }
 
 @media screen and (max-width: 1179px) {

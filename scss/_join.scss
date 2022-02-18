@@ -127,6 +127,17 @@
 			border-collapse: collapse;
 			margin-bottom: 20px;
 
+
+			input:-webkit-autofill {
+				-webkit-text-fill-color: #000;
+			}
+
+			input:-webkit-autofill,
+			input:-webkit-autofill:hover,
+			input:-webkit-autofill:focus,
+			input:-webkit-autofill:active {
+				transition: background-color 5000s ease-in-out 0s;
+			}
 			tr {
 				position: relative;
 
@@ -186,13 +197,11 @@
 			border-collapse: collapse;
 			margin-bottom: 20px;
 			tr {
-				
-				&:last-of-type >th {
+				&:last-of-type > th {
 					width: 20%;
 				}
-			
+
 				td {
-					
 				}
 				input[type="radio"] {
 					margin-right: 5px;
@@ -203,7 +212,7 @@
 				}
 				.recommend {
 					padding: 40px 0px 20px 0;
-					>label {
+					> label {
 						// margin-right: 60px;
 						display: inline-block;
 						width: 110px;
@@ -248,15 +257,14 @@
 				border: 1px solid #fff;
 				box-sizing: border-box;
 				cursor: pointer;
-				
 			}
-			
+
 			.box1 {
 				padding: 60px 0px 0px;
 				#box1_agree {
 					width: 20px;
 					height: 20px;
-					vertical-align: text-bottom; 
+					vertical-align: text-bottom;
 				}
 				span {
 					padding-left: 10px;
@@ -267,7 +275,7 @@
 				#box2_agree {
 					width: 20px;
 					height: 20px;
-					vertical-align: text-bottom; 
+					vertical-align: text-bottom;
 				}
 				span {
 					padding-left: 10px;
@@ -286,7 +294,6 @@
 				margin-bottom: 30px;
 				margin-top: 20px;
 				text-align: left;
-
 			}
 			.agree {
 				margin-top: 40px;
@@ -297,16 +304,15 @@
 				input[type="checkbox"] {
 					vertical-align: middle;
 				}
-				
-				>span {
+
+				> span {
 					font: 17px/1 "arial";
 					letter-spacing: 1.1px;
 				}
-				
 			}
 		}
-		p{
-			font: 15px/1 'Noto Sans KR';
+		p {
+			font: 15px/1 "Noto Sans KR";
 			color: #eb5079;
 		}
 	}
@@ -377,6 +383,7 @@
 				}
 			}
 			table {
+
 				width: 100%;
 				border-collapse: collapse;
 				margin-bottom: 20px;
